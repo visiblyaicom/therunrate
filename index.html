@@ -313,34 +313,6 @@ nav {
   line-height: 1.2; color: var(--ink); text-align: center;
 }
 
-/* ─── LATEST STRIP ─── */
-.latest-bg {
-  background: var(--navy-deep);
-  border-bottom: 3px solid var(--yellow);
-}
-.latest-inner {
-  max-width: 1200px; margin: 0 auto; padding: 0 32px;
-  display: grid; grid-template-columns: 100px 1fr 1fr 1fr;
-  min-height: 52px;
-}
-.latest-label {
-  background: var(--yellow); color: var(--navy-deep);
-  font-size: 9px; font-weight: 700; letter-spacing: 0.2em;
-  text-transform: uppercase; display: flex; align-items: center;
-  justify-content: center; padding: 0 12px;
-}
-.latest-item {
-  display: flex; align-items: center; gap: 12px;
-  padding: 14px 20px; border-left: 1px solid rgba(255,255,255,0.07);
-  transition: background 0.15s;
-}
-.latest-item:hover { background: rgba(255,255,255,0.03); }
-.latest-num {
-  font-family: 'Playfair Display', serif; font-size: 24px;
-  font-weight: 700; color: rgba(240,232,122,0.22); line-height: 1; flex-shrink: 0;
-}
-.latest-title { font-size: 11px; font-weight: 600; line-height: 1.4; color: rgba(255,255,255,0.7); }
-
 /* ─── SECTION ─── */
 .section-outer { max-width: 1200px; margin: 0 auto; padding: 44px 32px 0; }
 .section-head {
@@ -629,25 +601,6 @@ footer { background: var(--navy-deep); padding: 30px 32px; border-top: 3px solid
   });
 })();
 </script>
-
-<!-- LATEST STRIP -->
-<div class="latest-bg">
-  <div class="latest-inner">
-    <span class="latest-label">Latest</span>
-    <a href="article.html" class="latest-item">
-      <span class="latest-num">1</span>
-      <span class="latest-title">Planet Fitness Deployed AI Coaches. Here's What It Means for Independent Studios.</span>
-    </a>
-    <a href="churn-57.html" class="latest-item">
-      <span class="latest-num">2</span>
-      <span class="latest-title">57% of Fitness Studio Members Churn in Year One. Most Operators Don't Know Why.</span>
-    </a>
-    <a href="acquisition-80.html" class="latest-item">
-      <span class="latest-num">3</span>
-      <span class="latest-title">80% of New Members Come From 3 Sources. Most Studios Are Funding the Other 20.</span>
-    </a>
-  </div>
-</div>
 
 <!-- STUDIO GROWTH -->
 <div class="section-outer">
