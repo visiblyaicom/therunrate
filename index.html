@@ -90,13 +90,10 @@ nav {
   height: 72px; display: flex; align-items: center;
   justify-content: space-between; gap: 32px;
 }
-.nav-logo {
-  font-family: 'Playfair Display', serif;
-  font-size: 32px;
-  font-weight: 700;
-  color: var(--navy-deep);
-  letter-spacing: -0.02em;
-  line-height: 1;
+.nav-logo img {
+  height: 48px;
+  width: auto;
+  display: block;
   flex-shrink: 0;
 }
 .nav-links {
@@ -542,7 +539,7 @@ footer { background: var(--navy-deep); padding: 30px 32px; border-top: 3px solid
 <!-- NAV -->
 <nav>
   <div class="nav-inner">
-    <a href="/" class="nav-logo">The Run Rate</a>
+    <a href="/" class="nav-logo"><img src="logo-light.png" alt="The Run Rate"></a>
     <ul class="nav-links">
       <li><a href="#">Studio Growth</a></li>
       <li><span class="sep">/</span></li>
