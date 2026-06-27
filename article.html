@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Run Rate</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400;1,600&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+:root {
+  --navy:#1b2235;--navy-deep:#0d1421;--navy-mid:#243048;--navy-soft:#2e3d5c;
+  --yellow:#f0e87a;--yellow-dim:#e0d96a;
+  --ink:#12171f;--ink-mid:#3a4455;--ink-light:#6b7585;
+  --page:#f9f8f5;--border:#e2e1db;
+  --rule-dark:rgba(255,255,255,0.1);
+}
+*{margin:0;padding:0;box-sizing:border-box;}
+body{background:var(--page);color:var(--ink);font-family:'Jost',sans-serif;font-weight:300;-webkit-font-smoothing:antialiased;}
+a{color:inherit;text-decoration:none;}
+img{display:block;}
+
+/* TOP BAR */
+.top-bar{background:var(--yellow);text-align:center;padding:9px 24px;font-size:9px;font-weight:600;letter-spacing:0.22em;text-transform:uppercase;color:var(--navy-deep);}
+.top-bar a{color:var(--navy-deep);text-decoration:underline;text-underline-offset:2px;}
+
+/* NAV */
+nav{background:var(--navy-deep);border-bottom:0.5px solid var(--rule-dark);}
+.nav-inner{max-width:1200px;margin:0 auto;padding:0 40px;height:64px;display:flex;align-items:center;justify-content:space-between;gap:32px;}
+.nav-logo img{height:28px;width:auto;}
+.nav-subscribe{background:var(--yellow);color:var(--navy-deep);font-size:9px;font-weight:600;letter-spacing:0.18em;text-transform:uppercase;padding:8px 18px;border-radius:100px;white-space:nowrap;flex-shrink:0;}
+
+/* ARTICLE HERO (dark — this is the LinkedIn screenshot zone) */
+.article-hero {
+  background: var(--navy-deep);
+  padding: 64px 40px 56px;
+}
+.article-hero-inner {
+  max-width: 860px;
+  margin: 0 auto;
+}
+.article-meta {
+  display:flex;align-items:center;gap:14px;margin-bottom:28px;
+}
+.tag{font-size:8px;font-weight:600;letter-spacing:0.22em;text-transform:uppercase;padding:4px 11px;border-radius:100px;}
+.tag-y{background:var(--yellow);color:var(--navy-deep);}
+.article-date,.article-read-time{font-size:9px;font-weight:400;letter-spacing:0.12em;color:rgba(255,255,255,0.35);text-transform:uppercase;}
+.article-dot{color:rgba(255,255,255,0.15);}
+
+.article-headline {
+  font-family:'Cormorant Garamond',serif;
+  font-size:56px;
+  font-weight:400;
+  font-style:italic;
+  line-height:1.08;
+  color:#f8f8f4;
+  margin-bottom:24px;
+  letter-spacing:-0.01em;
+}
+.article-deck {
+  font-size:17px;font-weight:300;line-height:1.7;
+  color:rgba(255,255,255,0.5);
+  max-width:720px;margin-bottom:36px;
+}
+.article-byline {
+  display:flex;align-items:center;gap:14px;
+  padding-top:28px;border-top:0.5px solid rgba(255,255,255,0.08);
+}
+.byline-avatar {
+  width:36px;height:36px;border-radius:50%;
+  background:var(--navy-soft);
+  display:flex;align-items:center;justify-content:center;
+  font-family:'Cormorant Garamond',serif;font-size:14px;font-weight:600;
+  color:var(--yellow);flex-shrink:0;
+}
+.byline-name{font-size:11px;font-weight:500;letter-spacing:0.06em;color:#f8f8f4;}
+.byline-role{font-size:9px;font-weight:400;letter-spacing:0.1em;color:rgba(255,255,255,0.35);text-transform:uppercase;}
+
+/* STAT STRIP (light) */
+.stat-strip {
+  background:var(--page);
+  border-bottom:1px solid var(--border);
+}
+.stat-strip-inner {
+  max-width:860px;margin:0 auto;padding:36px 40px;
+  display:flex;gap:56px;
+}
+.stat-number {
+  font-family:'Cormorant Garamond',serif;
+  font-size:40px;font-weight:400;font-style:italic;
+  color:var(--navy-deep);line-height:1;margin-bottom:6px;
+}
+.stat-label {
+  font-size:9px;font-weight:500;letter-spacing:0.14em;
+  text-transform:uppercase;color:var(--ink-light);
+  max-width:130px;line-height:1.55;
+}
+
+/* ARTICLE BODY (light) */
+.article-body {
+  max-width:680px;margin:52px auto;padding:0 40px;
+}
+.article-body p {
+  font-size:16px;font-weight:300;line-height:1.85;
+  color:var(--ink-mid);margin-bottom:24px;
+}
+.article-body h2 {
+  font-family:'Cormorant Garamond',serif;
+  font-size:28px;font-weight:400;font-style:italic;
+  color:var(--ink);margin:40px 0 16px;
+}
+.pull-quote {
+  border-left:2px solid var(--yellow);
+  padding:8px 0 8px 24px;margin:36px 0;
+}
+.pull-quote p {
+  font-family:'Cormorant Garamond',serif;
+  font-size:22px;font-weight:400;font-style:italic;
+  color:var(--ink)!important;line-height:1.5!important;margin-bottom:8px!important;
+}
+.pull-quote cite {
+  font-size:9px;font-weight:500;letter-spacing:0.15em;
+  text-transform:uppercase;color:var(--ink-light);font-style:normal;
+}
+
+/* FOOTER */
+footer{background:var(--navy-deep);padding:36px 40px;margin-top:80px;}
+.footer-inner{max-width:1200px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;}
+footer img{height:20px;width:auto;}
+.footer-copy{font-size:10px;font-weight:300;letter-spacing:0.1em;text-transform:uppercase;color:rgba(255,255,255,0.3);}
+</style>
+</head>
+<body>
+
+<div class="top-bar">
+  Weekly growth intelligence for fitness &amp; wellness operators — <a href="https://therunrate.co">subscribe free →</a>
+</div>
+
+<nav>
+  <div class="nav-inner">
+    <a href="/" class="nav-logo"><img src="logo.png" alt="The Run Rate"></a>
+    <a href="https://therunrate.substack.com" class="nav-subscribe">Subscribe Free</a>
+  </div>
+</nav>
+
+<!-- ARTICLE HERO — dark, screenshottable -->
+<div class="article-hero" id="article-top">
+  <div class="article-hero-inner">
+    <div class="article-meta">
+      <span class="tag tag-y" id="article-category">Studio Growth</span>
+      <span class="article-dot">·</span>
+      <span class="article-date" id="article-date">Jun 27, 2026</span>
+      <span class="article-dot">·</span>
+      <span class="article-read-time" id="article-read-time">4 min read</span>
+    </div>
+
+    <h1 class="article-headline" id="article-headline">
+      Planet Fitness Just Deployed AI Coaches. Here's What It Means for Independent Studios.
+    </h1>
+
+    <p class="article-deck" id="article-deck">
+      When the 2,500-location chain moves, the whole market shifts. Independent operators have a narrow window to counter-position before AI coaching becomes the baseline expectation — not the differentiator.
+    </p>
+
+    <div class="article-byline">
+      <div class="byline-avatar">P</div>
+      <div>
+        <div class="byline-name">Paula Bartis</div>
+        <div class="byline-role">Founder, The Run Rate</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- STAT STRIP — light -->
+<div class="stat-strip">
+  <div class="stat-strip-inner">
+    <div>
+      <div class="stat-number">2,500+</div>
+      <div class="stat-label">Planet Fitness locations deploying AI coaching</div>
+    </div>
+    <div>
+      <div class="stat-number">$10</div>
+      <div class="stat-label">Monthly price point for AI-powered membership</div>
+    </div>
+    <div>
+      <div class="stat-number">18 mo</div>
+      <div class="stat-label">Window before AI coaching becomes table stakes</div>
+    </div>
+  </div>
+</div>
+
+<!-- ARTICLE BODY — light -->
+<article class="article-body">
+  <p>Planet Fitness announced AI-powered coaching features for all members last week. At $10/month. Across 2,500+ locations.</p>
+  <p>This isn't a pilot. It's a market signal.</p>
+
+  <div class="pull-quote">
+    <p>"When the biggest low-cost operator in fitness adds AI, it stops being a differentiator and starts being an expectation."</p>
+    <cite>— The Run Rate</cite>
+  </div>
+
+  <h2>What independent studios actually need to do</h2>
+
+  <p>The opportunity isn't to out-AI Planet Fitness. It's to do the thing AI coaching can't: build a genuine human relationship at the moment a member almost quits. That's your 30-day window. That's your moat.</p>
+
+  <p>Three moves that matter right now: audit your first-30-day touchpoint cadence, double down on coach-to-member communication, and make your community visible — not just to members, but to prospects comparing you to an app.</p>
+
+  <p><a href="https://therunrate.co" style="color:var(--navy-deep);font-weight:500;text-decoration:underline;text-underline-offset:3px;">Read the full issue at therunrate.co →</a></p>
+</article>
+
+<footer>
+  <div class="footer-inner">
+    <a href="/"><img src="logo.png" alt="The Run Rate"></a>
+    <span class="footer-copy">© 2026 The Run Rate</span>
+  </div>
+</footer>
+
+</body>
+</html>
