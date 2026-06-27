@@ -12,349 +12,473 @@
 :root {
   --navy:      #1b2235;
   --navy-deep: #0d1421;
-  --navy-mid:  #1e2a40;
   --yellow:    #f0e87a;
   --yellow-dim:#e0d96a;
-  --ink:       #12171f;
+  --red:       #e63329;
+  --ink:       #111820;
   --ink-mid:   #3a4455;
-  --ink-light: #6b7585;
-  --page:      #f9f8f5;
-  --page-warm: #f2f1ed;
-  --border:    #e2e1db;
-  --border-dark: rgba(255,255,255,0.07);
+  --ink-light: #888fa0;
+  --page:      #ffffff;
+  --border:    #e4e4e0;
 }
 * { margin:0; padding:0; box-sizing:border-box; }
 body { background:var(--page); color:var(--ink); font-family:'Jost',sans-serif; font-weight:300; -webkit-font-smoothing:antialiased; }
 a { color:inherit; text-decoration:none; }
 img { display:block; }
 
-/* ─── TOP BAR ─── */
-.top-bar {
-  background: var(--yellow);
-  text-align: center;
-  padding: 9px 24px;
-  font-size: 11px;
-  font-weight: 700;
-  letter-spacing: 0.16em;
-  text-transform: uppercase;
-  color: var(--navy-deep);
+/* ─── TICKER ─── */
+.ticker-bg {
+  background: var(--navy-deep);
+  overflow: hidden;
+  height: 36px;
+  display: flex;
+  align-items: center;
 }
-.top-bar a { color: var(--navy-deep); text-decoration: underline; text-underline-offset: 2px; }
+.ticker-inner {
+  display: flex;
+  align-items: center;
+  gap: 0;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.ticker-label {
+  background: var(--yellow);
+  color: var(--navy-deep);
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  padding: 0 16px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+  margin-right: 24px;
+}
+.ticker-track {
+  display: flex;
+  align-items: center;
+  animation: ticker 35s linear infinite;
+  gap: 0;
+}
+@keyframes ticker {
+  0%   { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+.ticker-item {
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: rgba(255,255,255,0.75);
+  padding-right: 48px;
+  white-space: nowrap;
+}
+.ticker-sep {
+  color: rgba(255,255,255,0.2);
+  padding-right: 48px;
+  font-size: 14px;
+}
 
 /* ─── NAV ─── */
-nav { background: var(--navy-deep); }
-.nav-inner {
-  max-width: 1200px; margin: 0 auto; padding: 0 40px;
-  height: 60px; display: flex; align-items: center;
-  justify-content: space-between; gap: 24px;
+nav {
+  border-bottom: 1px solid var(--border);
+  background: #fff;
 }
-.nav-logo img { height: 26px; width: auto; mix-blend-mode: screen; }
-.nav-links { display: flex; align-items: center; gap: 28px; list-style: none; }
+.nav-inner {
+  max-width: 1200px; margin: 0 auto; padding: 0 32px;
+  height: 72px; display: flex; align-items: center;
+  justify-content: space-between; gap: 32px;
+}
+.nav-logo {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 32px;
+  font-weight: 700;
+  color: var(--navy-deep);
+  letter-spacing: -0.02em;
+  line-height: 1;
+  flex-shrink: 0;
+}
+.nav-links {
+  display: flex; align-items: center; gap: 8px; list-style: none;
+}
+.nav-links li { display: flex; align-items: center; }
+.nav-links .sep {
+  color: var(--border);
+  font-size: 18px;
+  padding: 0 4px;
+  user-select: none;
+}
 .nav-links a {
   font-size: 11px; font-weight: 600; letter-spacing: 0.13em;
-  text-transform: uppercase; color: rgba(255,255,255,0.45); transition: color 0.15s;
+  text-transform: uppercase; color: var(--ink-mid); transition: color 0.15s;
 }
-.nav-links a:hover, .nav-links a.active { color: var(--yellow); }
+.nav-links a:hover { color: var(--ink); }
 .nav-sub {
-  background: var(--yellow); color: var(--navy-deep);
-  font-size: 11px; font-weight: 700; letter-spacing: 0.12em;
-  text-transform: uppercase; padding: 8px 18px; border-radius: 2px;
-  white-space: nowrap; flex-shrink: 0; transition: background 0.15s;
+  background: var(--yellow);
+  color: var(--navy-deep);
+  font-size: 11px; font-weight: 700; letter-spacing: 0.1em;
+  text-transform: uppercase; padding: 10px 20px;
+  border-radius: 2px; white-space: nowrap;
+  flex-shrink: 0; transition: background 0.15s;
 }
 .nav-sub:hover { background: var(--yellow-dim); }
 
-/* ─── HERO (dark) ─── */
-.hero-bg { background: var(--navy-deep); }
-.hero-inner {
-  max-width: 1200px; margin: 0 auto; padding: 32px 40px 40px;
-  display: grid; grid-template-columns: 1fr 360px; gap: 40px;
+/* ─── HERO: 3-COLUMN ─── */
+.hero-wrap {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 28px 32px 0;
+  display: grid;
+  grid-template-columns: 280px 1fr 280px;
+  gap: 24px;
+  border-bottom: 1px solid var(--border);
+  padding-bottom: 28px;
 }
 
-/* Big left story */
-.hero-main { display: flex; flex-direction: column; }
-.hero-main-img {
+/* LEFT col: 2 stacked cards */
+.hero-left { display: flex; flex-direction: column; gap: 24px; }
+.h-card {
+  display: flex; flex-direction: column;
+  border-bottom: 1px solid var(--border);
+  padding-bottom: 24px;
+}
+.h-card:last-child { border-bottom: none; padding-bottom: 0; }
+.h-card-img {
   width: 100%; aspect-ratio: 16/9;
-  background: linear-gradient(140deg, #1b2235 0%, #2e3d5c 100%);
-  display: flex; align-items: flex-end; padding: 24px;
-  margin-bottom: 20px; overflow: hidden;
+  background: linear-gradient(135deg, #e8e8e2 0%, #d4d4cc 100%);
+  display: flex; align-items: flex-end; padding: 10px;
+  margin-bottom: 10px; overflow: hidden;
 }
-.img-word {
-  font-family: 'Cormorant Garamond', serif; font-weight: 700;
-  color: rgba(240,232,122,0.07); line-height: 1; user-select: none;
+.img-bg-word {
+  font-family: 'Cormorant Garamond', serif;
+  font-weight: 700; color: rgba(18,24,32,0.06);
+  line-height: 1; user-select: none;
 }
-.hero-main-img .img-word { font-size: 100px; }
-.hero-tag {
-  display: inline-block; font-size: 9px; font-weight: 700;
-  letter-spacing: 0.18em; text-transform: uppercase;
-  background: var(--yellow); color: var(--navy-deep);
-  padding: 3px 10px; border-radius: 2px; margin-bottom: 12px;
+.h-card-img .img-bg-word { font-size: 36px; }
+.h-meta {
+  font-size: 10px; font-weight: 600; letter-spacing: 0.12em;
+  text-transform: uppercase; color: var(--ink-light);
+  margin-bottom: 6px;
 }
-.hero-headline {
-  font-family: 'Cormorant Garamond', serif; font-size: 40px;
-  font-weight: 700; font-style: normal; line-height: 1.1;
-  color: #f8f8f4; margin-bottom: 12px; letter-spacing: -0.01em;
+.h-meta span { color: var(--ink-light); }
+.h-headline {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 20px; font-weight: 700; font-style: normal;
+  line-height: 1.2; color: var(--ink); transition: color 0.15s;
 }
-.hero-deck {
+.h-card:hover .h-headline { color: var(--navy); }
+
+/* CENTER col: big featured */
+.hero-center {
+  display: flex; flex-direction: column;
+  border-left: 1px solid var(--border);
+  border-right: 1px solid var(--border);
+  padding: 0 28px;
+}
+.hero-center-img {
+  width: 100%; aspect-ratio: 16/9;
+  background: linear-gradient(140deg, #d8d6cd 0%, #bfbdb4 100%);
+  display: flex; align-items: flex-end; padding: 16px;
+  margin-bottom: 16px; overflow: hidden;
+}
+.hero-center-img .img-bg-word { font-size: 80px; }
+.hero-center-meta {
+  font-size: 10px; font-weight: 600; letter-spacing: 0.14em;
+  text-transform: uppercase; color: var(--ink-light);
+  text-align: center; margin-bottom: 12px;
+}
+.hero-center-meta strong { color: var(--ink-mid); }
+.hero-big-headline {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 44px; font-weight: 700; font-style: normal;
+  line-height: 1.08; color: var(--ink);
+  margin-bottom: 14px; letter-spacing: -0.02em;
+  transition: color 0.15s;
+}
+.hero-center:hover .hero-big-headline { color: var(--navy); }
+.hero-center-deck {
   font-size: 14px; font-weight: 300; line-height: 1.7;
-  color: rgba(255,255,255,0.45); margin-bottom: 20px;
+  color: var(--ink-mid);
 }
-.hero-foot {
-  display: flex; align-items: center; gap: 20px; margin-top: auto;
-}
-.hero-date { font-size: 11px; color: rgba(255,255,255,0.3); letter-spacing: 0.06em; text-transform: uppercase; }
-.hero-cta { font-size: 11px; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: var(--yellow); }
-.hero-cta:hover { opacity: 0.75; }
 
-/* Sidebar stories */
-.hero-sidebar { display: flex; flex-direction: column; gap: 0; }
-.side-story {
-  padding-bottom: 24px; margin-bottom: 24px;
-  border-bottom: 1px solid var(--border-dark);
+/* RIGHT col: 4 mini stories */
+.hero-right { display: flex; flex-direction: column; gap: 0; }
+.mini-story {
+  display: grid;
+  grid-template-columns: 1fr 80px;
+  gap: 12px;
+  align-items: start;
+  padding: 0 0 16px;
+  margin-bottom: 16px;
+  border-bottom: 1px solid var(--border);
 }
-.side-story:last-child { border-bottom: none; margin-bottom: 0; padding-bottom: 0; }
-.side-story-img {
-  width: 100%; aspect-ratio: 16/9;
-  background: linear-gradient(135deg, #1d2940 0%, #243048 100%);
-  display: flex; align-items: flex-end; padding: 12px;
-  margin-bottom: 12px; overflow: hidden;
+.mini-story:last-child { border-bottom: none; margin-bottom: 0; padding-bottom: 0; }
+.mini-story-body {}
+.mini-cat {
+  font-size: 9px; font-weight: 700; letter-spacing: 0.16em;
+  text-transform: uppercase; color: var(--ink-light);
+  margin-bottom: 5px;
 }
-.side-story-img .img-word { font-size: 40px; }
-.side-tag {
-  display: inline-block; font-size: 8px; font-weight: 700;
-  letter-spacing: 0.16em; text-transform: uppercase;
-  background: var(--yellow); color: var(--navy-deep);
-  padding: 2px 8px; border-radius: 2px; margin-bottom: 8px;
+.mini-headline {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 17px; font-weight: 700; font-style: normal;
+  line-height: 1.25; color: var(--ink); transition: color 0.15s;
 }
-.side-headline {
-  font-family: 'Cormorant Garamond', serif; font-size: 20px;
-  font-weight: 700; font-style: normal; line-height: 1.2;
-  color: #f0f0ec; transition: opacity 0.15s;
+.mini-story:hover .mini-headline { color: var(--navy); }
+.mini-img {
+  width: 80px; height: 60px;
+  background: linear-gradient(135deg, #e4e4de 0%, #d0d0c8 100%);
+  display: flex; align-items: flex-end; padding: 6px;
+  overflow: hidden; flex-shrink: 0;
 }
-.side-story:hover .side-headline { opacity: 0.7; }
-.side-date { font-size: 10px; color: rgba(255,255,255,0.28); text-transform: uppercase; letter-spacing: 0.06em; margin-top: 6px; }
+.mini-img .img-bg-word { font-size: 18px; }
 
 /* ─── LATEST STRIP ─── */
 .latest-bg {
-  background: var(--navy-mid);
-  border-top: 1px solid var(--border-dark);
+  background: var(--navy-deep);
   border-bottom: 3px solid var(--yellow);
 }
 .latest-inner {
-  max-width: 1200px; margin: 0 auto; padding: 0 40px;
-  display: grid; grid-template-columns: 120px 1fr 1fr 1fr;
+  max-width: 1200px; margin: 0 auto; padding: 0 32px;
+  display: grid; grid-template-columns: 100px 1fr 1fr 1fr;
   min-height: 52px;
 }
 .latest-label {
   background: var(--yellow); color: var(--navy-deep);
   font-size: 9px; font-weight: 700; letter-spacing: 0.2em;
   text-transform: uppercase; display: flex; align-items: center;
-  justify-content: center; padding: 0 16px;
+  justify-content: center; padding: 0 12px;
 }
 .latest-item {
   display: flex; align-items: center; gap: 12px;
-  padding: 14px 20px; border-left: 1px solid var(--border-dark);
+  padding: 14px 20px; border-left: 1px solid rgba(255,255,255,0.07);
   transition: background 0.15s;
 }
 .latest-item:hover { background: rgba(255,255,255,0.03); }
 .latest-num {
-  font-family: 'Cormorant Garamond', serif; font-size: 26px;
-  font-weight: 700; color: rgba(240,232,122,0.2); line-height: 1; flex-shrink: 0;
+  font-family: 'Cormorant Garamond', serif; font-size: 24px;
+  font-weight: 700; color: rgba(240,232,122,0.22); line-height: 1; flex-shrink: 0;
 }
-.latest-title { font-size: 12px; font-weight: 600; line-height: 1.4; color: rgba(255,255,255,0.7); }
+.latest-title { font-size: 11px; font-weight: 600; line-height: 1.4; color: rgba(255,255,255,0.7); }
 
-/* ─── SECTION LAYOUT ─── */
-.section-outer { max-width: 1200px; margin: 0 auto; padding: 52px 40px 0; }
+/* ─── SECTION ─── */
+.section-outer { max-width: 1200px; margin: 0 auto; padding: 44px 32px 0; }
 .section-head {
   display: flex; align-items: center; justify-content: space-between;
-  padding-bottom: 12px; border-bottom: 2px solid var(--ink);
+  padding-bottom: 10px; border-bottom: 2px solid var(--ink);
   margin-bottom: 24px;
 }
-.section-name { font-size: 12px; font-weight: 700; letter-spacing: 0.18em; text-transform: uppercase; }
-.section-more { font-size: 11px; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: var(--ink-light); transition: color 0.15s; }
+.section-name { font-size: 11px; font-weight: 700; letter-spacing: 0.2em; text-transform: uppercase; }
+.section-more {
+  font-size: 10px; font-weight: 600; letter-spacing: 0.12em;
+  text-transform: uppercase; color: var(--ink-light); transition: color 0.15s;
+}
 .section-more:hover { color: var(--ink); }
 
-/* Two-column section body */
-.section-body {
-  display: grid; grid-template-columns: 1fr 340px; gap: 40px; align-items: start;
-}
+/* 2-col: row cards LEFT + featured RIGHT */
+.section-body { display: grid; grid-template-columns: 1fr 320px; gap: 40px; align-items: start; }
 
-/* Left: stacked row cards */
+/* Row card (horizontal: small img left, text right) */
 .row-cards { display: flex; flex-direction: column; }
 .row-card {
-  display: grid; grid-template-columns: 140px 1fr; gap: 16px;
+  display: grid; grid-template-columns: 130px 1fr; gap: 16px;
   padding: 18px 0; border-bottom: 1px solid var(--border);
-  transition: background 0.15s;
 }
 .row-card:first-child { padding-top: 0; }
 .row-card:last-child { border-bottom: none; }
-.row-card-img {
-  width: 140px; aspect-ratio: 4/3;
-  background: linear-gradient(135deg, #e8e7e0 0%, #d5d4cc 100%);
+.rc-img {
+  width: 130px; aspect-ratio: 4/3;
+  background: linear-gradient(135deg, #e8e8e2 0%, #d4d4cc 100%);
   display: flex; align-items: flex-end; padding: 8px;
   overflow: hidden; flex-shrink: 0;
 }
-.row-card-img .img-word { font-size: 28px; color: rgba(18,23,31,0.07); }
-.row-card-body { display: flex; flex-direction: column; gap: 4px; }
-.rc-tag {
-  display: inline-block; font-size: 8px; font-weight: 700;
-  letter-spacing: 0.16em; text-transform: uppercase;
-  background: var(--yellow); color: var(--navy-deep);
-  padding: 2px 7px; border-radius: 2px; align-self: flex-start;
-}
-.rc-date { font-size: 10px; color: var(--ink-light); text-transform: uppercase; letter-spacing: 0.06em; }
+.rc-img .img-bg-word { font-size: 26px; }
+.rc-body { display: flex; flex-direction: column; gap: 4px; }
+.rc-meta { font-size: 9px; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase; color: var(--ink-light); }
 .rc-headline {
-  font-family: 'Cormorant Garamond', serif; font-size: 18px;
-  font-weight: 700; font-style: normal; line-height: 1.25;
-  color: var(--ink); transition: color 0.15s;
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 19px; font-weight: 700; font-style: normal;
+  line-height: 1.2; color: var(--ink); transition: color 0.15s;
 }
 .row-card:hover .rc-headline { color: var(--navy); }
 .rc-deck { font-size: 12px; font-weight: 300; line-height: 1.6; color: var(--ink-mid); }
 
-/* Right: tall featured card */
+/* Tall featured right card */
 .feat-card { display: flex; flex-direction: column; }
 .feat-img {
   width: 100%; aspect-ratio: 3/4;
-  background: linear-gradient(160deg, #e2e1d8 0%, #cac9c0 100%);
-  display: flex; align-items: flex-end; padding: 18px;
-  margin-bottom: 16px; overflow: hidden;
+  background: linear-gradient(160deg, #e0dfd6 0%, #c8c7be 100%);
+  display: flex; align-items: flex-end; padding: 14px;
+  margin-bottom: 14px; overflow: hidden;
 }
-.feat-img .img-word { font-size: 64px; color: rgba(18,23,31,0.06); }
-.feat-tag {
-  display: inline-block; font-size: 8px; font-weight: 700;
-  letter-spacing: 0.16em; text-transform: uppercase;
-  background: var(--yellow); color: var(--navy-deep);
-  padding: 2px 8px; border-radius: 2px; margin-bottom: 8px; align-self: flex-start;
-}
-.feat-date { font-size: 10px; color: var(--ink-light); text-transform: uppercase; letter-spacing: 0.06em; margin-bottom: 8px; }
+.feat-img .img-bg-word { font-size: 56px; }
+.feat-meta { font-size: 9px; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase; color: var(--ink-light); margin-bottom: 8px; }
 .feat-headline {
-  font-family: 'Cormorant Garamond', serif; font-size: 26px;
-  font-weight: 700; font-style: normal; line-height: 1.2;
-  color: var(--ink); margin-bottom: 10px; transition: color 0.15s;
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 26px; font-weight: 700; font-style: normal;
+  line-height: 1.2; color: var(--ink); margin-bottom: 10px; transition: color 0.15s;
 }
 .feat-card:hover .feat-headline { color: var(--navy); }
 .feat-deck { font-size: 13px; font-weight: 300; line-height: 1.65; color: var(--ink-mid); }
 
 /* ─── SUBSCRIBE CTA ─── */
-.cta-bg { background: var(--navy-deep); margin: 52px 0 0; padding: 48px 40px; }
-.cta-inner { max-width: 640px; margin: 0 auto; text-align: center; }
-.cta-eyebrow {
-  font-size: 10px; font-weight: 700; letter-spacing: 0.2em;
-  text-transform: uppercase; color: var(--yellow); margin-bottom: 14px;
-}
+.cta-bg { background: var(--navy-deep); margin: 44px 0 0; padding: 44px 32px; }
+.cta-inner { max-width: 600px; margin: 0 auto; text-align: center; }
+.cta-eyebrow { font-size: 9px; font-weight: 700; letter-spacing: 0.22em; text-transform: uppercase; color: var(--yellow); margin-bottom: 14px; }
 .cta-headline {
   font-family: 'Cormorant Garamond', serif; font-size: 36px;
   font-weight: 700; font-style: normal; line-height: 1.15;
   color: #f8f8f4; margin-bottom: 12px;
 }
-.cta-deck { font-size: 14px; font-weight: 300; line-height: 1.7; color: rgba(255,255,255,0.4); margin-bottom: 28px; }
+.cta-deck { font-size: 14px; font-weight: 300; line-height: 1.7; color: rgba(255,255,255,0.4); margin-bottom: 26px; }
 .cta-btn {
   display: inline-block; background: var(--yellow); color: var(--navy-deep);
-  font-size: 12px; font-weight: 700; letter-spacing: 0.14em;
-  text-transform: uppercase; padding: 13px 32px; border-radius: 2px;
-  transition: background 0.15s;
+  font-size: 11px; font-weight: 700; letter-spacing: 0.14em;
+  text-transform: uppercase; padding: 12px 30px; border-radius: 2px; transition: background 0.15s;
 }
 .cta-btn:hover { background: var(--yellow-dim); }
 
 /* ─── MOST READ ─── */
-.most-read-outer { max-width: 1200px; margin: 0 auto; padding: 52px 40px 52px; }
-.most-read-list { list-style: none; margin-top: 4px; }
-.most-read-item {
-  display: grid; grid-template-columns: 52px 1fr auto;
+.most-outer { max-width: 1200px; margin: 0 auto; padding: 44px 32px 52px; }
+.mr-list { list-style: none; }
+.mr-item {
+  display: grid; grid-template-columns: 48px 1fr auto;
   align-items: baseline; gap: 16px;
-  padding: 16px 0; border-bottom: 1px solid var(--border);
+  padding: 15px 0; border-bottom: 1px solid var(--border);
 }
-.most-read-item:first-child { border-top: 1px solid var(--border); }
+.mr-item:first-child { border-top: 1px solid var(--border); }
 .mr-num {
-  font-family: 'Cormorant Garamond', serif; font-size: 34px;
-  font-weight: 700; color: rgba(18,23,31,0.09); line-height: 1; text-align: right;
+  font-family: 'Cormorant Garamond', serif; font-size: 32px;
+  font-weight: 700; color: rgba(17,24,32,0.08); line-height: 1; text-align: right;
 }
 .mr-title {
   font-family: 'Cormorant Garamond', serif; font-size: 20px;
   font-weight: 700; font-style: normal; color: var(--ink);
   line-height: 1.3; transition: color 0.15s;
 }
-.most-read-item:hover .mr-title { color: var(--navy); }
+.mr-item:hover .mr-title { color: var(--navy); }
 .mr-date { font-size: 10px; color: var(--ink-light); text-transform: uppercase; letter-spacing: 0.06em; white-space: nowrap; }
 
 /* ─── FOOTER ─── */
-footer { background: var(--navy-deep); padding: 32px 40px; border-top: 3px solid var(--yellow); }
+footer { background: var(--navy-deep); padding: 30px 32px; border-top: 3px solid var(--yellow); }
 .footer-inner {
   max-width: 1200px; margin: 0 auto;
   display: flex; align-items: center; justify-content: space-between; gap: 24px;
 }
-footer img { height: 22px; width: auto; mix-blend-mode: screen; }
-.footer-links { display: flex; gap: 28px; list-style: none; }
+.footer-logo {
+  font-family: 'Cormorant Garamond', serif; font-size: 20px;
+  font-weight: 700; color: rgba(255,255,255,0.7); letter-spacing: -0.01em;
+}
+.footer-links { display: flex; gap: 24px; list-style: none; }
 .footer-links a {
-  font-size: 11px; font-weight: 500; letter-spacing: 0.12em;
-  text-transform: uppercase; color: rgba(255,255,255,0.35); transition: color 0.15s;
+  font-size: 11px; font-weight: 500; letter-spacing: 0.1em;
+  text-transform: uppercase; color: rgba(255,255,255,0.3); transition: color 0.15s;
 }
 .footer-links a:hover { color: #fff; }
-.footer-copy { font-size: 11px; color: rgba(255,255,255,0.22); text-transform: uppercase; letter-spacing: 0.08em; }
+.footer-copy { font-size: 11px; color: rgba(255,255,255,0.2); text-transform: uppercase; letter-spacing: 0.06em; }
 </style>
 </head>
 <body>
 
-<!-- TOP BAR -->
-<div class="top-bar">
-  Weekly growth intelligence for fitness &amp; wellness operators &nbsp;—&nbsp;
-  <a href="https://newsletter.therunrate.co">Subscribe free →</a>
+<!-- TICKER -->
+<div class="ticker-bg">
+  <span class="ticker-label">Latest</span>
+  <div class="ticker-track">
+    <span class="ticker-item">57% of Fitness Studio Members Churn in Year One. Most Operators Don't Know Why.</span>
+    <span class="ticker-sep">/</span>
+    <span class="ticker-item">80% of New Members Come From 3 Sources. Most Studios Are Funding the Other 20.</span>
+    <span class="ticker-sep">/</span>
+    <span class="ticker-item">Planet Fitness Just Deployed AI Coaches. Here's What It Means for Independent Studios.</span>
+    <span class="ticker-sep">/</span>
+    <span class="ticker-item">You Think You Know Where Your Members Come From. You Don't.</span>
+    <span class="ticker-sep">/</span>
+    <!-- duplicate for seamless loop -->
+    <span class="ticker-item">57% of Fitness Studio Members Churn in Year One. Most Operators Don't Know Why.</span>
+    <span class="ticker-sep">/</span>
+    <span class="ticker-item">80% of New Members Come From 3 Sources. Most Studios Are Funding the Other 20.</span>
+    <span class="ticker-sep">/</span>
+    <span class="ticker-item">Planet Fitness Just Deployed AI Coaches. Here's What It Means for Independent Studios.</span>
+    <span class="ticker-sep">/</span>
+    <span class="ticker-item">You Think You Know Where Your Members Come From. You Don't.</span>
+    <span class="ticker-sep">/</span>
+  </div>
 </div>
 
 <!-- NAV -->
 <nav>
   <div class="nav-inner">
-    <a href="/" class="nav-logo"><img src="logo.png" alt="The Run Rate"></a>
+    <a href="/" class="nav-logo">The Run Rate</a>
     <ul class="nav-links">
-      <li><a href="#" class="active">All</a></li>
       <li><a href="#">Studio Growth</a></li>
+      <li><span class="sep">/</span></li>
       <li><a href="#">Retention</a></li>
+      <li><span class="sep">/</span></li>
       <li><a href="#">Acquisition</a></li>
+      <li><span class="sep">/</span></li>
       <li><a href="#">AI &amp; Tech</a></li>
-      <li><a href="#">Tools</a></li>
     </ul>
     <a href="https://newsletter.therunrate.co" class="nav-sub">Subscribe Free</a>
   </div>
 </nav>
 
-<!-- HERO -->
-<div class="hero-bg">
-  <div class="hero-inner">
+<!-- HERO: 3-COL WHITE -->
+<div class="hero-wrap">
 
-    <a href="https://newsletter.therunrate.co/p/fitness-studio-member-attribution" class="hero-main">
-      <div class="hero-main-img">
-        <span class="img-word">Attribution</span>
-      </div>
-      <span class="hero-tag">Acquisition · Issue #3</span>
-      <h1 class="hero-headline">You Think You Know Where Your Members Come From. You Don't.</h1>
-      <p class="hero-deck">Most fitness studios credit referrals and word of mouth. Most are wrong. Here's how to actually track attribution — and what the data reveals about which channels actually drive joins.</p>
-      <div class="hero-foot">
-        <span class="hero-date">Apr 19, 2026</span>
-        <span class="hero-cta">Read the full issue →</span>
-      </div>
+  <!-- LEFT: 2 stacked cards -->
+  <div class="hero-left">
+    <a href="churn-57.html" class="h-card">
+      <div class="h-card-img"><span class="img-bg-word">Retention</span></div>
+      <div class="h-meta">Retention &nbsp;·&nbsp; Jun 27, 2026</div>
+      <div class="h-headline">57% of Fitness Studio Members Churn in Year One. Most Operators Don't Know Why.</div>
     </a>
-
-    <div class="hero-sidebar">
-      <a href="churn-57.html" class="side-story">
-        <div class="side-story-img"><span class="img-word">Retention</span></div>
-        <span class="side-tag">Retention</span>
-        <div class="side-headline">57% of Members Churn in Year One. Most Operators Don't Know Why.</div>
-        <div class="side-date">Jun 27, 2026</div>
-      </a>
-      <a href="acquisition-80.html" class="side-story">
-        <div class="side-story-img"><span class="img-word">Acquisition</span></div>
-        <span class="side-tag">Acquisition</span>
-        <div class="side-headline">80% of New Members Come From 3 Sources. Most Studios Fund the Other 20.</div>
-        <div class="side-date">Jun 27, 2026</div>
-      </a>
-      <a href="article.html" class="side-story">
-        <div class="side-story-img"><span class="img-word">AI</span></div>
-        <span class="side-tag">AI &amp; Tech</span>
-        <div class="side-headline">Planet Fitness Deployed AI Coaches. Here's What It Means for Independent Studios.</div>
-        <div class="side-date">Jun 27, 2026</div>
-      </a>
-    </div>
-
+    <a href="acquisition-80.html" class="h-card">
+      <div class="h-card-img"><span class="img-bg-word">Acquisition</span></div>
+      <div class="h-meta">Acquisition &nbsp;·&nbsp; Jun 27, 2026</div>
+      <div class="h-headline">80% of New Members Come From 3 Sources. Most Studios Are Funding the Other 20.</div>
+    </a>
   </div>
+
+  <!-- CENTER: big featured -->
+  <a href="https://newsletter.therunrate.co/p/fitness-studio-member-attribution" class="hero-center">
+    <div class="hero-center-img"><span class="img-bg-word">Attribution</span></div>
+    <div class="hero-center-meta"><strong>Acquisition</strong> &nbsp;·&nbsp; Apr 19, 2026</div>
+    <h1 class="hero-big-headline">You Think You Know Where Your Members Come From. You Don't.</h1>
+    <p class="hero-center-deck">Most fitness studios credit referrals and word of mouth. Most are wrong. Here's how to actually track attribution — and what the data reveals about which channels are actually driving members through the door.</p>
+  </a>
+
+  <!-- RIGHT: 4 mini stories -->
+  <div class="hero-right">
+    <a href="article.html" class="mini-story">
+      <div class="mini-story-body">
+        <div class="mini-cat">AI &amp; Tech</div>
+        <div class="mini-headline">Planet Fitness Just Deployed AI Coaches. Here's What It Means for Independent Studios.</div>
+      </div>
+      <div class="mini-img"><span class="img-bg-word">AI</span></div>
+    </a>
+    <a href="https://newsletter.therunrate.co/p/gym-member-retention-first-30-days" class="mini-story">
+      <div class="mini-story-body">
+        <div class="mini-cat">Retention</div>
+        <div class="mini-headline">Fitness Studios Don't Have a Marketing Problem. They Have a 30-Day Problem.</div>
+      </div>
+      <div class="mini-img"><span class="img-bg-word">30</span></div>
+    </a>
+    <a href="https://newsletter.therunrate.co" class="mini-story">
+      <div class="mini-story-body">
+        <div class="mini-cat">AI &amp; Tech</div>
+        <div class="mini-headline">Your Software Vendor Added a Chatbot and Called It AI. Here's What's Actually Coming.</div>
+      </div>
+      <div class="mini-img"><span class="img-bg-word">Tech</span></div>
+    </a>
+    <a href="https://newsletter.therunrate.co" class="mini-story">
+      <div class="mini-story-body">
+        <div class="mini-cat">Studio Growth</div>
+        <div class="mini-headline">The Referral Playbook: How to Make Word of Mouth Systematic.</div>
+      </div>
+      <div class="mini-img"><span class="img-bg-word">Ref</span></div>
+    </a>
+  </div>
+
 </div>
 
 <!-- LATEST STRIP -->
@@ -376,150 +500,129 @@ footer img { height: 22px; width: auto; mix-blend-mode: screen; }
   </div>
 </div>
 
-<!-- STUDIO GROWTH SECTION -->
+<!-- STUDIO GROWTH -->
 <div class="section-outer">
   <div class="section-head">
     <span class="section-name">Studio Growth</span>
     <a href="https://newsletter.therunrate.co/archive" class="section-more">Read more →</a>
   </div>
   <div class="section-body">
-
     <div class="row-cards">
       <a href="article.html" class="row-card">
-        <div class="row-card-img"><span class="img-word">AI</span></div>
-        <div class="row-card-body">
-          <span class="rc-tag">AI &amp; Tech</span>
-          <div class="rc-date">Jun 27, 2026</div>
+        <div class="rc-img"><span class="img-bg-word">AI</span></div>
+        <div class="rc-body">
+          <div class="rc-meta">AI &amp; Tech · Jun 27, 2026</div>
           <div class="rc-headline">Planet Fitness Just Deployed AI Coaches. Here's What It Means for Independent Studios.</div>
           <p class="rc-deck">When the 2,500-location chain moves, the whole market shifts. Independent operators have a narrow window to counter-position.</p>
         </div>
       </a>
       <a href="https://newsletter.therunrate.co/p/fitness-studio-member-attribution" class="row-card">
-        <div class="row-card-img"><span class="img-word">Growth</span></div>
-        <div class="row-card-body">
-          <span class="rc-tag">Acquisition</span>
-          <div class="rc-date">Apr 19, 2026</div>
+        <div class="rc-img"><span class="img-bg-word">Growth</span></div>
+        <div class="rc-body">
+          <div class="rc-meta">Acquisition · Apr 19, 2026</div>
           <div class="rc-headline">You Think You Know Where Your Members Come From. You Don't.</div>
           <p class="rc-deck">Most studios credit word of mouth. The attribution data tells a different story.</p>
         </div>
       </a>
       <a href="https://newsletter.therunrate.co" class="row-card">
-        <div class="row-card-img"><span class="img-word">Tech</span></div>
-        <div class="row-card-body">
-          <span class="rc-tag">AI &amp; Tech</span>
-          <div class="rc-date">Mar 22, 2026</div>
+        <div class="rc-img"><span class="img-bg-word">Tech</span></div>
+        <div class="rc-body">
+          <div class="rc-meta">AI &amp; Tech · Mar 22, 2026</div>
           <div class="rc-headline">Your Software Vendor Added a Chatbot and Called It AI. Here's What's Actually Coming.</div>
           <p class="rc-deck">The fitness tech category is rebranding. Operators need to know which upgrades actually move the needle.</p>
         </div>
       </a>
     </div>
-
     <a href="https://newsletter.therunrate.co/p/fitness-studio-member-attribution" class="feat-card">
-      <div class="feat-img"><span class="img-word">Attribution</span></div>
-      <span class="feat-tag">Featured Issue</span>
-      <div class="feat-date">Issue #3 · Apr 19, 2026</div>
+      <div class="feat-img"><span class="img-bg-word">Attribution</span></div>
+      <div class="feat-meta">Acquisition · Issue #3 · Apr 19, 2026</div>
       <div class="feat-headline">You Think You Know Where Your Members Come From. You Don't.</div>
-      <p class="feat-deck">Most studios credit referrals and word of mouth. The data says otherwise. Here's how to actually track attribution — and what it reveals.</p>
+      <p class="feat-deck">Most studios credit referrals and word of mouth. The data says otherwise. Here's how to actually track attribution — and what it reveals about which channels are really working.</p>
     </a>
-
   </div>
 </div>
 
-<!-- RETENTION SECTION -->
+<!-- RETENTION -->
 <div class="section-outer">
   <div class="section-head">
     <span class="section-name">Retention</span>
     <a href="https://newsletter.therunrate.co/archive" class="section-more">Read more →</a>
   </div>
   <div class="section-body">
-
     <div class="row-cards">
       <a href="churn-57.html" class="row-card">
-        <div class="row-card-img"><span class="img-word">Churn</span></div>
-        <div class="row-card-body">
-          <span class="rc-tag">Retention</span>
-          <div class="rc-date">Jun 27, 2026</div>
+        <div class="rc-img"><span class="img-bg-word">57%</span></div>
+        <div class="rc-body">
+          <div class="rc-meta">Retention · Jun 27, 2026</div>
           <div class="rc-headline">57% of Fitness Studio Members Churn in Year One. Most Operators Don't Know Why.</div>
           <p class="rc-deck">The data is damning — and it's not about price or location. Members who leave tell a consistent story.</p>
         </div>
       </a>
       <a href="https://newsletter.therunrate.co/p/gym-member-retention-first-30-days" class="row-card">
-        <div class="row-card-img"><span class="img-word">Day 30</span></div>
-        <div class="row-card-body">
-          <span class="rc-tag">Retention</span>
-          <div class="rc-date">Apr 5, 2026</div>
+        <div class="rc-img"><span class="img-bg-word">Day 30</span></div>
+        <div class="rc-body">
+          <div class="rc-meta">Retention · Apr 5, 2026</div>
           <div class="rc-headline">Fitness Studios Don't Have a Marketing Problem. They Have a 30-Day Problem.</div>
           <p class="rc-deck">The decision to leave is made in the first month. Here's what the data says.</p>
         </div>
       </a>
       <a href="https://newsletter.therunrate.co" class="row-card">
-        <div class="row-card-img"><span class="img-word">Onboard</span></div>
-        <div class="row-card-body">
-          <span class="rc-tag">Retention</span>
-          <div class="rc-date">Coming soon</div>
+        <div class="rc-img"><span class="img-bg-word">Onboard</span></div>
+        <div class="rc-body">
+          <div class="rc-meta">Retention · Coming soon</div>
           <div class="rc-headline">The Onboarding Playbook: How to Turn a Trial into a Habit in 30 Days.</div>
           <p class="rc-deck">The first 30 days set everything. Most studios have no systematic plan for them.</p>
         </div>
       </a>
     </div>
-
     <a href="churn-57.html" class="feat-card">
-      <div class="feat-img"><span class="img-word">57%</span></div>
-      <span class="feat-tag">Must Read</span>
-      <div class="feat-date">Jun 27, 2026</div>
+      <div class="feat-img"><span class="img-bg-word">Churn</span></div>
+      <div class="feat-meta">Retention · Jun 27, 2026</div>
       <div class="feat-headline">57% of Fitness Studio Members Churn in Year One. Most Operators Don't Know Why.</div>
-      <p class="feat-deck">More than half your members will leave before their first anniversary. The decision happens in week 2 — not month 3. Here's what to do about it.</p>
+      <p class="feat-deck">More than half your members will leave before their first anniversary. The decision happens in week 2 — not month 3. Here's what to do about it before the window closes.</p>
     </a>
-
   </div>
 </div>
 
-<!-- ACQUISITION SECTION -->
+<!-- ACQUISITION -->
 <div class="section-outer">
   <div class="section-head">
     <span class="section-name">Acquisition</span>
     <a href="https://newsletter.therunrate.co/archive" class="section-more">Read more →</a>
   </div>
   <div class="section-body">
-
     <div class="row-cards">
       <a href="acquisition-80.html" class="row-card">
-        <div class="row-card-img"><span class="img-word">80%</span></div>
-        <div class="row-card-body">
-          <span class="rc-tag">Acquisition</span>
-          <div class="rc-date">Jun 27, 2026</div>
+        <div class="rc-img"><span class="img-bg-word">80%</span></div>
+        <div class="rc-body">
+          <div class="rc-meta">Acquisition · Jun 27, 2026</div>
           <div class="rc-headline">80% of New Members Come From 3 Sources. Most Studios Are Funding the Other 20.</div>
           <p class="rc-deck">Budgets spread thin across every channel. The data shows where members actually come from.</p>
         </div>
       </a>
       <a href="https://newsletter.therunrate.co/p/fitness-studio-member-attribution" class="row-card">
-        <div class="row-card-img"><span class="img-word">Source</span></div>
-        <div class="row-card-body">
-          <span class="rc-tag">Acquisition</span>
-          <div class="rc-date">Apr 19, 2026</div>
+        <div class="rc-img"><span class="img-bg-word">Source</span></div>
+        <div class="rc-body">
+          <div class="rc-meta">Acquisition · Apr 19, 2026</div>
           <div class="rc-headline">You Think You Know Where Your Members Come From. You Don't.</div>
           <p class="rc-deck">Most studios credit referrals and word of mouth. Most are wrong.</p>
         </div>
       </a>
       <a href="https://newsletter.therunrate.co" class="row-card">
-        <div class="row-card-img"><span class="img-word">Referral</span></div>
-        <div class="row-card-body">
-          <span class="rc-tag">Acquisition</span>
-          <div class="rc-date">Coming soon</div>
+        <div class="rc-img"><span class="img-bg-word">Referral</span></div>
+        <div class="rc-body">
+          <div class="rc-meta">Acquisition · Coming soon</div>
           <div class="rc-headline">The Referral Playbook: How to Make Word of Mouth Systematic.</div>
           <p class="rc-deck">Referrals are the highest-LTV channel most studios treat as an accident.</p>
         </div>
       </a>
     </div>
-
     <a href="acquisition-80.html" class="feat-card">
-      <div class="feat-img"><span class="img-word">Acquisition</span></div>
-      <span class="feat-tag">Must Read</span>
-      <div class="feat-date">Jun 27, 2026</div>
+      <div class="feat-img"><span class="img-bg-word">Acquisition</span></div>
+      <div class="feat-meta">Acquisition · Jun 27, 2026</div>
       <div class="feat-headline">80% of New Members Come From 3 Sources. Most Studios Are Funding the Other 20.</div>
-      <p class="feat-deck">Acquisition budgets get spread thin across every channel "just in case." But the data shows most studios are over-investing in low-yield channels while under-investing in the three that actually drive the majority of new members.</p>
+      <p class="feat-deck">Acquisition budgets get spread thin across every channel "just in case." But the data shows most studios are over-investing in low-yield channels while under-investing in the three that actually drive new members.</p>
     </a>
-
   </div>
 </div>
 
@@ -534,37 +637,37 @@ footer img { height: 22px; width: auto; mix-blend-mode: screen; }
 </div>
 
 <!-- MOST READ -->
-<div class="most-read-outer">
+<div class="most-outer">
   <div class="section-head">
     <span class="section-name">Most Read</span>
   </div>
-  <ul class="most-read-list">
-    <li class="most-read-item">
+  <ul class="mr-list">
+    <li class="mr-item">
       <span class="mr-num">01</span>
       <a href="https://newsletter.therunrate.co/p/fitness-studio-member-attribution" class="mr-title">You Think You Know Where Your Members Come From. You Don't.</a>
       <span class="mr-date">Apr 19, 2026</span>
     </li>
-    <li class="most-read-item">
+    <li class="mr-item">
       <span class="mr-num">02</span>
       <a href="https://newsletter.therunrate.co/p/gym-member-retention-first-30-days" class="mr-title">Fitness Studios Don't Have a Marketing Problem. They Have a 30-Day Problem.</a>
       <span class="mr-date">Apr 5, 2026</span>
     </li>
-    <li class="most-read-item">
+    <li class="mr-item">
       <span class="mr-num">03</span>
       <a href="https://newsletter.therunrate.co" class="mr-title">Your Software Vendor Added a Chatbot and Called It AI. Here's What's Actually Coming.</a>
       <span class="mr-date">Mar 22, 2026</span>
     </li>
-    <li class="most-read-item">
+    <li class="mr-item">
       <span class="mr-num">04</span>
       <a href="churn-57.html" class="mr-title">57% of Fitness Studio Members Churn in Year One. Most Operators Don't Know Why.</a>
       <span class="mr-date">Jun 27, 2026</span>
     </li>
-    <li class="most-read-item">
+    <li class="mr-item">
       <span class="mr-num">05</span>
       <a href="acquisition-80.html" class="mr-title">80% of New Members Come From 3 Sources. Most Studios Are Funding the Other 20.</a>
       <span class="mr-date">Jun 27, 2026</span>
     </li>
-    <li class="most-read-item">
+    <li class="mr-item">
       <span class="mr-num">06</span>
       <a href="article.html" class="mr-title">Planet Fitness Just Deployed AI Coaches. Here's What It Means for Independent Studios.</a>
       <span class="mr-date">Jun 27, 2026</span>
@@ -575,7 +678,7 @@ footer img { height: 22px; width: auto; mix-blend-mode: screen; }
 <!-- FOOTER -->
 <footer>
   <div class="footer-inner">
-    <a href="/"><img src="logo.png" alt="The Run Rate"></a>
+    <span class="footer-logo">The Run Rate</span>
     <ul class="footer-links">
       <li><a href="https://newsletter.therunrate.co/archive">Archive</a></li>
       <li><a href="https://newsletter.therunrate.co/about">About</a></li>
