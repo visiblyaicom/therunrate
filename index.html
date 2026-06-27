@@ -314,62 +314,123 @@ nav {
 }
 
 /* ─── SECTION ─── */
-.section-outer { max-width: 1200px; margin: 0 auto; padding: 44px 32px 0; }
+.section-outer { max-width: 1200px; margin: 0 auto; padding: 52px 32px 0; }
 .section-head {
   display: flex; align-items: center; justify-content: space-between;
-  padding-bottom: 10px; border-bottom: 2px solid var(--ink);
-  margin-bottom: 24px;
+  padding-bottom: 16px; border-bottom: 2px solid var(--ink);
+  margin-bottom: 28px;
 }
-.section-name { font-size: 11px; font-weight: 700; letter-spacing: 0.2em; text-transform: uppercase; }
+.section-name {
+  font-family: 'Playfair Display', serif;
+  font-size: 30px; font-weight: 700; letter-spacing: -0.01em;
+  color: var(--ink);
+}
 .section-more {
-  font-size: 10px; font-weight: 600; letter-spacing: 0.12em;
-  text-transform: uppercase; color: var(--ink-light); transition: color 0.15s;
+  display: inline-flex; align-items: center; gap: 6px;
+  background: var(--navy-deep); color: #fff;
+  font-size: 11px; font-weight: 600; letter-spacing: 0.1em;
+  text-transform: uppercase; padding: 10px 18px; border-radius: 4px;
+  transition: background 0.15s; white-space: nowrap;
 }
-.section-more:hover { color: var(--ink); }
+.section-more:hover { background: #1e2c44; }
 
-/* 2-col: row cards LEFT + featured RIGHT */
+/* ─── 3-COL SECTION BODY ─── */
+.section-body-3 {
+  display: grid;
+  grid-template-columns: minmax(0, 1.6fr) minmax(0, 1.6fr) 280px;
+  gap: 36px;
+  align-items: start;
+}
+
+/* Left: large featured */
+.sf-feat { display: flex; flex-direction: column; }
+.sf-feat-img {
+  width: 100%; aspect-ratio: 3/4;
+  background: linear-gradient(160deg, #dddbd2 0%, #c8c6bc 100%);
+  display: flex; align-items: flex-end; padding: 14px;
+  margin-bottom: 16px; overflow: hidden;
+}
+.sf-feat-img .img-bg-word { font-size: 56px; }
+.sf-feat-date { font-size: 10px; font-weight: 500; letter-spacing: 0.1em; text-transform: uppercase; color: var(--ink-light); margin-bottom: 10px; }
+.sf-feat-headline {
+  font-family: 'Playfair Display', serif;
+  font-size: 26px; font-weight: 700; line-height: 1.2;
+  color: var(--ink); margin-bottom: 12px; transition: color 0.15s;
+}
+.sf-feat:hover .sf-feat-headline { color: var(--navy); }
+.sf-feat-deck { font-size: 14px; font-weight: 400; line-height: 1.7; color: var(--ink-mid); }
+
+/* Center: 2 stacked articles */
+.sf-stack { display: flex; flex-direction: column; }
+.sf-card {
+  display: flex; flex-direction: column;
+  padding-bottom: 28px; margin-bottom: 28px;
+  border-bottom: 1px solid var(--border);
+}
+.sf-card:last-child { border-bottom: none; margin-bottom: 0; padding-bottom: 0; }
+.sf-card-img {
+  width: 100%; aspect-ratio: 16/9;
+  background: linear-gradient(135deg, #e4e4de 0%, #d0d0c8 100%);
+  display: flex; align-items: flex-end; padding: 10px;
+  margin-bottom: 14px; overflow: hidden;
+}
+.sf-card-img .img-bg-word { font-size: 32px; }
+.sf-date { font-size: 10px; font-weight: 500; letter-spacing: 0.1em; text-transform: uppercase; color: var(--ink-light); margin-bottom: 8px; }
+.sf-headline {
+  font-family: 'Playfair Display', serif;
+  font-size: 21px; font-weight: 700; line-height: 1.25;
+  color: var(--ink); margin-bottom: 10px; transition: color 0.15s;
+}
+.sf-card:hover .sf-headline { color: var(--navy); }
+.sf-deck { font-size: 14px; font-weight: 400; line-height: 1.65; color: var(--ink-mid); }
+
+/* Right: Top Stories box */
+.top-stories {
+  border: 1.5px solid var(--navy-deep);
+}
+.top-stories-label {
+  text-align: center; padding: 10px 16px;
+  font-size: 10px; font-weight: 700; letter-spacing: 0.2em;
+  text-transform: uppercase; color: var(--navy-deep);
+  border-bottom: 1.5px solid var(--navy-deep);
+  background: #fff;
+}
+.tsi {
+  display: flex; flex-direction: column; gap: 5px;
+  padding: 16px; border-bottom: 1px solid var(--border);
+  transition: background 0.15s;
+}
+.tsi:last-child { border-bottom: none; }
+.tsi:hover { background: #f8f8f6; }
+.tsi-meta {
+  font-size: 9px; font-weight: 600; letter-spacing: 0.14em;
+  text-transform: uppercase; color: var(--ink-light);
+}
+.tsi-headline {
+  font-family: 'Playfair Display', serif;
+  font-size: 16px; font-weight: 700; line-height: 1.3;
+  color: var(--ink); transition: color 0.15s;
+}
+.tsi:hover .tsi-headline { color: var(--navy); }
+
+/* Legacy classes kept for Retention/Acquisition sections */
 .section-body { display: grid; grid-template-columns: 1fr 320px; gap: 40px; align-items: start; }
-
-/* Row card (horizontal: small img left, text right) */
 .row-cards { display: flex; flex-direction: column; }
-.row-card {
-  display: grid; grid-template-columns: 130px 1fr; gap: 16px;
-  padding: 18px 0; border-bottom: 1px solid var(--border);
-}
+.row-card { display: grid; grid-template-columns: 130px 1fr; gap: 16px; padding: 18px 0; border-bottom: 1px solid var(--border); }
 .row-card:first-child { padding-top: 0; }
 .row-card:last-child { border-bottom: none; }
-.rc-img {
-  width: 130px; aspect-ratio: 4/3;
-  background: linear-gradient(135deg, #e8e8e2 0%, #d4d4cc 100%);
-  display: flex; align-items: flex-end; padding: 8px;
-  overflow: hidden; flex-shrink: 0;
-}
+.rc-img { width: 130px; aspect-ratio: 4/3; background: linear-gradient(135deg, #e8e8e2 0%, #d4d4cc 100%); display: flex; align-items: flex-end; padding: 8px; overflow: hidden; flex-shrink: 0; }
 .rc-img .img-bg-word { font-size: 26px; }
 .rc-body { display: flex; flex-direction: column; gap: 4px; }
 .rc-meta { font-size: 9px; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase; color: var(--ink-light); }
-.rc-headline {
-  font-family: 'Playfair Display', serif;
-  font-size: 19px; font-weight: 700; font-style: normal;
-  line-height: 1.2; color: var(--ink); transition: color 0.15s;
-}
+.rc-headline { font-family: 'Playfair Display', serif; font-size: 19px; font-weight: 700; line-height: 1.2; color: var(--ink); transition: color 0.15s; }
 .row-card:hover .rc-headline { color: var(--navy); }
 .rc-deck { font-size: 14px; font-weight: 400; line-height: 1.65; color: var(--ink-mid); }
-
-/* Tall featured right card */
 .feat-card { display: flex; flex-direction: column; }
-.feat-img {
-  width: 100%; aspect-ratio: 3/4;
-  background: linear-gradient(160deg, #e0dfd6 0%, #c8c7be 100%);
-  display: flex; align-items: flex-end; padding: 14px;
-  margin-bottom: 14px; overflow: hidden;
-}
+.feat-img { width: 100%; aspect-ratio: 3/4; background: linear-gradient(160deg, #e0dfd6 0%, #c8c7be 100%); display: flex; align-items: flex-end; padding: 14px; margin-bottom: 14px; overflow: hidden; }
 .feat-img .img-bg-word { font-size: 56px; }
 .feat-meta { font-size: 9px; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase; color: var(--ink-light); margin-bottom: 8px; }
-.feat-headline {
-  font-family: 'Playfair Display', serif;
-  font-size: 26px; font-weight: 700; font-style: normal;
-  line-height: 1.2; color: var(--ink); margin-bottom: 10px; transition: color 0.15s;
-}
+.feat-headline { font-family: 'Playfair Display', serif; font-size: 26px; font-weight: 700; line-height: 1.2; color: var(--ink); margin-bottom: 10px; transition: color 0.15s; }
 .feat-card:hover .feat-headline { color: var(--navy); }
 .feat-deck { font-size: 15px; font-weight: 400; line-height: 1.65; color: var(--ink-mid); }
 
@@ -642,41 +703,59 @@ footer { background: var(--navy-deep); padding: 30px 32px; border-top: 3px solid
 <div class="section-outer">
   <div class="section-head">
     <span class="section-name">Studio Growth</span>
-    <a href="https://newsletter.therunrate.co/archive" class="section-more">Read more →</a>
+    <a href="https://newsletter.therunrate.co/archive" class="section-more">View More ↗</a>
   </div>
-  <div class="section-body">
-    <div class="row-cards">
-      <a href="article.html" class="row-card">
-        <div class="rc-img"><span class="img-bg-word">AI</span></div>
-        <div class="rc-body">
-          <div class="rc-meta">AI &amp; Tech · Jun 27, 2026</div>
-          <div class="rc-headline">Planet Fitness Just Deployed AI Coaches. Here's What It Means for Independent Studios.</div>
-          <p class="rc-deck">When the 2,500-location chain moves, the whole market shifts. Independent operators have a narrow window to counter-position.</p>
-        </div>
+  <div class="section-body-3">
+
+    <!-- LEFT: large featured -->
+    <a href="https://newsletter.therunrate.co/p/fitness-studio-member-attribution" class="sf-feat">
+      <div class="sf-feat-img"><span class="img-bg-word">Attribution</span></div>
+      <div class="sf-feat-date">Apr 19, 2026</div>
+      <div class="sf-feat-headline">You Think You Know Where Your Members Come From. You Don't.</div>
+      <p class="sf-feat-deck">Most fitness studios credit referrals and word of mouth. The attribution data tells a different story — and what it reveals about which channels are really driving members through the door.</p>
+    </a>
+
+    <!-- CENTER: 2 stacked -->
+    <div class="sf-stack">
+      <a href="article.html" class="sf-card">
+        <div class="sf-card-img"><span class="img-bg-word">AI</span></div>
+        <div class="sf-date">Jun 27, 2026</div>
+        <div class="sf-headline">Planet Fitness Just Deployed AI Coaches. Here's What It Means for Independent Studios.</div>
+        <p class="sf-deck">When the 2,500-location chain moves, the whole market shifts. Independent operators have a narrow window to counter-position before AI coaching becomes the baseline.</p>
       </a>
-      <a href="https://newsletter.therunrate.co/p/fitness-studio-member-attribution" class="row-card">
-        <div class="rc-img"><span class="img-bg-word">Growth</span></div>
-        <div class="rc-body">
-          <div class="rc-meta">Acquisition · Apr 19, 2026</div>
-          <div class="rc-headline">You Think You Know Where Your Members Come From. You Don't.</div>
-          <p class="rc-deck">Most studios credit word of mouth. The attribution data tells a different story.</p>
-        </div>
-      </a>
-      <a href="https://newsletter.therunrate.co" class="row-card">
-        <div class="rc-img"><span class="img-bg-word">Tech</span></div>
-        <div class="rc-body">
-          <div class="rc-meta">AI &amp; Tech · Mar 22, 2026</div>
-          <div class="rc-headline">Your Software Vendor Added a Chatbot and Called It AI. Here's What's Actually Coming.</div>
-          <p class="rc-deck">The fitness tech category is rebranding. Operators need to know which upgrades actually move the needle.</p>
-        </div>
+      <a href="https://newsletter.therunrate.co" class="sf-card">
+        <div class="sf-card-img"><span class="img-bg-word">Tech</span></div>
+        <div class="sf-date">Mar 22, 2026</div>
+        <div class="sf-headline">Your Software Vendor Added a Chatbot and Called It AI. Here's What's Actually Coming.</div>
+        <p class="sf-deck">The fitness tech category is rebranding. Operators need to know which upgrades actually move the needle — and which are just marketing.</p>
       </a>
     </div>
-    <a href="https://newsletter.therunrate.co/p/fitness-studio-member-attribution" class="feat-card">
-      <div class="feat-img"><span class="img-bg-word">Attribution</span></div>
-      <div class="feat-meta">Acquisition · Issue #3 · Apr 19, 2026</div>
-      <div class="feat-headline">You Think You Know Where Your Members Come From. You Don't.</div>
-      <p class="feat-deck">Most studios credit referrals and word of mouth. The data says otherwise. Here's how to actually track attribution — and what it reveals about which channels are really working.</p>
-    </a>
+
+    <!-- RIGHT: top stories box -->
+    <div class="top-stories">
+      <div class="top-stories-label">Top Stories</div>
+      <a href="article.html" class="tsi">
+        <div class="tsi-meta">AI &amp; Tech · Jun 27, 2026</div>
+        <div class="tsi-headline">Planet Fitness Just Deployed AI Coaches. Here's What It Means for Independent Studios.</div>
+      </a>
+      <a href="https://newsletter.therunrate.co/p/fitness-studio-member-attribution" class="tsi">
+        <div class="tsi-meta">Acquisition · Apr 19, 2026</div>
+        <div class="tsi-headline">You Think You Know Where Your Members Come From. You Don't.</div>
+      </a>
+      <a href="https://newsletter.therunrate.co/p/gym-member-retention-first-30-days" class="tsi">
+        <div class="tsi-meta">Retention · Apr 5, 2026</div>
+        <div class="tsi-headline">Fitness Studios Don't Have a Marketing Problem. They Have a 30-Day Problem.</div>
+      </a>
+      <a href="churn-57.html" class="tsi">
+        <div class="tsi-meta">Retention · Jun 27, 2026</div>
+        <div class="tsi-headline">57% of Fitness Studio Members Churn in Year One. Most Operators Don't Know Why.</div>
+      </a>
+      <a href="acquisition-80.html" class="tsi">
+        <div class="tsi-meta">Acquisition · Jun 27, 2026</div>
+        <div class="tsi-headline">80% of New Members Come From 3 Sources. Most Studios Are Funding the Other 20.</div>
+      </a>
+    </div>
+
   </div>
 </div>
 
