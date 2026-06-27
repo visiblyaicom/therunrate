@@ -53,6 +53,17 @@ footer{background:var(--navy-deep);padding:36px 40px;margin-top:80px;}
 footer img{height:20px;width:auto;}
 .footer-copy{font-size:10px;font-weight:300;letter-spacing:0.1em;text-transform:uppercase;color:rgba(255,255,255,0.3);}
 </style>
+<script async type="application/javascript" src="https://news.google.com/swg/js/v1/swg-basic.js"></script>
+<script>
+  (self.SWG_BASIC = self.SWG_BASIC || []).push(basicSubscriptions => {
+    basicSubscriptions.init({
+      type: "NewsArticle",
+      isPartOfType: ["Product"],
+      isPartOfProductId: "CAown-fLDA:openaccess",
+      clientOptions: { theme: "light", lang: "en" },
+    });
+  });
+</script>
 </head>
 <body>
 
