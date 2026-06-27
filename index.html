@@ -61,6 +61,7 @@ nav {
 .nav-logo img {
   height: 28px;
   width: auto;
+  mix-blend-mode: screen;
 }
 .nav-links {
   display: flex;
@@ -187,12 +188,10 @@ nav {
 .section-header {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 40px 40px 20px;
+  padding: 48px 40px 20px;
   display: flex;
   align-items: baseline;
   justify-content: space-between;
-  border-bottom: 1px solid var(--border);
-  margin-bottom: 0;
 }
 .section-label {
   font-size: 11px;
@@ -218,19 +217,12 @@ nav {
   padding: 0 40px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 0;
+  gap: 40px 40px;
 }
 
 .article-card {
-  padding: 28px 24px 28px 0;
-  border-bottom: 1px solid var(--border);
+  padding: 0;
 }
-.article-card:not(:last-child):not(:nth-child(3n)) {
-  border-right: 1px solid var(--border);
-  padding-right: 24px;
-}
-.article-card:nth-child(3n) { padding-right: 0; }
-.article-card:nth-child(n+4) { border-bottom: none; }
 
 .card-image {
   width: 100%;
@@ -291,18 +283,13 @@ nav {
 .featured-row {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 0 40px;
+  padding: 0 40px 40px;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 0;
-  border-bottom: 1px solid var(--border);
+  gap: 40px;
 }
 .featured-card {
-  padding: 28px 24px 28px 0;
-}
-.featured-card + .featured-card {
-  padding: 28px 0 28px 24px;
-  border-left: 1px solid var(--border);
+  padding: 0;
 }
 .featured-card .card-image { aspect-ratio: 3/2; }
 
