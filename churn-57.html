@@ -3,55 +3,119 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>57% of Fitness Studio Members Churn in Year One — The Run Rate</title>
+<title>57% of Fitness Studio Members Churn in Year One. Most Operators Don't Know Why. — The Run Rate</title>
+<meta name="description" content="The data is damning — and it's not about price, location, or equipment. The members who leave tell a consistent story. The question is whether you're listening before they go.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400;1,700&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&family=Jost:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 <style>
 :root {
-  --navy:#1b2235;--navy-deep:#0d1421;--navy-mid:#243048;--navy-soft:#2e3d5c;
-  --yellow:#f0e87a;--yellow-dim:#e0d96a;
-  --ink:#12171f;--ink-mid:#3a4455;--ink-light:#6b7585;
-  --page:#f9f8f5;--border:#e2e1db;
-  --rule-dark:rgba(255,255,255,0.1);
+  --navy-deep: #0d1421;
+  --yellow:    #f0e87a;
+  --yellow-dim:#e0d96a;
+  --ink:       #111820;
+  --ink-mid:   #3a4455;
+  --ink-light: #888fa0;
+  --page:      #ffffff;
+  --border:    #e4e4e0;
 }
-*{margin:0;padding:0;box-sizing:border-box;}
-body{background:var(--page);color:var(--ink);font-family:'Jost',sans-serif;font-weight:300;-webkit-font-smoothing:antialiased;}
-a{color:inherit;text-decoration:none;}
-img{display:block;}
-.top-bar{background:var(--yellow);text-align:center;padding:9px 24px;font-size:9px;font-weight:600;letter-spacing:0.22em;text-transform:uppercase;color:var(--navy-deep);}
-.top-bar a{color:var(--navy-deep);text-decoration:underline;text-underline-offset:2px;}
-nav{background:var(--navy-deep);border-bottom:0.5px solid var(--rule-dark);}
-.nav-inner{max-width:1200px;margin:0 auto;padding:0 40px;height:64px;display:flex;align-items:center;justify-content:space-between;gap:32px;}
-.nav-logo img{height:28px;width:auto;}
-.nav-subscribe{background:var(--yellow);color:var(--navy-deep);font-size:9px;font-weight:600;letter-spacing:0.18em;text-transform:uppercase;padding:8px 18px;border-radius:100px;white-space:nowrap;flex-shrink:0;}
-.article-hero{background:var(--navy-deep);padding:64px 40px 56px;}
-.article-hero-inner{max-width:860px;margin:0 auto;}
-.article-meta{display:flex;align-items:center;gap:14px;margin-bottom:28px;}
-.tag{font-size:8px;font-weight:600;letter-spacing:0.22em;text-transform:uppercase;padding:4px 11px;border-radius:100px;}
-.tag-y{background:var(--yellow);color:var(--navy-deep);}
-.article-date,.article-read-time{font-size:9px;font-weight:400;letter-spacing:0.12em;color:rgba(255,255,255,0.35);text-transform:uppercase;}
-.article-dot{color:rgba(255,255,255,0.15);}
-.article-headline{font-family:'Playfair Display',serif;font-size:56px;font-weight:400;font-style:italic;line-height:1.08;color:#f8f8f4;margin-bottom:24px;letter-spacing:-0.01em;}
-.article-deck{font-size:17px;font-weight:300;line-height:1.7;color:rgba(255,255,255,0.5);max-width:720px;margin-bottom:36px;}
-.article-byline{display:flex;align-items:center;gap:14px;padding-top:28px;border-top:0.5px solid rgba(255,255,255,0.08);}
-.byline-avatar{width:36px;height:36px;border-radius:50%;background:var(--navy-soft);display:flex;align-items:center;justify-content:center;font-family:'Playfair Display',serif;font-size:14px;font-weight:600;color:var(--yellow);flex-shrink:0;}
-.byline-name{font-size:11px;font-weight:500;letter-spacing:0.06em;color:#f8f8f4;}
-.byline-role{font-size:9px;font-weight:400;letter-spacing:0.1em;color:rgba(255,255,255,0.35);text-transform:uppercase;}
-.stat-strip{background:var(--page);border-bottom:1px solid var(--border);}
-.stat-strip-inner{max-width:860px;margin:0 auto;padding:36px 40px;display:flex;gap:56px;}
-.stat-number{font-family:'Playfair Display',serif;font-size:40px;font-weight:400;font-style:italic;color:var(--navy-deep);line-height:1;margin-bottom:6px;}
-.stat-label{font-size:9px;font-weight:500;letter-spacing:0.14em;text-transform:uppercase;color:var(--ink-light);max-width:130px;line-height:1.55;}
-.article-body{max-width:680px;margin:52px auto;padding:0 40px;}
-.article-body p{font-size:16px;font-weight:300;line-height:1.85;color:var(--ink-mid);margin-bottom:24px;}
-.article-body h2{font-family:'Playfair Display',serif;font-size:28px;font-weight:400;font-style:italic;color:var(--ink);margin:40px 0 16px;}
-.pull-quote{border-left:2px solid var(--yellow);padding:8px 0 8px 24px;margin:36px 0;}
-.pull-quote p{font-family:'Playfair Display',serif;font-size:22px;font-weight:400;font-style:italic;color:var(--ink)!important;line-height:1.5!important;margin-bottom:8px!important;}
-.pull-quote cite{font-size:9px;font-weight:500;letter-spacing:0.15em;text-transform:uppercase;color:var(--ink-light);font-style:normal;}
-footer{background:var(--navy-deep);padding:36px 40px;margin-top:80px;}
-.footer-inner{max-width:1200px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;}
-footer img{height:20px;width:auto;}
-.footer-copy{font-size:10px;font-weight:300;letter-spacing:0.1em;text-transform:uppercase;color:rgba(255,255,255,0.3);}
+* { margin:0; padding:0; box-sizing:border-box; }
+body { background: var(--page); color: var(--ink); font-family: 'Jost', sans-serif; font-weight: 400; -webkit-font-smoothing: antialiased; }
+a { color: inherit; text-decoration: none; }
+img { display: block; }
+
+.ticker-bg { background: var(--navy-deep); overflow: hidden; height: 36px; display: flex; align-items: center; }
+.ticker-label { background: var(--yellow); color: var(--navy-deep); font-size: 9px; font-weight: 700; letter-spacing: 0.2em; text-transform: uppercase; padding: 0 16px; height: 36px; display: flex; align-items: center; flex-shrink: 0; margin-right: 24px; }
+.ticker-track { display: flex; align-items: center; animation: ticker 35s linear infinite; }
+@keyframes ticker { 0% { transform: translateX(0); } 100% { transform: translateX(-50%); } }
+.ticker-item { font-size: 11px; font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase; color: rgba(255,255,255,0.75); padding-right: 48px; white-space: nowrap; }
+.ticker-sep { color: rgba(255,255,255,0.2); padding-right: 48px; font-size: 14px; }
+
+nav { border-bottom: 1px solid var(--border); background: #fff; }
+.nav-inner { max-width: 1200px; margin: 0 auto; padding: 0 32px; height: 72px; display: flex; align-items: center; justify-content: space-between; gap: 32px; }
+.nav-logo img { height: 36px; width: auto; display: block; }
+.nav-links { display: flex; align-items: center; gap: 8px; list-style: none; }
+.nav-links .sep { color: var(--border); font-size: 18px; padding: 0 4px; user-select: none; }
+.nav-links a { font-size: 11px; font-weight: 600; letter-spacing: 0.13em; text-transform: uppercase; color: var(--ink-mid); transition: color 0.15s; }
+.nav-links a:hover { color: var(--ink); }
+.nav-sub { background: var(--yellow); color: var(--navy-deep); font-size: 11px; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; padding: 10px 20px; border-radius: 2px; white-space: nowrap; flex-shrink: 0; transition: background 0.15s; }
+.nav-sub:hover { background: var(--yellow-dim); }
+
+.art-header { max-width: 860px; margin: 0 auto; padding: 44px 32px 32px; }
+.art-back { display: inline-flex; align-items: center; gap: 6px; font-size: 11px; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: var(--ink-light); margin-bottom: 28px; transition: color 0.15s; }
+.art-back:hover { color: var(--ink); }
+.art-meta { display: flex; align-items: center; gap: 10px; margin-bottom: 20px; }
+.art-cat { font-size: 9px; font-weight: 700; letter-spacing: 0.2em; text-transform: uppercase; color: var(--navy-deep); }
+.art-dot { color: var(--border); }
+.art-date, .art-time { font-size: 9px; font-weight: 500; letter-spacing: 0.12em; text-transform: uppercase; color: var(--ink-light); }
+.art-headline { font-family: 'Playfair Display', serif; font-size: 52px; font-weight: 700; line-height: 1.08; color: var(--ink); margin-bottom: 20px; letter-spacing: -0.02em; }
+.art-deck { font-size: 18px; font-weight: 400; line-height: 1.65; color: var(--ink-mid); margin-bottom: 28px; }
+.art-byline-row { display: flex; align-items: center; justify-content: space-between; padding-top: 20px; border-top: 1px solid var(--border); }
+.art-byline { display: flex; align-items: center; gap: 12px; }
+.byline-avatar { width: 38px; height: 38px; border-radius: 50%; background: var(--navy-deep); display: flex; align-items: center; justify-content: center; font-family: 'Playfair Display', serif; font-size: 15px; font-weight: 700; color: var(--yellow); flex-shrink: 0; }
+.byline-name { font-size: 13px; font-weight: 600; color: var(--ink); }
+.byline-role { font-size: 10px; font-weight: 400; color: var(--ink-light); text-transform: uppercase; letter-spacing: 0.08em; }
+.art-share { display: flex; align-items: center; gap: 8px; }
+.share-label { font-size: 10px; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: var(--ink-light); margin-right: 4px; }
+.share-btn { width: 34px; height: 34px; border-radius: 50%; border: 1px solid var(--border); display: flex; align-items: center; justify-content: center; transition: border-color 0.15s, background 0.15s; }
+.share-btn:hover { border-color: var(--ink); background: var(--ink); }
+.share-btn svg { width: 15px; height: 15px; display: block; }
+.share-btn:hover svg path, .share-btn:hover svg rect, .share-btn:hover svg circle { fill: #fff; }
+
+.art-hero { max-width: 860px; margin: 32px auto 0; padding: 0 32px; }
+.art-hero-img { width: 100%; aspect-ratio: 16/9; background: linear-gradient(140deg, #d4d4cc 0%, #bcbcb4 100%); display: flex; align-items: flex-end; padding: 20px; overflow: hidden; }
+.img-bg-word { font-family: 'Playfair Display', serif; font-weight: 700; color: rgba(18,24,32,0.06); line-height: 1; user-select: none; font-size: 80px; }
+
+.art-google { max-width: 860px; margin: 0 auto; padding: 0 32px; }
+.art-google-inner { background: #f5f5f3; padding: 14px 20px; display: flex; align-items: center; justify-content: space-between; gap: 16px; margin: 20px 0; }
+.art-google-label { font-size: 13px; font-weight: 400; color: var(--ink-mid); }
+.art-google-btn { display: inline-flex; align-items: center; gap: 8px; background: var(--ink); color: #fff; font-size: 12px; font-weight: 600; letter-spacing: 0.02em; padding: 9px 18px; border-radius: 100px; white-space: nowrap; flex-shrink: 0; transition: background 0.15s; }
+.art-google-btn:hover { background: #2a3040; }
+
+.art-stats { max-width: 860px; margin: 0 auto; padding: 0 32px 36px; }
+.art-stats-inner { display: flex; gap: 48px; padding: 28px 0; border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); }
+.stat-number { font-family: 'Playfair Display', serif; font-size: 40px; font-weight: 700; color: var(--navy-deep); line-height: 1; margin-bottom: 6px; }
+.stat-label { font-size: 9px; font-weight: 500; letter-spacing: 0.14em; text-transform: uppercase; color: var(--ink-light); max-width: 130px; line-height: 1.55; }
+
+.art-wrap { max-width: 1100px; margin: 0 auto; padding: 0 32px 80px; display: grid; grid-template-columns: 1fr 300px; gap: 60px; align-items: start; }
+.art-body p { font-size: 17px; font-weight: 400; line-height: 1.85; color: var(--ink-mid); margin-bottom: 24px; }
+.art-body h2 { font-family: 'Playfair Display', serif; font-size: 28px; font-weight: 700; color: var(--ink); margin: 44px 0 16px; }
+.pull-quote { border-left: 3px solid var(--yellow); padding: 8px 0 8px 24px; margin: 36px 0; }
+.pull-quote p { font-family: 'Playfair Display', serif; font-size: 22px; font-weight: 400; font-style: italic; color: var(--ink)!important; line-height: 1.5!important; margin-bottom: 8px!important; }
+.pull-quote cite { font-size: 9px; font-weight: 600; letter-spacing: 0.15em; text-transform: uppercase; color: var(--ink-light); font-style: normal; }
+.art-body a { color: var(--navy-deep); text-decoration: underline; text-underline-offset: 3px; }
+
+.art-sidebar { position: sticky; top: 32px; }
+.sidebar-sub { border: 1.5px solid var(--navy-deep); padding: 24px; margin-bottom: 32px; }
+.sidebar-eyebrow { font-size: 9px; font-weight: 700; letter-spacing: 0.2em; text-transform: uppercase; color: var(--navy-deep); margin-bottom: 12px; }
+.sidebar-headline { font-family: 'Playfair Display', serif; font-size: 22px; font-weight: 700; line-height: 1.2; color: var(--ink); margin-bottom: 10px; }
+.sidebar-deck { font-size: 13px; font-weight: 400; line-height: 1.65; color: var(--ink-mid); margin-bottom: 18px; }
+.sidebar-btn { display: block; background: var(--yellow); color: var(--navy-deep); font-size: 11px; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; padding: 12px 20px; text-align: center; border-radius: 2px; transition: background 0.15s; }
+.sidebar-btn:hover { background: var(--yellow-dim); }
+.sidebar-more-label { font-size: 9px; font-weight: 700; letter-spacing: 0.2em; text-transform: uppercase; color: var(--ink-light); }
+.sidebar-article { display: block; padding: 14px 0; border-bottom: 1px solid var(--border); }
+.sidebar-article:first-of-type { border-top: 1px solid var(--border); margin-top: 16px; }
+.sidebar-article-cat { font-size: 9px; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase; color: var(--ink-light); margin-bottom: 5px; }
+.sidebar-article-title { font-family: 'Playfair Display', serif; font-size: 16px; font-weight: 700; line-height: 1.28; color: var(--ink); transition: color 0.15s; }
+.sidebar-article:hover .sidebar-article-title { color: var(--navy-deep); }
+
+.art-more { max-width: 1100px; margin: 0 auto; padding: 0 32px 80px; }
+.art-more-head { font-size: 11px; font-weight: 700; letter-spacing: 0.2em; text-transform: uppercase; padding-bottom: 16px; border-bottom: 2px solid var(--ink); margin-bottom: 28px; }
+.art-more-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 24px; }
+.mini-card { display: flex; flex-direction: column; }
+.mini-card-img { width: 100%; aspect-ratio: 4/3; background: linear-gradient(135deg, #e4e4de 0%, #d0d0c8 100%); display: flex; align-items: flex-end; padding: 8px; margin-bottom: 10px; overflow: hidden; }
+.mini-card-img .img-bg-word { font-size: 20px; }
+.mini-card-cat { font-size: 9px; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; color: var(--ink-light); margin-bottom: 6px; }
+.mini-card-headline { font-family: 'Playfair Display', serif; font-size: 16px; font-weight: 700; line-height: 1.28; color: var(--ink); transition: color 0.15s; }
+.mini-card:hover .mini-card-headline { color: var(--navy-deep); }
+
+footer { background: var(--navy-deep); padding: 30px 32px; border-top: 3px solid var(--yellow); }
+.footer-inner { max-width: 1200px; margin: 0 auto; display: flex; align-items: center; justify-content: space-between; gap: 24px; }
+.footer-logo { font-family: 'Playfair Display', serif; font-size: 20px; font-weight: 700; color: rgba(255,255,255,0.7); letter-spacing: -0.01em; }
+.footer-links { display: flex; gap: 24px; list-style: none; }
+.footer-links a { font-size: 11px; font-weight: 500; letter-spacing: 0.1em; text-transform: uppercase; color: rgba(255,255,255,0.3); transition: color 0.15s; }
+.footer-links a:hover { color: #fff; }
+.footer-copy { font-size: 11px; color: rgba(255,255,255,0.2); text-transform: uppercase; letter-spacing: 0.06em; }
 </style>
 <script async type="application/javascript" src="https://news.google.com/swg/js/v1/swg-basic.js"></script>
 <script>
@@ -67,62 +131,203 @@ footer img{height:20px;width:auto;}
 </head>
 <body>
 
-<div class="top-bar">
-  Weekly growth intelligence for fitness &amp; wellness operators — <a href="https://therunrate.co">subscribe free →</a>
+<div class="ticker-bg">
+  <span class="ticker-label">Latest</span>
+  <div class="ticker-track">
+    <span class="ticker-item">57% of Fitness Studio Members Churn in Year One. Most Operators Don't Know Why.</span>
+    <span class="ticker-sep">/</span>
+    <span class="ticker-item">80% of New Members Come From 3 Sources. Most Studios Are Funding the Other 20.</span>
+    <span class="ticker-sep">/</span>
+    <span class="ticker-item">Planet Fitness Just Deployed AI Coaches. Here's What It Means for Independent Studios.</span>
+    <span class="ticker-sep">/</span>
+    <span class="ticker-item">You Think You Know Where Your Members Come From. You Don't.</span>
+    <span class="ticker-sep">/</span>
+    <span class="ticker-item">57% of Fitness Studio Members Churn in Year One. Most Operators Don't Know Why.</span>
+    <span class="ticker-sep">/</span>
+    <span class="ticker-item">80% of New Members Come From 3 Sources. Most Studios Are Funding the Other 20.</span>
+    <span class="ticker-sep">/</span>
+    <span class="ticker-item">Planet Fitness Just Deployed AI Coaches. Here's What It Means for Independent Studios.</span>
+    <span class="ticker-sep">/</span>
+    <span class="ticker-item">You Think You Know Where Your Members Come From. You Don't.</span>
+    <span class="ticker-sep">/</span>
+  </div>
 </div>
 
 <nav>
   <div class="nav-inner">
-    <a href="/" class="nav-logo"><img src="logo.png" alt="The Run Rate"></a>
-    <a href="https://newsletter.therunrate.co" class="nav-subscribe">Subscribe Free</a>
+    <a href="/" class="nav-logo"><img src="logo-light.png" alt="The Run Rate"></a>
+    <ul class="nav-links">
+      <li><a href="/#studio-growth">Studio Growth</a></li>
+      <li><span class="sep">/</span></li>
+      <li><a href="/#retention">Retention</a></li>
+      <li><span class="sep">/</span></li>
+      <li><a href="/#acquisition">Acquisition</a></li>
+      <li><span class="sep">/</span></li>
+      <li><a href="/#ai-tech">AI &amp; Tech</a></li>
+    </ul>
+    <a href="https://newsletter.therunrate.co" class="nav-sub">Subscribe Free</a>
   </div>
 </nav>
 
-<div class="article-hero">
-  <div class="article-hero-inner">
-    <div class="article-meta">
-      <span class="tag tag-y">Retention</span>
-      <span class="article-dot">·</span>
-      <span class="article-date">Jun 27, 2026</span>
-      <span class="article-dot">·</span>
-      <span class="article-read-time">5 min read</span>
-    </div>
-    <h1 class="article-headline">57% of Fitness Studio Members Churn in Year One. Most Operators Don't Know Why.</h1>
-    <p class="article-deck">The data is damning — and it's not about price, location, or equipment. The members who leave tell a consistent story. The question is whether you're listening before they go.</p>
-    <div class="article-byline">
+<div class="art-header">
+  <a href="/" class="art-back">← All Articles</a>
+  <div class="art-meta">
+    <span class="art-cat">Retention</span>
+    <span class="art-dot">·</span>
+    <span class="art-date">Jun 27, 2026</span>
+    <span class="art-dot">·</span>
+    <span class="art-time">7 min read</span>
+  </div>
+  <h1 class="art-headline">57% of Fitness Studio Members Churn in Year One. Most Operators Don't Know Why.</h1>
+  <p class="art-deck">The data is damning — and it's not about price, location, or equipment. The members who leave tell a consistent story. The question is whether you're listening before they go.</p>
+  <div class="art-byline-row">
+    <div class="art-byline">
       <div class="byline-avatar">P</div>
       <div>
         <div class="byline-name">Paula Bartis</div>
         <div class="byline-role">Founder, The Run Rate</div>
       </div>
     </div>
+    <div class="art-share">
+      <span class="share-label">Share</span>
+      <a href="https://www.linkedin.com/sharing/share-offsite/?url=https://therunrate.co/churn-57.html" class="share-btn" target="_blank" rel="noopener" title="Share on LinkedIn">
+        <svg viewBox="0 0 24 24" fill="none"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" fill="#111820"/><rect x="2" y="9" width="4" height="12" fill="#111820"/><circle cx="4" cy="4" r="2" fill="#111820"/></svg>
+      </a>
+      <a href="https://twitter.com/intent/tweet?url=https://therunrate.co/churn-57.html&text=57%25+of+Fitness+Studio+Members+Churn+in+Year+One." class="share-btn" target="_blank" rel="noopener" title="Share on X">
+        <svg viewBox="0 0 24 24" fill="none"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" fill="#111820"/></svg>
+      </a>
+    </div>
   </div>
 </div>
 
-<div class="stat-strip">
-  <div class="stat-strip-inner">
-    <div><div class="stat-number">57%</div><div class="stat-label">of members churn within 12 months</div></div>
-    <div><div class="stat-number">Day 30</div><div class="stat-label">when most members decide whether to stay</div></div>
-    <div><div class="stat-number">6×</div><div class="stat-label">cost to acquire vs. retain a member</div></div>
+<div class="art-hero">
+  <div class="art-hero-img"><span class="img-bg-word">57%</span></div>
+</div>
+
+<div class="art-google">
+  <div class="art-google-inner">
+    <span class="art-google-label">Make The Run Rate one of your go-to sources on Google</span>
+    <a href="https://www.google.com/preferences/source?q=https://therunrate.co" class="art-google-btn">
+      <svg width="16" height="16" viewBox="0 0 24 24"><path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4"/><path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/><path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l3.66-2.84z" fill="#FBBC05"/><path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"/></svg>
+      Add The Run Rate on Google
+    </a>
   </div>
 </div>
 
-<article class="article-body">
-  <p>More than half your members will leave before their first anniversary. Industry data has pointed to this for years, but most studios still treat churn as a billing problem rather than an experience problem.</p>
-  <p>It's not. It's a Day 1–30 problem.</p>
-  <div class="pull-quote">
-    <p>"The member who churns in month 3 made the decision to leave in week 2. By the time they cancel, the window has been closed for months."</p>
-    <cite>— The Run Rate</cite>
+<div class="art-stats">
+  <div class="art-stats-inner">
+    <div><div class="stat-number">57%</div><div class="stat-label">of members churn within their first 12 months</div></div>
+    <div><div class="stat-number">Day 30</div><div class="stat-label">when most members decide whether to stay or go</div></div>
+    <div><div class="stat-number">6×</div><div class="stat-label">more expensive to acquire a member than to retain one</div></div>
   </div>
-  <h2>What actually drives early churn</h2>
-  <p>Three patterns show up consistently: members who don't visit in their first 10 days almost never develop a habit. Members with zero social connection to staff or other members churn at 2× the rate. Members who don't use a feature they were sold on in the first month never do.</p>
-  <p>None of these are marketing problems. They're onboarding problems disguised as retention problems.</p>
-  <p><a href="https://therunrate.co" style="color:var(--navy-deep);font-weight:500;text-decoration:underline;text-underline-offset:3px;">Read the full analysis at therunrate.co →</a></p>
-</article>
+</div>
+
+<div class="art-wrap">
+  <article class="art-body">
+    <p>More than half your members will leave before their first anniversary. The industry has known this for years — but most studios still treat churn as a billing problem, a pricing problem, or a competition problem. It isn't any of those things.</p>
+
+    <p>It's a Day 1–30 problem. And it's almost entirely predictable.</p>
+
+    <div class="pull-quote">
+      <p>"The member who churns in month 3 made the decision to leave in week 2. By the time they cancel, the window has been closed for months."</p>
+      <cite>— The Run Rate</cite>
+    </div>
+
+    <h2>What the data actually shows</h2>
+
+    <p>Three patterns show up with enough consistency to call them structural. First: members who don't visit in their first 10 days almost never develop a habit. The initial motivation that brought them in — a New Year's resolution, a recommendation from a friend, a health scare — fades faster than the payment clears. If you don't convert that motivation into a physical habit before it expires, you've already lost the member. They just haven't canceled yet.</p>
+
+    <p>Second: members with zero social connection to staff or other members churn at roughly double the rate of those who have at least one. Not dozens of connections — one. Knowing a coach's name. Being remembered at the front desk. Being recognized by a single regular in a class. That's the threshold. It's not about community in the abstract. It's about a single person knowing you exist.</p>
+
+    <p>Third: members who don't use the feature they were sold on in the first month almost never do. The studio that sold them on "personalized programming" needs to deliver that experience before day 30, or they will have created a gap between the promise and the reality that no discount or re-engagement email will close.</p>
+
+    <h2>Why operators miss this</h2>
+
+    <p>The problem with a Day 30 retention failure is that it shows up in your churn numbers three months later. The member cancels in month 3 or month 4. They cite the obvious reasons — too expensive, too busy, not using it enough. Those reasons feel true to the member, and they feel plausible to the operator. But they're not the root cause. They're the story someone tells themselves to justify a decision they already made weeks ago.</p>
+
+    <p>Most studio software isn't built to show you this. Your CRM shows you cancellation dates. It doesn't show you the moment someone went from "active member" to "member who has already decided to leave." That signal lives in visit frequency in the first 30 days — and most operators aren't watching it in real time.</p>
+
+    <div class="pull-quote">
+      <p>"Your churn report shows you who already left. Your visit frequency report in the first 30 days shows you who is about to."</p>
+      <cite>— The Run Rate</cite>
+    </div>
+
+    <h2>The three highest-ROI retention interventions</h2>
+
+    <p><strong>1. A personal outreach trigger at day 7.</strong> Any member who hasn't visited in their first 7 days should get a personal outreach from a coach or front desk staff — not an automated email, not a push notification, but an actual message that shows they've been noticed. The message doesn't need to be sophisticated. "Hey, we haven't seen you since you signed up — anything we can help with?" is enough. The cost is minutes. The return is a member who knows they're being watched in the best possible sense.</p>
+
+    <p><strong>2. A structured intro experience, not an orientation tour.</strong> Most studios treat onboarding as a liability waiver and a locker room tour. What actually works is a structured experience that connects a new member to at least one other person in the building — a class recommendation, an intro to a coach, or a small group session — within the first two weeks. The goal isn't to overwhelm them with programming. It's to engineer the "I know someone here" moment before they've had a chance to feel like a stranger.</p>
+
+    <p><strong>3. Feature activation before month one ends.</strong> Whatever you sold them on — the nutrition coaching, the small group training, the app-based programming — activate it before day 30. If you sold it in the pitch, you owe them the delivery before the novelty wears off. Studios that make good on their enrollment promises in the first month have materially better 90-day retention. It's not complicated. It's just execution.</p>
+
+    <h2>The math that should change how you think about this</h2>
+
+    <p>Acquiring a new member costs roughly six times what it costs to retain an existing one. If your average member pays $100/month and you're losing 57% of them before year one, you're spending acquisition budget to replace members who never had to leave. Every percentage point of improvement in 30-day retention is worth more than most paid acquisition campaigns — and it compounds, because retained members refer more, spend more, and leave better reviews.</p>
+
+    <p>The studios that are growing fastest right now aren't the ones with the best Facebook ads. They're the ones with the best first 30 days.</p>
+  </article>
+
+  <aside class="art-sidebar">
+    <div class="sidebar-sub">
+      <div class="sidebar-eyebrow">Free Weekly Newsletter</div>
+      <div class="sidebar-headline">Come back for the reason it lands.</div>
+      <p class="sidebar-deck">Growth intelligence for fitness &amp; wellness operators. Every Wednesday — one issue, one playbook, one number that changes how you see your business.</p>
+      <a href="https://newsletter.therunrate.co" class="sidebar-btn">Subscribe Free →</a>
+    </div>
+    <div class="sidebar-more-label">More from The Run Rate</div>
+    <a href="acquisition-80.html" class="sidebar-article">
+      <div class="sidebar-article-cat">Acquisition</div>
+      <div class="sidebar-article-title">80% of New Members Come From 3 Sources. Most Studios Are Funding the Other 20.</div>
+    </a>
+    <a href="article.html" class="sidebar-article">
+      <div class="sidebar-article-cat">AI &amp; Tech</div>
+      <div class="sidebar-article-title">Planet Fitness Just Deployed AI Coaches. Here's What It Means for Independent Studios.</div>
+    </a>
+    <a href="https://newsletter.therunrate.co/p/gym-member-retention-first-30-days" class="sidebar-article">
+      <div class="sidebar-article-cat">Retention</div>
+      <div class="sidebar-article-title">Fitness Studios Don't Have a Marketing Problem. They Have a 30-Day Problem.</div>
+    </a>
+    <a href="https://newsletter.therunrate.co/p/fitness-studio-member-attribution" class="sidebar-article">
+      <div class="sidebar-article-cat">Acquisition</div>
+      <div class="sidebar-article-title">You Think You Know Where Your Members Come From. You Don't.</div>
+    </a>
+  </aside>
+</div>
+
+<div class="art-more">
+  <div class="art-more-head">More from The Run Rate</div>
+  <div class="art-more-grid">
+    <a href="acquisition-80.html" class="mini-card">
+      <div class="mini-card-img"><span class="img-bg-word">80%</span></div>
+      <div class="mini-card-cat">Acquisition</div>
+      <div class="mini-card-headline">80% of New Members Come From 3 Sources. Most Studios Are Funding the Other 20.</div>
+    </a>
+    <a href="article.html" class="mini-card">
+      <div class="mini-card-img"><span class="img-bg-word">AI</span></div>
+      <div class="mini-card-cat">AI &amp; Tech</div>
+      <div class="mini-card-headline">Planet Fitness Just Deployed AI Coaches. Here's What It Means for Independent Studios.</div>
+    </a>
+    <a href="https://newsletter.therunrate.co/p/gym-member-retention-first-30-days" class="mini-card">
+      <div class="mini-card-img"><span class="img-bg-word">Day 30</span></div>
+      <div class="mini-card-cat">Retention</div>
+      <div class="mini-card-headline">Fitness Studios Don't Have a Marketing Problem. They Have a 30-Day Problem.</div>
+    </a>
+    <a href="https://newsletter.therunrate.co/p/fitness-studio-member-attribution" class="mini-card">
+      <div class="mini-card-img"><span class="img-bg-word">Source</span></div>
+      <div class="mini-card-cat">Acquisition</div>
+      <div class="mini-card-headline">You Think You Know Where Your Members Come From. You Don't.</div>
+    </a>
+  </div>
+</div>
 
 <footer>
   <div class="footer-inner">
-    <a href="/"><img src="logo.png" alt="The Run Rate"></a>
+    <span class="footer-logo">The Run Rate</span>
+    <ul class="footer-links">
+      <li><a href="https://newsletter.therunrate.co/archive">Archive</a></li>
+      <li><a href="https://newsletter.therunrate.co/about">About</a></li>
+      <li><a href="https://newsletter.therunrate.co">Work With Us</a></li>
+    </ul>
     <span class="footer-copy">© 2026 The Run Rate</span>
   </div>
 </footer>
