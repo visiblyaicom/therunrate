@@ -363,11 +363,12 @@ nav {
 .li-read-cta {
   display: flex; align-items: center; justify-content: center; gap: 6px;
   font-size: 10px; font-weight: 700; letter-spacing: 0.14em;
-  text-transform: uppercase; color: var(--navy-deep);
-  padding-top: 12px; border-top: 1px solid var(--border);
-  transition: gap 0.15s;
+  text-transform: uppercase; color: #fff;
+  background: var(--navy-deep);
+  padding: 10px 20px; margin-top: 14px;
+  transition: gap 0.15s, background 0.15s;
 }
-.li-panel:hover .li-read-cta { gap: 10px; }
+.li-panel:hover .li-read-cta { gap: 10px; background: var(--navy); }
 .li-sub-hint {
   margin-top: 20px; padding-top: 16px;
   border-top: 1px solid #d8dde8;
