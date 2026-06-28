@@ -63,8 +63,7 @@ nav { border-bottom: 1px solid var(--border); background: #fff; }
 .share-btn:hover svg path, .share-btn:hover svg rect, .share-btn:hover svg circle { fill: #fff; }
 
 .art-hero { max-width: 860px; margin: 32px auto 0; padding: 0 32px; }
-.art-hero-img { width: 100%; aspect-ratio: 16/9; background: linear-gradient(140deg, #d0d4cc 0%, #b8bcb4 100%); display: flex; align-items: flex-end; padding: 20px; overflow: hidden; }
-.img-bg-word { font-family: 'Playfair Display', serif; font-weight: 700; color: rgba(18,24,32,0.06); line-height: 1; user-select: none; font-size: 80px; }
+.art-hero-img { width: 100%; aspect-ratio: 16/9; object-fit: cover; display: block; }
 
 .art-google { max-width: 860px; margin: 0 auto; padding: 0 32px; }
 .art-google-inner { background: #f5f5f3; padding: 14px 20px; display: flex; align-items: center; justify-content: space-between; gap: 16px; margin: 20px 0; }
@@ -201,7 +200,7 @@ footer { background: var(--navy-deep); padding: 30px 32px; border-top: 3px solid
 </div>
 
 <div class="art-hero">
-  <div class="art-hero-img"><span class="img-bg-word">Acquisition</span></div>
+  <img src="hero-acquisition.png" alt="Fitness studio member acquisition editorial collage" class="art-hero-img">
 </div>
 
 <div class="art-google">
