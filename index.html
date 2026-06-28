@@ -453,6 +453,91 @@ nav {
   width: 22px; height: 22px; flex-shrink: 0;
 }
 
+/* ─── AI & TECH STYLE — top 3-col + bottom 4-col (Retention) ─── */
+.sg2-top {
+  display: grid;
+  grid-template-columns: 2.2fr 1.6fr 1.6fr;
+  gap: 32px; align-items: start;
+}
+.sg2-feat { display: flex; flex-direction: column; }
+.sg2-feat-img {
+  width: 100%; aspect-ratio: 4/3;
+  background: linear-gradient(150deg, #d8dae0 0%, #c4c6cc 100%);
+  display: flex; align-items: flex-end; padding: 14px;
+  margin-bottom: 16px; overflow: hidden;
+}
+.sg2-feat-img .img-bg-word { font-size: 48px; }
+.sg2-feat-date { font-size: 10px; font-weight: 500; letter-spacing: 0.1em; text-transform: uppercase; color: var(--ink-light); margin-bottom: 10px; }
+.sg2-feat-headline { font-family: 'Playfair Display', serif; font-size: 28px; font-weight: 700; line-height: 1.18; color: var(--ink); margin-bottom: 12px; transition: color 0.15s; }
+.sg2-feat:hover .sg2-feat-headline { color: var(--navy); }
+.sg2-feat-deck { font-size: 14px; font-weight: 400; line-height: 1.7; color: var(--ink-mid); }
+
+.sg2-callout {
+  background: #eef1f7; padding: 20px; display: flex; flex-direction: column;
+}
+.sg2-callout-label { font-size: 9px; font-weight: 700; letter-spacing: 0.2em; text-transform: uppercase; color: var(--ink-light); margin-bottom: 14px; }
+.sg2-callout-img {
+  width: 100%; aspect-ratio: 4/3;
+  background: linear-gradient(140deg, #c8cad4 0%, #b0b4c0 100%);
+  display: flex; align-items: flex-end; padding: 10px;
+  margin-bottom: 16px; overflow: hidden;
+}
+.sg2-callout-img .img-bg-word { font-size: 32px; color: rgba(255,255,255,0.2); }
+.sg2-callout-headline { font-family: 'Playfair Display', serif; font-size: 19px; font-weight: 700; line-height: 1.25; color: var(--ink); margin-bottom: 10px; transition: color 0.15s; }
+.sg2-callout:hover .sg2-callout-headline { color: var(--navy); }
+.sg2-callout-deck { font-size: 13px; font-weight: 400; line-height: 1.65; color: var(--ink-mid); }
+
+.sg2-text-stack { display: flex; flex-direction: column; }
+.sg2-text-item { padding: 16px 0; border-bottom: 1px solid var(--border); }
+.sg2-text-item:first-child { padding-top: 0; }
+.sg2-text-item:last-child { border-bottom: none; padding-bottom: 0; }
+.sg2-text-date { font-size: 10px; font-weight: 500; letter-spacing: 0.1em; text-transform: uppercase; color: var(--ink-light); margin-bottom: 7px; }
+.sg2-text-headline { font-family: 'Playfair Display', serif; font-size: 18px; font-weight: 700; line-height: 1.28; color: var(--ink); margin-bottom: 7px; transition: color 0.15s; }
+.sg2-text-item:hover .sg2-text-headline { color: var(--navy); }
+.sg2-text-deck { font-size: 13px; font-weight: 400; line-height: 1.6; color: var(--ink-mid); }
+
+/* ─── BRAND & CREATIVE STYLE — top 3-col + bottom 4-col (Acquisition) ─── */
+.sg3-top {
+  display: grid;
+  grid-template-columns: 2fr 1.8fr 1.4fr;
+  gap: 32px; align-items: start;
+}
+.sg3-feat { display: flex; flex-direction: column; }
+.sg3-feat-img {
+  width: 100%; aspect-ratio: 16/9;
+  background: linear-gradient(150deg, #d4d8d0 0%, #bfc3bb 100%);
+  display: flex; align-items: flex-end; padding: 14px;
+  margin-bottom: 16px; overflow: hidden;
+}
+.sg3-feat-img .img-bg-word { font-size: 48px; }
+.sg3-feat-date { font-size: 10px; font-weight: 500; letter-spacing: 0.1em; text-transform: uppercase; color: var(--ink-light); margin-bottom: 10px; }
+.sg3-feat-headline { font-family: 'Playfair Display', serif; font-size: 28px; font-weight: 700; line-height: 1.18; color: var(--ink); margin-bottom: 12px; transition: color 0.15s; }
+.sg3-feat:hover .sg3-feat-headline { color: var(--navy); }
+.sg3-feat-deck { font-size: 14px; font-weight: 400; line-height: 1.7; color: var(--ink-mid); }
+
+/* Center stacked (reuses sf-stack / sf-card) — already defined */
+
+/* Right text-only (reuses sg2-text-stack / sg2-text-item) — already defined */
+
+/* ─── 4-COL MINI GRID (shared) ─── */
+.mini-grid {
+  display: grid; grid-template-columns: repeat(4, 1fr);
+  gap: 24px; margin-top: 36px;
+  padding-top: 28px; border-top: 1px solid var(--border);
+}
+.mini-card { display: flex; flex-direction: column; }
+.mini-card-img {
+  width: 100%; aspect-ratio: 4/3;
+  background: linear-gradient(135deg, #e4e4de 0%, #d0d0c8 100%);
+  display: flex; align-items: flex-end; padding: 8px;
+  margin-bottom: 10px; overflow: hidden;
+}
+.mini-card-img .img-bg-word { font-size: 20px; }
+.mini-card-cat { font-size: 9px; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; color: var(--ink-light); margin-bottom: 6px; }
+.mini-card-date { font-size: 10px; font-weight: 500; letter-spacing: 0.08em; text-transform: uppercase; color: var(--ink-light); margin-bottom: 6px; }
+.mini-card-headline { font-family: 'Playfair Display', serif; font-size: 16px; font-weight: 700; line-height: 1.28; color: var(--ink); transition: color 0.15s; }
+.mini-card:hover .mini-card-headline { color: var(--navy); }
+
 /* ─── SUBSCRIBE CTA ─── */
 .cta-bg { background: var(--navy-deep); margin: 44px 0 0; padding: 44px 32px; }
 .cta-inner { max-width: 600px; margin: 0 auto; text-align: center; }
@@ -771,84 +856,154 @@ footer { background: var(--navy-deep); padding: 30px 32px; border-top: 3px solid
 <div class="section-outer">
   <div class="section-head">
     <span class="section-name">Retention</span>
-    <a href="https://newsletter.therunrate.co/archive" class="section-more">Read more →</a>
+    <a href="https://newsletter.therunrate.co/archive" class="section-more">View More ↗</a>
   </div>
-  <div class="section-body">
-    <div class="row-cards">
-      <a href="churn-57.html" class="row-card">
-        <div class="rc-img"><span class="img-bg-word">57%</span></div>
-        <div class="rc-body">
-          <div class="rc-meta">Retention · Jun 27, 2026</div>
-          <div class="rc-headline">57% of Fitness Studio Members Churn in Year One. Most Operators Don't Know Why.</div>
-          <p class="rc-deck">The data is damning — and it's not about price or location. Members who leave tell a consistent story.</p>
-        </div>
+
+  <div class="sg2-top">
+
+    <!-- Left: big featured -->
+    <a href="churn-57.html" class="sg2-feat">
+      <div class="sg2-feat-img"><span class="img-bg-word">Churn</span></div>
+      <div class="sg2-feat-date">Jun 27, 2026</div>
+      <div class="sg2-feat-headline">57% of Fitness Studio Members Churn in Year One. Most Operators Don't Know Why.</div>
+      <p class="sg2-feat-deck">The data is damning — and it's not about price, location, or equipment. Members who leave tell a consistent story. The question is whether you're listening before they go.</p>
+    </a>
+
+    <!-- Center: featured issue callout -->
+    <a href="https://newsletter.therunrate.co/p/gym-member-retention-first-30-days" class="sg2-callout">
+      <div class="sg2-callout-label">Featured Issue</div>
+      <div class="sg2-callout-img"><span class="img-bg-word">30</span></div>
+      <div class="sg2-callout-headline">Fitness Studios Don't Have a Marketing Problem. They Have a 30-Day Problem.</div>
+      <p class="sg2-callout-deck">The member who churns in month 3 made the decision to leave in week 2. Here's what the data says — and what to do about it before the window closes.</p>
+    </a>
+
+    <!-- Right: text-only stack -->
+    <div class="sg2-text-stack">
+      <a href="churn-57.html" class="sg2-text-item">
+        <div class="sg2-text-date">Jun 27, 2026</div>
+        <div class="sg2-text-headline">57% of Fitness Studio Members Churn in Year One. Most Operators Don't Know Why.</div>
       </a>
-      <a href="https://newsletter.therunrate.co/p/gym-member-retention-first-30-days" class="row-card">
-        <div class="rc-img"><span class="img-bg-word">Day 30</span></div>
-        <div class="rc-body">
-          <div class="rc-meta">Retention · Apr 5, 2026</div>
-          <div class="rc-headline">Fitness Studios Don't Have a Marketing Problem. They Have a 30-Day Problem.</div>
-          <p class="rc-deck">The decision to leave is made in the first month. Here's what the data says.</p>
-        </div>
+      <a href="https://newsletter.therunrate.co/p/gym-member-retention-first-30-days" class="sg2-text-item">
+        <div class="sg2-text-date">Apr 5, 2026</div>
+        <div class="sg2-text-headline">Fitness Studios Don't Have a Marketing Problem. They Have a 30-Day Problem.</div>
       </a>
-      <a href="https://newsletter.therunrate.co" class="row-card">
-        <div class="rc-img"><span class="img-bg-word">Onboard</span></div>
-        <div class="rc-body">
-          <div class="rc-meta">Retention · Coming soon</div>
-          <div class="rc-headline">The Onboarding Playbook: How to Turn a Trial into a Habit in 30 Days.</div>
-          <p class="rc-deck">The first 30 days set everything. Most studios have no systematic plan for them.</p>
-        </div>
+      <a href="https://newsletter.therunrate.co" class="sg2-text-item">
+        <div class="sg2-text-date">Coming soon</div>
+        <div class="sg2-text-headline">The Onboarding Playbook: How to Turn a Trial into a Habit in 30 Days.</div>
+      </a>
+      <a href="https://newsletter.therunrate.co" class="sg2-text-item">
+        <div class="sg2-text-date">Coming soon</div>
+        <div class="sg2-text-headline">The Full Member Retention System: A Playbook for Year One.</div>
       </a>
     </div>
-    <a href="churn-57.html" class="feat-card">
-      <div class="feat-img"><span class="img-bg-word">Churn</span></div>
-      <div class="feat-meta">Retention · Jun 27, 2026</div>
-      <div class="feat-headline">57% of Fitness Studio Members Churn in Year One. Most Operators Don't Know Why.</div>
-      <p class="feat-deck">More than half your members will leave before their first anniversary. The decision happens in week 2 — not month 3. Here's what to do about it before the window closes.</p>
+
+  </div>
+
+  <!-- Bottom: 4-col mini grid -->
+  <div class="mini-grid">
+    <a href="churn-57.html" class="mini-card">
+      <div class="mini-card-img"><span class="img-bg-word">57%</span></div>
+      <div class="mini-card-cat">Retention</div>
+      <div class="mini-card-headline">57% of Members Churn in Year One. Most Operators Don't Know Why.</div>
+    </a>
+    <a href="https://newsletter.therunrate.co/p/gym-member-retention-first-30-days" class="mini-card">
+      <div class="mini-card-img"><span class="img-bg-word">Day 30</span></div>
+      <div class="mini-card-cat">Retention</div>
+      <div class="mini-card-headline">Fitness Studios Don't Have a Marketing Problem. They Have a 30-Day Problem.</div>
+    </a>
+    <a href="https://newsletter.therunrate.co" class="mini-card">
+      <div class="mini-card-img"><span class="img-bg-word">Onboard</span></div>
+      <div class="mini-card-cat">Retention</div>
+      <div class="mini-card-headline">The Onboarding Playbook: Turn a Trial into a Habit in 30 Days.</div>
+    </a>
+    <a href="https://newsletter.therunrate.co" class="mini-card">
+      <div class="mini-card-img"><span class="img-bg-word">System</span></div>
+      <div class="mini-card-cat">Retention</div>
+      <div class="mini-card-headline">The Full Member Retention System: A Playbook for Year One.</div>
     </a>
   </div>
+
 </div>
 
 <!-- ACQUISITION -->
 <div class="section-outer">
   <div class="section-head">
     <span class="section-name">Acquisition</span>
-    <a href="https://newsletter.therunrate.co/archive" class="section-more">Read more →</a>
+    <a href="https://newsletter.therunrate.co/archive" class="section-more">View More ↗</a>
   </div>
-  <div class="section-body">
-    <div class="row-cards">
-      <a href="acquisition-80.html" class="row-card">
-        <div class="rc-img"><span class="img-bg-word">80%</span></div>
-        <div class="rc-body">
-          <div class="rc-meta">Acquisition · Jun 27, 2026</div>
-          <div class="rc-headline">80% of New Members Come From 3 Sources. Most Studios Are Funding the Other 20.</div>
-          <p class="rc-deck">Budgets spread thin across every channel. The data shows where members actually come from.</p>
-        </div>
+
+  <div class="sg3-top">
+
+    <!-- Left: big featured -->
+    <a href="acquisition-80.html" class="sg3-feat">
+      <div class="sg3-feat-img"><span class="img-bg-word">Acquisition</span></div>
+      <div class="sg3-feat-date">Jun 27, 2026</div>
+      <div class="sg3-feat-headline">80% of New Members Come From 3 Sources. Most Studios Are Funding the Other 20.</div>
+      <p class="sg3-feat-deck">Acquisition budgets get spread thin across every channel "just in case." The data shows most studios are over-investing in low-yield channels while the three that actually drive new members stay underfunded.</p>
+    </a>
+
+    <!-- Center: 2 stacked with images -->
+    <div class="sf-stack">
+      <a href="https://newsletter.therunrate.co/p/fitness-studio-member-attribution" class="sf-card">
+        <div class="sf-card-img"><span class="img-bg-word">Attribution</span></div>
+        <div class="sf-date">Apr 19, 2026</div>
+        <div class="sf-headline">You Think You Know Where Your Members Come From. You Don't.</div>
+        <p class="sf-deck">Most studios credit referrals and word of mouth. The attribution data tells a different story.</p>
       </a>
-      <a href="https://newsletter.therunrate.co/p/fitness-studio-member-attribution" class="row-card">
-        <div class="rc-img"><span class="img-bg-word">Source</span></div>
-        <div class="rc-body">
-          <div class="rc-meta">Acquisition · Apr 19, 2026</div>
-          <div class="rc-headline">You Think You Know Where Your Members Come From. You Don't.</div>
-          <p class="rc-deck">Most studios credit referrals and word of mouth. Most are wrong.</p>
-        </div>
-      </a>
-      <a href="https://newsletter.therunrate.co" class="row-card">
-        <div class="rc-img"><span class="img-bg-word">Referral</span></div>
-        <div class="rc-body">
-          <div class="rc-meta">Acquisition · Coming soon</div>
-          <div class="rc-headline">The Referral Playbook: How to Make Word of Mouth Systematic.</div>
-          <p class="rc-deck">Referrals are the highest-LTV channel most studios treat as an accident.</p>
-        </div>
+      <a href="https://newsletter.therunrate.co" class="sf-card">
+        <div class="sf-card-img"><span class="img-bg-word">Referral</span></div>
+        <div class="sf-date">Coming soon</div>
+        <div class="sf-headline">The Referral Playbook: How to Make Word of Mouth Systematic.</div>
+        <p class="sf-deck">Referrals are the highest-LTV channel most studios treat as an accident. Here's how to make it a system.</p>
       </a>
     </div>
-    <a href="acquisition-80.html" class="feat-card">
-      <div class="feat-img"><span class="img-bg-word">Acquisition</span></div>
-      <div class="feat-meta">Acquisition · Jun 27, 2026</div>
-      <div class="feat-headline">80% of New Members Come From 3 Sources. Most Studios Are Funding the Other 20.</div>
-      <p class="feat-deck">Acquisition budgets get spread thin across every channel "just in case." But the data shows most studios are over-investing in low-yield channels while under-investing in the three that actually drive new members.</p>
+
+    <!-- Right: text-only stack -->
+    <div class="sg2-text-stack">
+      <a href="acquisition-80.html" class="sg2-text-item">
+        <div class="sg2-text-date">Jun 27, 2026</div>
+        <div class="sg2-text-headline">80% of New Members Come From 3 Sources. Most Studios Are Funding the Other 20.</div>
+      </a>
+      <a href="https://newsletter.therunrate.co/p/fitness-studio-member-attribution" class="sg2-text-item">
+        <div class="sg2-text-date">Apr 19, 2026</div>
+        <div class="sg2-text-headline">You Think You Know Where Your Members Come From. You Don't.</div>
+      </a>
+      <a href="https://newsletter.therunrate.co" class="sg2-text-item">
+        <div class="sg2-text-date">Coming soon</div>
+        <div class="sg2-text-headline">The Referral Playbook: How to Make Word of Mouth Systematic.</div>
+      </a>
+      <a href="https://newsletter.therunrate.co" class="sg2-text-item">
+        <div class="sg2-text-date">Coming soon</div>
+        <div class="sg2-text-headline">Local Search Is Your Cheapest Acquisition Channel. Here's How to Own It.</div>
+      </a>
+    </div>
+
+  </div>
+
+  <!-- Bottom: 4-col mini grid -->
+  <div class="mini-grid">
+    <a href="acquisition-80.html" class="mini-card">
+      <div class="mini-card-img"><span class="img-bg-word">80%</span></div>
+      <div class="mini-card-cat">Acquisition</div>
+      <div class="mini-card-headline">80% of New Members Come From 3 Sources. Most Studios Are Funding the Other 20.</div>
+    </a>
+    <a href="https://newsletter.therunrate.co/p/fitness-studio-member-attribution" class="mini-card">
+      <div class="mini-card-img"><span class="img-bg-word">Source</span></div>
+      <div class="mini-card-cat">Acquisition</div>
+      <div class="mini-card-headline">You Think You Know Where Your Members Come From. You Don't.</div>
+    </a>
+    <a href="https://newsletter.therunrate.co" class="mini-card">
+      <div class="mini-card-img"><span class="img-bg-word">Referral</span></div>
+      <div class="mini-card-cat">Acquisition</div>
+      <div class="mini-card-headline">The Referral Playbook: How to Make Word of Mouth Systematic.</div>
+    </a>
+    <a href="https://newsletter.therunrate.co" class="mini-card">
+      <div class="mini-card-img"><span class="img-bg-word">Search</span></div>
+      <div class="mini-card-cat">Acquisition</div>
+      <div class="mini-card-headline">Local Search Is Your Cheapest Acquisition Channel. Here's How to Own It.</div>
     </a>
   </div>
+
 </div>
 
 <!-- SUBSCRIBE CTA -->
