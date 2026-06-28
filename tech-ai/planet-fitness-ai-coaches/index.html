@@ -192,6 +192,24 @@ footer { background: var(--navy-deep); padding: 30px 32px; border-top: 3px solid
 .footer-links a { font-size: 11px; font-weight: 500; letter-spacing: 0.1em; text-transform: uppercase; color: rgba(255,255,255,0.3); transition: color 0.15s; }
 .footer-links a:hover { color: #fff; }
 .footer-copy { font-size: 11px; color: rgba(255,255,255,0.2); text-transform: uppercase; letter-spacing: 0.06em; }
+@media (max-width: 768px) {
+  .nav-inner { padding: 0 16px; gap: 12px; }
+  .nav-links { display: none; }
+  .art-header { padding: 28px 16px 20px; }
+  .art-hero { padding: 0 16px; margin-top: 20px; }
+  .art-google { padding: 0 16px; }
+  .art-google-inner { flex-direction: column; align-items: flex-start; gap: 10px; }
+  .art-stats { padding: 0 16px 24px; }
+  .art-stats-inner { flex-direction: column; gap: 20px; }
+  .art-wrap { padding: 0 16px 48px; grid-template-columns: 1fr; gap: 0; }
+  .art-sidebar { display: none; }
+  .art-more { padding: 0 16px 48px; }
+  .art-more-grid { grid-template-columns: repeat(2, 1fr); gap: 16px; }
+  .art-headline { font-size: 26px; }
+  footer { padding: 24px 16px; border-top: 3px solid var(--yellow); }
+  .footer-inner { flex-direction: column; align-items: flex-start; gap: 12px; }
+}
+
 </style>
 <script async type="application/javascript" src="https://news.google.com/swg/js/v1/swg-basic.js"></script>
 <script>

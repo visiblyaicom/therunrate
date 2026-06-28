@@ -1,0 +1,11 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "therunrate",
+      "runtimeExecutable": "python3",
+      "runtimeArgs": ["-m", "http.server", "8791", "--directory", "/Users/babypau/Documents/Trainerize/2026/Claude code/therunrate/site"],
+      "port": 8791
+    }
+  ]
+}

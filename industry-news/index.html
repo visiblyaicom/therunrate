@@ -61,6 +61,18 @@ footer { background:var(--navy-deep); padding:40px 32px; }
 .footer-links { display:flex; gap:24px; list-style:none; }
 .footer-links a { font-size:12px; font-weight:500; color:rgba(255,255,255,0.5); transition:color 0.15s; }
 .footer-links a:hover { color:#fff; }
+@media (max-width: 768px) {
+  .nav-inner { padding: 0 16px; gap: 12px; }
+  .nav-links { display: none; }
+  .cat-header { padding: 32px 16px 24px; }
+  .cat-title { font-size: 36px; }
+  .cat-body { padding: 28px 16px 52px; }
+  .cat-grid { grid-template-columns: 1fr; gap: 28px; }
+  .cat-empty { padding: 48px 16px; }
+  footer { padding: 24px 16px; }
+  .footer-inner { flex-direction: column; align-items: flex-start; gap: 12px; }
+}
+
 </style>
 </head>
 <body>
