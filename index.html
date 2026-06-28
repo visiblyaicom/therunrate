@@ -325,19 +325,28 @@ nav {
 .li-right { position: relative; overflow: hidden; }
 .li-panel {
   display: none; height: 100%; position: absolute; inset: 0;
+  cursor: pointer;
 }
 .li-panel.active { display: block; }
 .li-panel-img {
   width: 100%; height: 100%;
   background: linear-gradient(140deg, #c8cad4 0%, #b0b4c0 100%);
   display: flex; align-items: flex-end; padding: 20px;
-  position: relative;
+  position: relative; overflow: hidden;
+  transition: filter 0.2s;
+}
+.li-panel:hover .li-panel-img { filter: brightness(0.93); }
+.li-panel-img::after {
+  content: ''; position: absolute; inset: 0;
+  background: linear-gradient(to bottom, transparent 50%, rgba(0,0,0,0.18) 100%);
+  pointer-events: none;
 }
 .li-panel-img .img-bg-word { font-size: 80px; color: rgba(255,255,255,0.12); }
 .li-caption {
   position: absolute; bottom: 0; left: 0; right: 0;
   background: #fff;
-  padding: 20px 24px;
+  padding: 20px 24px 18px;
+  border-top: 2px solid var(--yellow);
 }
 .li-caption-meta {
   font-size: 10px; font-weight: 600; letter-spacing: 0.14em;
@@ -349,6 +358,25 @@ nav {
   font-family: 'Playfair Display', serif;
   font-size: 22px; font-weight: 700; font-style: normal;
   line-height: 1.2; color: var(--ink); text-align: center;
+  margin-bottom: 14px;
+}
+.li-read-cta {
+  display: flex; align-items: center; justify-content: center; gap: 6px;
+  font-size: 10px; font-weight: 700; letter-spacing: 0.14em;
+  text-transform: uppercase; color: var(--navy-deep);
+  padding-top: 12px; border-top: 1px solid var(--border);
+  transition: gap 0.15s;
+}
+.li-panel:hover .li-read-cta { gap: 10px; }
+.li-sub-hint {
+  margin-top: 20px; padding-top: 16px;
+  border-top: 1px solid #d8dde8;
+  font-size: 12px; font-weight: 400; color: var(--ink-light);
+  line-height: 1.5;
+}
+.li-sub-hint a {
+  color: var(--navy-deep); font-weight: 600; text-decoration: underline;
+  text-underline-offset: 2px;
 }
 
 /* ─── SECTION ─── */
@@ -788,6 +816,7 @@ footer { background: var(--navy-deep); padding: 30px 32px; border-top: 3px solid
         <div class="li-dot" data-panel="1"></div>
         <div class="li-dot" data-panel="2"></div>
       </div>
+      <p class="li-sub-hint">New issues every week — <a href="https://newsletter.therunrate.co">subscribe free</a> to get them in your inbox.</p>
     </div>
 
     <div class="li-right">
@@ -796,6 +825,7 @@ footer { background: var(--navy-deep); padding: 30px 32px; border-top: 3px solid
         <div class="li-caption">
           <div class="li-caption-meta">Acquisition <span>■</span> Apr 19, 2026</div>
           <div class="li-caption-headline">You Think You Know Where Your Members Come From. You Don't.</div>
+          <div class="li-read-cta">Read Issue →</div>
         </div>
       </a>
       <a href="/fitness-studio-member-churn-year-one" class="li-panel" data-panel="1">
@@ -803,6 +833,7 @@ footer { background: var(--navy-deep); padding: 30px 32px; border-top: 3px solid
         <div class="li-caption">
           <div class="li-caption-meta">Retention <span>■</span> Jun 27, 2026</div>
           <div class="li-caption-headline">57% of Fitness Studio Members Churn in Year One. Most Operators Don't Know Why.</div>
+          <div class="li-read-cta">Read Article →</div>
         </div>
       </a>
       <a href="/fitness-studio-new-member-acquisition-sources" class="li-panel" data-panel="2">
@@ -810,6 +841,7 @@ footer { background: var(--navy-deep); padding: 30px 32px; border-top: 3px solid
         <div class="li-caption">
           <div class="li-caption-meta">Acquisition <span>■</span> Jun 27, 2026</div>
           <div class="li-caption-headline">80% of New Members Come From 3 Sources. Most Studios Are Funding the Other 20.</div>
+          <div class="li-read-cta">Read Article →</div>
         </div>
       </a>
     </div>
