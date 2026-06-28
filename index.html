@@ -663,6 +663,85 @@ footer { background: var(--navy-deep); padding: 30px 32px; border-top: 3px solid
 }
 .footer-links a:hover { color: #fff; }
 .footer-copy { font-size: 11px; color: rgba(255,255,255,0.2); text-transform: uppercase; letter-spacing: 0.06em; }
+
+/* ─── MOBILE ─── */
+@media (max-width: 768px) {
+
+  /* Nav */
+  .nav-inner { padding: 0 16px; gap: 12px; }
+  .nav-links { display: none; }
+
+  /* Hero */
+  .hero-wrap {
+    padding: 16px 16px 20px;
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+  .hero-left { gap: 20px; margin-bottom: 20px; }
+  .hero-center {
+    border-left: none;
+    border-right: none;
+    padding-bottom: 20px;
+  }
+  .hero-center-img { aspect-ratio: 16/9; }
+  .hero-center-headline { font-size: 26px; }
+  .hero-right { display: none; }
+
+  /* Latest Issues */
+  .li-inner {
+    grid-template-columns: 1fr;
+    min-height: unset;
+    padding: 0 16px;
+  }
+  .li-left {
+    padding: 32px 0 24px;
+    border-right: none;
+    border-bottom: 1px solid #d8dde8;
+  }
+  .li-heading { font-size: 26px; margin-bottom: 16px; }
+  .li-right {
+    position: relative;
+    height: 420px;
+  }
+  .li-panel { position: absolute; inset: 0; }
+
+  /* Sections */
+  .section-outer { padding: 36px 16px 0; }
+  .section-body-3 { grid-template-columns: 1fr; }
+  .top-stories { display: none; }
+  .sf-stack { display: none; }
+  .sf-feat-img { aspect-ratio: 16/9; }
+  .sf-feat-headline { font-size: 22px; }
+
+  .section-body { grid-template-columns: 1fr; }
+  .sg2-right { display: none; }
+  .sg2-top { grid-template-columns: 1fr; }
+  .sg2-mid { display: none; }
+  .sg3-top { grid-template-columns: 1fr; }
+  .sg3-mid { display: none; }
+
+  /* Mini grid */
+  .mini-grid { grid-template-columns: repeat(2, 1fr); gap: 16px; margin-top: 24px; }
+
+  /* Most Read */
+  .most-outer { padding: 32px 16px 40px; }
+  .mr-item { grid-template-columns: 40px 1fr; gap: 10px; }
+  .mr-date { display: none; }
+  .mr-title { font-size: 16px; }
+  .mr-num { font-size: 24px; }
+
+  /* Subscribe CTA */
+  .cta-bg { padding: 36px 16px; }
+  .cta-headline { font-size: 26px; }
+
+  /* Footer */
+  footer { padding: 24px 16px; }
+  .footer-inner { flex-direction: column; align-items: flex-start; gap: 16px; }
+  .footer-copy { display: none; }
+
+  /* Google News CTA */
+  .gnews-inner { padding: 20px 16px; flex-direction: column; text-align: center; gap: 12px; }
+}
 </style>
 <script async type="application/javascript" src="https://news.google.com/swg/js/v1/swg-basic.js"></script>
 <script>
