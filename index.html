@@ -1158,9 +1158,9 @@ footer { background: var(--navy-deep); padding: 30px 32px; border-top: 3px solid
       el.style.display = '';
     });
 
-    // RIGHT: articles[1] through articles[4] (skip articles[0] already in center)
+    // RIGHT: top 4 articles (articles[0] may repeat center — intentional when article count is low)
     const right = document.getElementById('hero-right');
-    articles.slice(1, 5).forEach(a => {
+    articles.slice(0, 4).forEach(a => {
       const node = document.createElement('a');
       node.href = a.url;
       node.className = 'mini-story';
