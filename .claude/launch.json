@@ -3,8 +3,8 @@
   "configurations": [
     {
       "name": "therunrate",
-      "runtimeExecutable": "python3",
-      "runtimeArgs": ["-m", "http.server", "8791", "--directory", "/Users/babypau/Documents/Trainerize/2026/Claude code/therunrate/site"],
+      "runtimeExecutable": "/usr/local/bin/npx",
+      "runtimeArgs": ["serve", "-p", "8791", "/Users/babypau/Documents/Trainerize/2026/Claude code/therunrate/site"],
       "port": 8791
     }
   ]
