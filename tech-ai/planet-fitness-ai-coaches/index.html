@@ -394,14 +394,7 @@ footer { background: var(--navy-deep); padding: 30px 32px; border-top: 3px solid
       <iframe src="https://newsletter.therunrate.co/embed" width="100%" height="160" style="border:none;background:transparent;" frameborder="0" scrolling="no"></iframe>
     </div>
     <div class="sidebar-more-label">More from The Run Rate</div>
-    <a href="/studio-growth/fitness-studio-member-churn-year-one" class="sidebar-article">
-      <div class="sidebar-article-cat">Retention</div>
-      <div class="sidebar-article-title">57% of Members Churn in Year One. Most Operators Don't Know Why.</div>
-    </a>
-    <a href="/studio-growth/fitness-studio-new-member-acquisition-sources" class="sidebar-article">
-      <div class="sidebar-article-cat">Acquisition</div>
-      <div class="sidebar-article-title">80% of New Members Come From 3 Sources. Most Studios Are Funding the Other 20.</div>
-    </a>
+    <div id="trr-sidebar"></div>
   </aside>
 
 </div>
@@ -409,18 +402,7 @@ footer { background: var(--navy-deep); padding: 30px 32px; border-top: 3px solid
 <!-- MORE ARTICLES -->
 <div class="art-more">
   <div class="art-more-head">More from The Run Rate</div>
-  <div class="art-more-grid" style="grid-template-columns:repeat(2,1fr);">
-    <a href="/studio-growth/fitness-studio-member-churn-year-one" class="mini-card">
-      <div class="mini-card-img" style="background-image:url('/fitness-studio-member-churn-statistics.png');background-size:cover;background-position:center;"></div>
-      <div class="mini-card-cat">Retention</div>
-      <div class="mini-card-headline">57% of Members Churn in Year One. Most Operators Don't Know Why.</div>
-    </a>
-    <a href="/studio-growth/fitness-studio-new-member-acquisition-sources" class="mini-card">
-      <div class="mini-card-img" style="background-image:url('/fitness-studio-member-acquisition-channels.png');background-size:cover;background-position:center;"></div>
-      <div class="mini-card-cat">Acquisition</div>
-      <div class="mini-card-headline">80% of New Members Come From 3 Sources. Most Studios Are Funding the Other 20.</div>
-    </a>
-  </div>
+  <div id="trr-more"></div>
 </div>
 
 <!-- FOOTER -->
@@ -436,5 +418,11 @@ footer { background: var(--navy-deep); padding: 30px 32px; border-top: 3px solid
   </div>
 </footer>
 
+
+<script src="/assets/trr.js"></script>
+<script>
+  TRR.renderSidebar('/tech-ai/planet-fitness-ai-coaches', 'Tech & AI', document.getElementById("trr-sidebar"));
+  TRR.renderMore('/tech-ai/planet-fitness-ai-coaches', document.getElementById("trr-more"));
+</script>
 </body>
 </html>

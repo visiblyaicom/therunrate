@@ -103,21 +103,10 @@ footer { background:var(--navy-deep); padding:40px 32px; }
 </div>
 
 <div class="cat-body">
-  <div class="cat-grid">
-    <a href="/wellness/exercise-dementia-longevity-fitness-studios" class="cat-card">
-      <div class="cat-card-img" style="background-image:url('/exercise-dementia-longevity-fitness-studios.png');background-size:cover;background-position:center;"></div>
-      <div class="cat-card-meta">Longevity · Jun 29, 2026</div>
-      <div class="cat-card-headline">Exercise Is the Best Dementia Prevention Tool We Have. Fitness Studios That Miss This Miss a Generation.</div>
-      <p class="cat-card-deck">New research confirms regular exercise measurably slows cognitive decline. The opportunity for operators isn't just positioning — it's a referral network and a new pricing tier.</p>
-    </a>
-    <a href="/wellness/apple-health-ios27-womens-fitness" class="cat-card">
-      <div class="cat-card-img" style="background-image:url('/apple-health-ios27-womens-fitness.png');background-size:cover;background-position:center;"></div>
-      <div class="cat-card-meta">Women's Health · Jun 29, 2026</div>
-      <div class="cat-card-headline">Apple Is Building a Women's Health OS. Your Gym Is Either a Node in It or Invisible.</div>
-      <p class="cat-card-deck">iOS 27's perimenopause tracking and Apple Health+ aren't just features. They're Apple staking a claim on the 40+ female health journey your millennial members are now on.</p>
-    </a>
-  </div>
+  <div id="trr-grid"></div>
 </div>
+<script src="/assets/trr.js"></script>
+<script>TRR.renderCategory('Wellness', document.getElementById("trr-grid"));</script>
 
 <footer>
   <div class="footer-inner">

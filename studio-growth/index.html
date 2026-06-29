@@ -103,29 +103,11 @@ footer { background:var(--navy-deep); padding:40px 32px; }
 </div>
 
 <div class="cat-body">
-  <div class="cat-grid">
-    <a href="/studio-growth/fitness-studio-member-churn-year-one" class="cat-card">
-      <div class="cat-card-img" style="background-image:url('/fitness-studio-member-churn-statistics.png');background-size:cover;background-position:center;"></div>
-      <div class="cat-card-meta">Retention &nbsp;·&nbsp; Jun 27, 2026</div>
-      <div class="cat-card-headline">57% of Fitness Studio Members Churn in Year One. Most Operators Don't Know Why.</div>
-      <p class="cat-card-deck">The data is damning — and it's not about price, location, or equipment. The members who leave tell a consistent story.</p>
-    </a>
-    <a href="/studio-growth/fitness-studio-new-member-acquisition-sources" class="cat-card">
-      <div class="cat-card-img" style="background-image:url('/fitness-studio-member-acquisition-channels.png');background-size:cover;background-position:center;"></div>
-      <div class="cat-card-meta">Acquisition &nbsp;·&nbsp; Jun 27, 2026</div>
-      <div class="cat-card-headline">80% of New Members Come From 3 Sources. Most Studios Are Funding the Other 20.</div>
-      <p class="cat-card-deck">Acquisition budgets get spread thin across every channel. The data shows which three actually drive new members.</p>
-    </a>
-    <a href="/studio-growth/fitness-studio-member-attribution" class="cat-card">
-      <div class="cat-card-img" style="background-image:url('/fitness-studio-member-attribution.png');background-size:cover;background-position:center;"></div>
-      <div class="cat-card-meta">Acquisition &nbsp;·&nbsp; Apr 19, 2026</div>
-      <div class="cat-card-headline">You Think You Know Where Your Members Come From. You Don't.</div>
-      <p class="cat-card-deck">Most studios credit referrals and Instagram — but have no data to back it up. The fix starts with three questions on a signup form.</p>
-    </a>
-  </div>
+  <div id="trr-grid"></div>
 </div>
 </div>
-
+<script src="/assets/trr.js"></script>
+<script>TRR.renderCategory('Studio Growth', document.getElementById("trr-grid"));</script>
 <footer>
   <div class="footer-inner">
     <span class="footer-logo">the run rate</span>

@@ -103,13 +103,10 @@ footer { background:var(--navy-deep); padding:40px 32px; }
 </div>
 
 <div class="cat-body">
-  <div class="">
-  <div class="cat-empty">
-    <p>New Brands & Trends articles coming soon.</p>
-    <a href="https://newsletter.therunrate.co" class="cat-empty-cta">Subscribe to get them first →</a>
-  </div>
-  </div>
+  <div id="trr-grid"></div>
 </div>
+<script src="/assets/trr.js"></script>
+<script>TRR.renderCategory('Brands', document.getElementById("trr-grid"));</script>
 
 <footer>
   <div class="footer-inner">
