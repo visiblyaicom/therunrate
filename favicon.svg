@@ -1,4 +1,9 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
-  <rect width="32" height="32" fill="#1B2235" rx="4"/>
-  <polygon points="8,8 8,24 13,24 13,19.5 20,24 26,24 26,22 17,16 26,10 26,8 20,8 13,12.5 13,8" fill="#F0E87A"/>
+  <rect width="32" height="32" fill="#1B2235"/>
+  <!-- First R -->
+  <text x="2" y="24" font-family="Arial Black, sans-serif" font-weight="900" font-size="20" fill="#F8F8F4">R</text>
+  <!-- Second R -->
+  <text x="14" y="24" font-family="Arial Black, sans-serif" font-weight="900" font-size="20" fill="#F8F8F4">R</text>
+  <!-- Butter chevron mark top-right -->
+  <polygon points="25,4 29,7 25,10 26.5,7" fill="#F0E87A"/>
 </svg>
