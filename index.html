@@ -1161,9 +1161,9 @@ footer { background: var(--navy-deep); padding: 30px 32px; border-top: 3px solid
       el.style.display = '';
     });
 
-    // RIGHT: top 4 articles (articles[0] may repeat center — intentional when article count is low)
+    // RIGHT: articles[3]–[6] — next articles not shown in center or left
     const right = document.getElementById('hero-right');
-    articles.slice(0, 4).forEach(a => {
+    articles.slice(3, 7).forEach(a => {
       const node = document.createElement('a');
       node.href = a.url;
       node.className = 'mini-story';
