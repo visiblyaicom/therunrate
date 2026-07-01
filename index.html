@@ -1320,12 +1320,10 @@ footer { background: var(--navy-deep); padding: 30px 32px; border-top: 3px solid
     <div class="sub-tag">FREE WEEKLY NEWSLETTER</div>
     <h2 class="sub-heading" id="sub-heading">The intelligence your competitors aren't reading.</h2>
     <p class="sub-body">Studio growth, member acquisition, wearables, AI tools, and brand strategy — applied weekly to the fitness and wellness industry.</p>
-    <form class="sub-form" id="sub-form" action="https://newsletter.therunrate.co/subscribe" method="POST" target="sub-sink">
-      <input type="hidden" name="utm_source" value="site_popup">
+    <form class="sub-form" id="sub-form">
       <input type="email" id="sub-email" name="email" placeholder="your@email.com" required autocomplete="email" class="sub-input">
       <button type="submit" class="sub-btn">Subscribe free →</button>
     </form>
-    <iframe name="sub-sink" style="display:none" aria-hidden="true"></iframe>
     <p class="sub-fine">No spam. Unsubscribe anytime.</p>
   </div>
 </div>
@@ -1512,13 +1510,15 @@ footer { background: var(--navy-deep); padding: 30px 32px; border-top: 3px solid
     if (e.key === 'Escape') dismiss();
   });
 
-  // Submit: form posts silently to Substack via hidden iframe — just show success state
-  document.getElementById('sub-form').addEventListener('submit', function() {
-    setTimeout(function() {
-      document.querySelector('.sub-form').innerHTML = '<p style="font-family:\'Jost\',sans-serif;font-weight:300;font-size:13px;color:#F0E87A;text-align:center;padding:12px 0;">Check your inbox to confirm ✓</p>';
-      document.querySelector('.sub-fine').style.display = 'none';
-    }, 300);
-    setTimeout(dismiss, 4000);
+  // Submit: open Substack subscribe page in new tab with email pre-filled
+  document.getElementById('sub-form').addEventListener('submit', function(e) {
+    e.preventDefault();
+    var email = document.getElementById('sub-email').value.trim();
+    if (!email) return;
+    document.querySelector('.sub-form').innerHTML = '<p style="font-family:\'Jost\',sans-serif;font-weight:300;font-size:13px;color:#F0E87A;text-align:center;padding:12px 0;">Opening your subscription options ✓</p>';
+    document.querySelector('.sub-fine').style.display = 'none';
+    window.open('https://newsletter.therunrate.co/subscribe?email=' + encodeURIComponent(email) + '&utm_source=site_popup', '_blank');
+    setTimeout(dismiss, 3000);
   });
 })();
 </script>
