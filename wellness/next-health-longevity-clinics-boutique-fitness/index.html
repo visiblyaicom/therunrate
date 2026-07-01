@@ -118,10 +118,22 @@ nav { border-bottom:1px solid var(--border); background:#fff; }
 .mini-card-cat { font-size:9px; font-weight:700; letter-spacing:0.14em; text-transform:uppercase; color:var(--ink-light); margin-bottom:6px; }
 .mini-card-headline { font-family:'Playfair Display',serif; font-size:16px; font-weight:700; line-height:1.28; color:var(--ink); transition:color 0.15s; }
 .mini-card:hover .mini-card-headline { color:var(--navy-deep); }
-footer { background:var(--navy-deep); padding:30px 32px; border-top:3px solid var(--yellow); }
-.footer-inner { max-width:1200px; margin:0 auto; display:flex; align-items:center; justify-content:space-between; gap:24px; }
-.footer-logo { font-family:'Playfair Display',serif; font-size:20px; font-weight:700; color:rgba(255,255,255,0.7); }
-.footer-links { display:flex; gap:24px; list-style:none; }
+footer { background:var(--navy-deep); border-top:3px solid var(--yellow); }
+.footer-main { max-width:1200px; margin:0 auto; padding:48px 32px 40px; display:grid; grid-template-columns:1.4fr 1fr 1fr 1fr; gap:40px; }
+.footer-brand-name { font-family:'Playfair Display',serif; font-size:20px; font-weight:700; color:#fff; margin-bottom:8px; }
+.footer-tagline { font-size:12px; font-weight:300; color:rgba(255,255,255,0.38); line-height:1.6; margin-bottom:22px; }
+.footer-form { display:flex; }
+.footer-email-input { flex:1; background:rgba(255,255,255,0.07); border:1px solid rgba(255,255,255,0.12); border-right:none; color:#fff; font-size:12px; padding:9px 12px; outline:none; min-width:0; font-family:'Jost',sans-serif; }
+.footer-email-input::placeholder { color:rgba(255,255,255,0.25); }
+.footer-submit { background:var(--yellow); border:none; color:var(--navy-deep); font-size:11px; font-weight:700; letter-spacing:0.06em; text-transform:uppercase; padding:9px 14px; cursor:pointer; font-family:'Jost',sans-serif; }
+.footer-col-label { font-size:9px; font-weight:700; letter-spacing:0.2em; text-transform:uppercase; color:rgba(255,255,255,0.25); margin-bottom:18px; }
+.footer-col-list { list-style:none; }
+.footer-col-list li { margin-bottom:11px; }
+.footer-col-list a { font-size:13px; font-weight:300; color:rgba(255,255,255,0.5); transition:color 0.15s; }
+.footer-col-list a:hover { color:#fff; }
+.footer-bottom { max-width:1200px; margin:0 auto; padding:18px 32px; border-top:1px solid rgba(255,255,255,0.07); display:flex; align-items:center; justify-content:space-between; }
+.footer-copy { font-size:11px; color:rgba(255,255,255,0.18); text-transform:uppercase; letter-spacing:0.06em; }
+.footer-slug { font-size:11px; font-style:italic; color:rgba(255,255,255,0.18); }
 .footer-links a { font-size:11px; font-weight:500; letter-spacing:0.1em; text-transform:uppercase; color:rgba(255,255,255,0.3); transition:color 0.15s; }
 .footer-links a:hover { color:#fff; }
 .footer-copy { font-size:11px; color:rgba(255,255,255,0.2); text-transform:uppercase; letter-spacing:0.06em; }
@@ -317,15 +329,44 @@ footer { background:var(--navy-deep); padding:30px 32px; border-top:3px solid va
 </div>
 
 <footer>
-  <div class="footer-inner">
-    <span class="footer-logo">The Run Rate</span>
-    <ul class="footer-links">
-      <li><a href="https://newsletter.therunrate.co/subscribe">Subscribe</a></li>
-      <li><a href="https://newsletter.therunrate.co/archive">Archive</a></li>
-      <li><a href="/about">About</a></li>
-      <li><a href="/work-with-us">Advertise</a></li>
-    </ul>
+  <div class="footer-main">
+    <div>
+      <div class="footer-brand-name">The Run Rate</div>
+      <p class="footer-tagline">Growth intelligence for fitness, wellness and health tech.</p>
+      <form class="footer-form" onsubmit="window.location.href='https://newsletter.therunrate.co/subscribe?email='+encodeURIComponent(this.querySelector('input').value);return false;">
+        <input class="footer-email-input" type="email" placeholder="your@email.com" required>
+        <button type="submit" class="footer-submit">Subscribe →</button>
+      </form>
+    </div>
+    <div>
+      <div class="footer-col-label">Read</div>
+      <ul class="footer-col-list">
+        <li><a href="https://newsletter.therunrate.co/archive">Weekly Roundup</a></li>
+        <li><a href="https://newsletter.therunrate.co/subscribe">The Take</a></li>
+        <li><a href="https://newsletter.therunrate.co/subscribe">Growth Playbooks</a></li>
+        <li><a href="https://newsletter.therunrate.co/archive">Archive</a></li>
+      </ul>
+    </div>
+    <div>
+      <div class="footer-col-label">Company</div>
+      <ul class="footer-col-list">
+        <li><a href="/about">About</a></li>
+        <li><a href="/work-with-us">Advertise</a></li>
+        <li><a href="/">therunrate.co ↗</a></li>
+      </ul>
+    </div>
+    <div>
+      <div class="footer-col-label">Connect</div>
+      <ul class="footer-col-list">
+        <li><a href="https://www.instagram.com/therunrate.co" target="_blank" rel="noopener">Instagram ↗</a></li>
+        <li><a href="https://www.linkedin.com/company/the-run-rate" target="_blank" rel="noopener">LinkedIn ↗</a></li>
+        <li><a href="mailto:hello@therunrate.co">hello@therunrate.co</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
     <span class="footer-copy">© 2026 The Run Rate</span>
+    <span class="footer-slug">The intelligence your competitors aren't reading.</span>
   </div>
 </footer>
 
