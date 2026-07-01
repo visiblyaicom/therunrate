@@ -1551,7 +1551,7 @@ footer { background:var(--navy-deep); border-top:3px solid var(--yellow); }
     if (!email) return;
     document.querySelector('.sub-form').innerHTML = '<p style="font-family:\'Jost\',sans-serif;font-weight:300;font-size:13px;color:#F0E87A;text-align:center;padding:12px 0;">Opening your subscription options ✓</p>';
     document.querySelector('.sub-fine').style.display = 'none';
-    window.open('https://newsletter.therunrate.co/subscribe?email=' + encodeURIComponent(email) + '&utm_source=site_popup', '_blank');
+    window.location.href = 'https://newsletter.therunrate.co/subscribe?email=' + encodeURIComponent(email) + '&utm_source=site_popup';
     setTimeout(dismiss, 3000);
   });
 })();
