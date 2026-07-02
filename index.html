@@ -1073,7 +1073,7 @@ footer { background:var(--navy-deep); border-top:3px solid var(--yellow); }
     function renderGrowthStyle(items, id) {
       const el = document.getElementById(id);
       if (!el || !items?.length) return;
-      const [feat, second, ...rest] = items;
+      const [feat, second, third, ...rest] = items;
       const topNews = rest.slice(0, 5);
       el.className = 'section-body-3';
       el.innerHTML = `
@@ -1089,6 +1089,12 @@ footer { background:var(--navy-deep); border-top:3px solid var(--yellow); }
             <div class="sf-date">${second.dateDisplay}</div>
             <div class="sf-headline">${second.title}</div>
             <p class="sf-deck">${second.deck}</p>
+          </a>` : ''}
+          ${third ? `<a href="${third.url}" class="sf-card">
+            <div class="sf-card-img" style="${bg(third.image)}"></div>
+            <div class="sf-date">${third.dateDisplay}</div>
+            <div class="sf-headline">${third.title}</div>
+            <p class="sf-deck">${third.deck}</p>
           </a>` : ''}
         </div>
         <div class="top-stories">
