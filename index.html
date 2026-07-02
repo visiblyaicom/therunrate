@@ -772,33 +772,7 @@ footer { background:var(--navy-deep); border-top:3px solid var(--yellow); }
 <!-- TICKER -->
 <div class="ticker-bg">
   <span class="ticker-label">Latest</span>
-  <div class="ticker-track">
-    <span class="ticker-item">Crunch Has a New CEO. Here's What It Signals for the Budget Fitness Wars.</span>
-    <span class="ticker-sep">/</span>
-    <span class="ticker-item">Strength Training Just Replaced Weight Loss as the Top Gym Goal. Is Your Class Mix Ready?</span>
-    <span class="ticker-sep">/</span>
-    <span class="ticker-item">Apple Is Coming for Oura's Ring. Here's Why Your Members Should Care.</span>
-    <span class="ticker-sep">/</span>
-    <span class="ticker-item">WHOOP Built a $1B Category. Now Every Boardroom Wants a Piece.</span>
-    <span class="ticker-sep">/</span>
-    <span class="ticker-item">Connected Fitness Is Plan B. Here's What Plan A Looks Like.</span>
-    <span class="ticker-sep">/</span>
-    <span class="ticker-item">Your Gym Software Just Became Your Distribution Channel.</span>
-    <span class="ticker-sep">/</span>
-    <!-- duplicate for seamless loop -->
-    <span class="ticker-item">Crunch Has a New CEO. Here's What It Signals for the Budget Fitness Wars.</span>
-    <span class="ticker-sep">/</span>
-    <span class="ticker-item">Strength Training Just Replaced Weight Loss as the Top Gym Goal. Is Your Class Mix Ready?</span>
-    <span class="ticker-sep">/</span>
-    <span class="ticker-item">Apple Is Coming for Oura's Ring. Here's Why Your Members Should Care.</span>
-    <span class="ticker-sep">/</span>
-    <span class="ticker-item">WHOOP Built a $1B Category. Now Every Boardroom Wants a Piece.</span>
-    <span class="ticker-sep">/</span>
-    <span class="ticker-item">Connected Fitness Is Plan B. Here's What Plan A Looks Like.</span>
-    <span class="ticker-sep">/</span>
-    <span class="ticker-item">Your Gym Software Just Became Your Distribution Channel.</span>
-    <span class="ticker-sep">/</span>
-  </div>
+  <div class="ticker-track" id="ticker-track"></div>
 </div>
 
 <!-- NAV -->
@@ -811,8 +785,6 @@ footer { background:var(--navy-deep); border-top:3px solid var(--yellow); }
       <li><a href="/tech-ai">Tech &amp; AI</a></li>
       <li><span class="sep">/</span></li>
       <li><a href="/wellness">Wellness</a></li>
-      <li><span class="sep">/</span></li>
-      <li><a href="/industry-news">Industry</a></li>
       <li><span class="sep">/</span></li>
       <li><a href="/brands">Brands</a></li>
     </ul>
@@ -942,241 +914,36 @@ footer { background:var(--navy-deep); border-top:3px solid var(--yellow); }
 <div class="section-outer">
   <div class="section-head">
     <span class="section-name">Studio Growth</span>
-    <a href="/studio-growth" class="section-more">View More</a>
+    <a href="/studio-growth" class="section-more">View More ↗</a>
   </div>
-  <div class="section-body-3">
-
-    <!-- LEFT: large featured -->
-    <a href="/studio-growth/strength-training-replacing-weight-loss-gym-goal" class="sf-feat">
-      <div class="sf-feat-img" style="background-image:url('strength-training-replacing-weight-loss-gym-goal.png');background-size:cover;background-position:center;"></div>
-      <div class="sf-feat-date">Jun 30, 2026</div>
-      <div class="sf-feat-headline">Strength Training Just Replaced Weight Loss as the Top Gym Goal. Is Your Class Mix Ready?</div>
-      <p class="sf-feat-deck">Trainers are reporting the same shift across the board: members aren't walking in to lose weight anymore. They're walking in to get strong. The studios that retool their programming and messaging first will own the next five years of member acquisition.</p>
-    </a>
-
-    <!-- CENTER: 2 stacked -->
-    <div class="sf-stack">
-      <a href="/studio-growth/fitness-studio-member-churn-year-one" class="sf-card">
-        <div class="sf-card-img" style="background-image:url('fitness-studio-member-churn-statistics.png');background-size:cover;background-position:center;"></div>
-        <div class="sf-date">Jun 27, 2026</div>
-        <div class="sf-headline">57% of Fitness Studio Members Churn in Year One. Most Operators Don't Know Why.</div>
-        <p class="sf-deck">The data is damning — and it's not about price, location, or equipment. Members who leave tell a consistent story. The question is whether you're listening before they go.</p>
-      </a>
-      <a href="/studio-growth/fitness-studio-new-member-acquisition-sources" class="sf-card">
-        <div class="sf-card-img" style="background-image:url('fitness-studio-member-acquisition-channels.png');background-size:cover;background-position:center;"></div>
-        <div class="sf-date">Jun 27, 2026</div>
-        <div class="sf-headline">80% of New Members Come From 3 Sources. Most Studios Are Funding the Other 20.</div>
-        <p class="sf-deck">Acquisition budgets get spread thin across every channel "just in case." The data shows most studios are over-investing in low-yield channels.</p>
-      </a>
-    </div>
-
-    <!-- RIGHT: top stories box -->
-    <div class="top-stories">
-      <div class="top-stories-label">Top Stories</div>
-      <a href="/brands/crunch-fitness-chequan-lewis-ceo-boutique-studio-competition" class="tsi">
-        <div class="tsi-meta">Brands · Jun 30, 2026</div>
-        <div class="tsi-headline">Crunch Has a New CEO. Here's What It Signals for the Budget Fitness Wars.</div>
-      </a>
-      <a href="/tech-ai/whoop-billion-dollar-category-screenless-wearables-fitness-studios" class="tsi">
-        <div class="tsi-meta">Tech &amp; AI · Jun 30, 2026</div>
-        <div class="tsi-headline">WHOOP Built a $1B Category. Now Every Boardroom Wants a Piece.</div>
-      </a>
-      <a href="/tech-ai/apple-smart-ring-oura-wearables-war-fitness-studios" class="tsi">
-        <div class="tsi-meta">Tech &amp; AI · Jun 30, 2026</div>
-        <div class="tsi-headline">Apple Is Coming for Oura's Ring. Here's Why Your Members Should Care.</div>
-      </a>
-      <a href="/tech-ai/peloton-connected-fitness-plan-b-strength-longevity" class="tsi">
-        <div class="tsi-meta">Tech &amp; AI · Jun 30, 2026</div>
-        <div class="tsi-headline">Connected Fitness Is Plan B. Here's What Plan A Looks Like.</div>
-      </a>
-      <a href="/tech-ai/octiv-explore-gym-software-owned-distribution-aggregators" class="tsi">
-        <div class="tsi-meta">Tech &amp; AI · Jun 29, 2026</div>
-        <div class="tsi-headline">Your Gym Software Just Became Your Distribution Channel.</div>
-      </a>
-    </div>
-
-  </div>
+  <div id="sec-studio-growth"></div>
 </div>
 
 <!-- TECH & AI -->
 <div class="section-outer">
   <div class="section-head">
     <span class="section-name">Tech &amp; AI</span>
-    <a href="/tech-ai" class="section-more">View More</a>
+    <a href="/tech-ai" class="section-more">View More ↗</a>
   </div>
-
-  <div class="sg2-top">
-
-    <!-- Left: big featured -->
-    <a href="/tech-ai/whoop-billion-dollar-category-screenless-wearables-fitness-studios" class="sg2-feat">
-      <div class="sg2-feat-img" style="background-image:url('/whoop-billion-dollar-category-screenless-wearables-fitness-studios.png');background-size:cover;background-position:center;"></div>
-      <div class="sg2-feat-date">Jun 30, 2026</div>
-      <div class="sg2-feat-headline">WHOOP Built a $1B Category. Now Every Boardroom Wants a Piece.</div>
-      <p class="sg2-feat-deck">WHOOP proved you can sell a screenless rubber band for $239 a year and build a $10 billion company. Google, Garmin, and Apple are all copying the model. Here's what it means for fitness studios.</p>
-    </a>
-
-    <!-- Center: featured issue callout -->
-    <a href="/tech-ai/apple-smart-ring-oura-wearables-war-fitness-studios" class="sg2-callout">
-      <div class="sg2-callout-label">Latest</div>
-      <div class="sg2-callout-img" style="background-image:url('/apple-smart-ring-oura-wearables-war-fitness-studios.png');background-size:cover;background-position:center;"></div>
-      <div class="sg2-callout-headline">Apple Is Coming for Oura's Ring. Here's Why Your Members Should Care.</div>
-      <p class="sg2-callout-deck">Oura charges $6 a month on top of the hardware. If Apple folds the same recovery data into the Health app for free, the smart ring business model breaks overnight — and your members' wearable data gets a lot more interesting.</p>
-    </a>
-
-    <!-- Right: text-only stack -->
-    <div class="sg2-text-stack">
-      <a href="/tech-ai/peloton-connected-fitness-plan-b-strength-longevity" class="sg2-text-item">
-        <div class="sg2-text-date">Jun 30, 2026</div>
-        <div class="sg2-text-headline">Connected Fitness Is Plan B. Here's What Plan A Looks Like.</div>
-      </a>
-      <a href="/tech-ai/octiv-explore-gym-software-owned-distribution-aggregators" class="sg2-text-item">
-        <div class="sg2-text-date">Jun 29, 2026</div>
-        <div class="sg2-text-headline">Your Gym Software Just Became Your Distribution Channel.</div>
-      </a>
-      <a href="/tech-ai/whoop-fda-blood-pressure-wearables-fitness-studios" class="sg2-text-item">
-        <div class="sg2-text-date">Jun 29, 2026</div>
-        <div class="sg2-text-headline">Whoop Just Won a Fight Apple and Samsung Couldn't.</div>
-      </a>
-    </div>
-
-  </div>
-
-  <!-- Bottom: 4-col mini grid — unique articles not shown above -->
-  <div class="mini-grid">
-    <a href="/tech-ai/planet-fitness-ai-coaches" class="mini-card">
-      <div class="mini-card-img" style="background-image:url('/planet-fitness-ai-coaches-independent-studios.png');background-size:cover;background-position:center;"></div>
-      <div class="mini-card-cat">Tech &amp; AI</div>
-      <div class="mini-card-headline">Planet Fitness Just Deployed AI Coaches. Here's What It Means for Independent Studios.</div>
-    </a>
-    <a href="/tech-ai/daxko-acquires-fitnessforce-fitness-software-consolidation" class="mini-card">
-      <div class="mini-card-img" style="background-image:url('/daxko-fitnessforce-acquisition.png');background-size:cover;background-position:center;"></div>
-      <div class="mini-card-cat">Tech &amp; AI</div>
-      <div class="mini-card-headline">Daxko Just Bought an API Stack. Here's Why That Matters More Than the Acquisition.</div>
-    </a>
-    <a href="/wellness/apple-health-ios27-womens-fitness" class="mini-card">
-      <div class="mini-card-img" style="background-image:url('/apple-health-ios27-womens-fitness.png');background-size:cover;background-position:center;"></div>
-      <div class="mini-card-cat">Wellness</div>
-      <div class="mini-card-headline">Apple Is Building a Women's Health OS. Your Gym Is Either a Node in It or Invisible.</div>
-    </a>
-    <a href="/wellness/exercise-dementia-longevity-fitness-studios" class="mini-card">
-      <div class="mini-card-img" style="background-image:url('/exercise-dementia-longevity-fitness-studios.png');background-size:cover;background-position:center;"></div>
-      <div class="mini-card-cat">Wellness</div>
-      <div class="mini-card-headline">Exercise Is the Best Dementia Prevention Tool We Have. Fitness Studios That Miss This Miss a Generation.</div>
-    </a>
-  </div>
-
+  <div id="sec-tech-ai"></div>
 </div>
 
 <!-- WELLNESS -->
 <div class="section-outer">
   <div class="section-head">
     <span class="section-name">Wellness</span>
-    <a href="/wellness" class="section-more">View More</a>
+    <a href="/wellness" class="section-more">View More ↗</a>
   </div>
-
-  <div class="sg2-top">
-
-    <!-- Left: big featured -->
-    <a href="/wellness/apple-health-ios27-womens-fitness" class="sg2-feat">
-      <div class="sg2-feat-img" style="background-image:url('/apple-health-ios27-womens-fitness.png');background-size:cover;background-position:center;"></div>
-      <div class="sg2-feat-date">Jun 29, 2026</div>
-      <div class="sg2-feat-headline">Apple Is Building a Women's Health OS. Your Gym Is Either a Node in It or Invisible.</div>
-      <p class="sg2-feat-deck">iOS 27's perimenopause tracking and Apple Health+ aren't just features. They're Apple staking a claim on the 40+ female health journey — the same journey your millennial members are now on.</p>
-    </a>
-
-    <!-- Center: featured issue callout -->
-    <a href="/wellness/exercise-dementia-longevity-fitness-studios" class="sg2-callout">
-      <div class="sg2-callout-label">Latest</div>
-      <div class="sg2-callout-img" style="background-image:url('/exercise-dementia-longevity-fitness-studios.png');background-size:cover;background-position:center;"></div>
-      <div class="sg2-callout-headline">Exercise Is the Best Dementia Prevention Tool We Have. Fitness Studios That Miss This Miss a Generation.</div>
-      <p class="sg2-callout-deck">New research confirms regular exercise measurably slows cognitive decline. The opportunity for operators isn't just a wellness positioning shift — it's a referral network, a new pricing tier, and a program design question your competitors haven't asked yet.</p>
-    </a>
-
-    <!-- Right: text-only stack -->
-    <div class="sg2-text-stack">
-      <a href="/wellness/next-health-longevity-clinics-boutique-fitness" class="sg2-text-item">
-        <div class="sg2-text-date">Jun 29, 2026</div>
-        <div class="sg2-text-headline">The Longevity Clinic Is Coming for Your Members. Here's How to Not Lose Them.</div>
-      </a>
-    </div>
-
-  </div>
-
-  <!-- Bottom: mini grid — unique articles not shown above -->
-  <div class="mini-grid" style="grid-template-columns: repeat(3, 1fr);">
-    <a href="/wellness/next-health-longevity-clinics-boutique-fitness" class="mini-card">
-      <div class="mini-card-img" style="background-image:url('/next-health-longevity-clinics-boutique-fitness.png');background-size:cover;background-position:center;"></div>
-      <div class="mini-card-cat">Longevity</div>
-      <div class="mini-card-headline">The Longevity Clinic Is Coming for Your Members. Here's How to Not Lose Them.</div>
-    </a>
-    <a href="/studio-growth/strength-training-replacing-weight-loss-gym-goal" class="mini-card">
-      <div class="mini-card-img" style="background-image:url('/strength-training-replacing-weight-loss-gym-goal.png');background-size:cover;background-position:center;"></div>
-      <div class="mini-card-cat">Studio Growth</div>
-      <div class="mini-card-headline">Strength Training Just Replaced Weight Loss as the Top Gym Goal. Is Your Class Mix Ready?</div>
-    </a>
-    <a href="/studio-growth/fitness-studio-member-churn-year-one" class="mini-card">
-      <div class="mini-card-img" style="background-image:url('/fitness-studio-member-churn-statistics.png');background-size:cover;background-position:center;"></div>
-      <div class="mini-card-cat">Studio Growth</div>
-      <div class="mini-card-headline">57% of Fitness Studio Members Churn in Year One. Most Operators Don't Know Why.</div>
-    </a>
-  </div>
-
+  <div id="sec-wellness"></div>
 </div>
 
 <!-- BRANDS -->
 <div class="section-outer">
   <div class="section-head">
     <span class="section-name">Brands</span>
-    <a href="/brands" class="section-more">View More</a>
+    <a href="/brands" class="section-more">View More ↗</a>
   </div>
-
-  <div class="sg2-top">
-
-    <!-- Left: big featured -->
-    <a href="/brands/crunch-fitness-chequan-lewis-ceo-boutique-studio-competition" class="sg2-feat">
-      <div class="sg2-feat-img" style="background-image:url('/crunch-fitness-chequan-lewis-ceo-boutique-studio-competition.png');background-size:cover;background-position:center;"></div>
-      <div class="sg2-feat-date">Jun 30, 2026</div>
-      <div class="sg2-feat-headline">Crunch Has a New CEO. Here's What It Signals for the Budget Fitness Wars.</div>
-      <p class="sg2-feat-deck">Chequan Lewis just took the top job at Crunch Fitness. Leadership changes at 400-location chains don't happen quietly — and the direction he takes Crunch will tell boutique studio operators a lot about where the competitive pressure is heading next.</p>
-    </a>
-
-    <!-- Center: featured issue callout -->
-    <a href="/brands/lululemon-brand-playbook-boutique-fitness-studios" class="sg2-callout">
-      <div class="sg2-callout-label">Also in Brands</div>
-      <div class="sg2-callout-img" style="background-image:url('/lululemon-brand-playbook-boutique-fitness-studios.png');background-size:cover;background-position:center;"></div>
-      <div class="sg2-callout-headline">Lululemon Built a $10B Brand Without Ever Running a Single Ad. Here's What Fitness Studios Can Learn.</div>
-      <p class="sg2-callout-deck">No TV. No print. No paid social. Just obsessive product focus and local community ambassadors. The playbook is free — and most studios aren't using it.</p>
-    </a>
-
-    <!-- Right: text-only stack -->
-    <div class="sg2-text-stack">
-      <a href="/brands/pilates-boxing-barre-results-programming" class="sg2-text-item">
-        <div class="sg2-text-date">Jun 29, 2026</div>
-        <div class="sg2-text-headline">The Vibe Era Is Over. What Comes Next for Pilates, Boxing, and Barre.</div>
-      </a>
-    </div>
-
-  </div>
-
-  <!-- Bottom: mini grid — unique articles not shown above -->
-  <div class="mini-grid" style="grid-template-columns: repeat(3, 1fr);">
-    <a href="/brands/pilates-boxing-barre-results-programming" class="mini-card">
-      <div class="mini-card-img" style="background-image:url('/pilates-boxing-barre-results-programming.png');background-size:cover;background-position:center;"></div>
-      <div class="mini-card-cat">Brands</div>
-      <div class="mini-card-headline">The Vibe Era Is Over. What Comes Next for Pilates, Boxing, and Barre.</div>
-    </a>
-    <a href="/tech-ai/whoop-billion-dollar-category-screenless-wearables-fitness-studios" class="mini-card">
-      <div class="mini-card-img" style="background-image:url('/whoop-billion-dollar-category-screenless-wearables-fitness-studios.png');background-size:cover;background-position:center;"></div>
-      <div class="mini-card-cat">Tech &amp; AI</div>
-      <div class="mini-card-headline">WHOOP Built a $1B Category. Now Every Boardroom Wants a Piece.</div>
-    </a>
-    <a href="/studio-growth/fitness-studio-new-member-acquisition-sources" class="mini-card">
-      <div class="mini-card-img" style="background-image:url('/fitness-studio-member-acquisition-channels.png');background-size:cover;background-position:center;"></div>
-      <div class="mini-card-cat">Studio Growth</div>
-      <div class="mini-card-headline">80% of New Members Come From 3 Sources. Most Studios Are Funding the Other 20.</div>
-    </a>
-  </div>
-
+  <div id="sec-brands"></div>
 </div>
 
 <!-- SUBSCRIBE CTA -->
@@ -1194,58 +961,7 @@ footer { background:var(--navy-deep); border-top:3px solid var(--yellow); }
   <div class="section-head">
     <span class="section-name">Most Read</span>
   </div>
-  <ul class="mr-list">
-    <li class="mr-item">
-      <span class="mr-num">01</span>
-      <a href="/brands/crunch-fitness-chequan-lewis-ceo-boutique-studio-competition" class="mr-title">Crunch Has a New CEO. Here's What It Signals for the Budget Fitness Wars.</a>
-      <span class="mr-date">Jun 30, 2026</span>
-    </li>
-    <li class="mr-item">
-      <span class="mr-num">02</span>
-      <a href="/tech-ai/whoop-billion-dollar-category-screenless-wearables-fitness-studios" class="mr-title">WHOOP Built a $1B Category. Now Every Boardroom Wants a Piece.</a>
-      <span class="mr-date">Jun 30, 2026</span>
-    </li>
-    <li class="mr-item">
-      <span class="mr-num">03</span>
-      <a href="/tech-ai/apple-smart-ring-oura-wearables-war-fitness-studios" class="mr-title">Apple Is Coming for Oura's Ring. Here's Why Your Members Should Care.</a>
-      <span class="mr-date">Jun 30, 2026</span>
-    </li>
-    <li class="mr-item">
-      <span class="mr-num">04</span>
-      <a href="/studio-growth/strength-training-replacing-weight-loss-gym-goal" class="mr-title">Strength Training Just Replaced Weight Loss as the Top Gym Goal. Is Your Class Mix Ready?</a>
-      <span class="mr-date">Jun 30, 2026</span>
-    </li>
-    <li class="mr-item">
-      <span class="mr-num">05</span>
-      <a href="/tech-ai/peloton-connected-fitness-plan-b-strength-longevity" class="mr-title">Connected Fitness Is Plan B. Here's What Plan A Looks Like.</a>
-      <span class="mr-date">Jun 30, 2026</span>
-    </li>
-    <li class="mr-item">
-      <span class="mr-num">06</span>
-      <a href="/wellness/apple-health-ios27-womens-fitness" class="mr-title">Apple Is Building a Women's Health OS. Your Gym Is Either a Node in It or Invisible.</a>
-      <span class="mr-date">Jun 29, 2026</span>
-    </li>
-    <li class="mr-item">
-      <span class="mr-num">07</span>
-      <a href="/brands/lululemon-brand-playbook-boutique-fitness-studios" class="mr-title">Lululemon Built a $10B Brand Without Ever Running a Single Ad. Here's What Fitness Studios Can Learn.</a>
-      <span class="mr-date">Jun 29, 2026</span>
-    </li>
-    <li class="mr-item">
-      <span class="mr-num">08</span>
-      <a href="/studio-growth/fitness-studio-member-churn-year-one" class="mr-title">57% of Fitness Studio Members Churn in Year One. Most Operators Don't Know Why.</a>
-      <span class="mr-date">Jun 27, 2026</span>
-    </li>
-    <li class="mr-item">
-      <span class="mr-num">09</span>
-      <a href="/tech-ai/planet-fitness-ai-coaches" class="mr-title">Planet Fitness Just Deployed AI Coaches. Here's What It Means for Independent Studios.</a>
-      <span class="mr-date">Jun 27, 2026</span>
-    </li>
-    <li class="mr-item">
-      <span class="mr-num">10</span>
-      <a href="/brands/pilates-boxing-barre-results-programming" class="mr-title">The Vibe Era Is Over. What Comes Next for Pilates, Boxing, and Barre.</a>
-      <span class="mr-date">Jun 29, 2026</span>
-    </li>
-  </ul>
+  <ul class="mr-list" id="most-read-list"></ul>
 </div>
 
 <!-- FOOTER -->
@@ -1298,51 +1014,160 @@ footer { background:var(--navy-deep); border-top:3px solid var(--yellow); }
     const raw = await res.json();
     const articles = raw.slice().sort((a, b) => new Date(b.date) - new Date(a.date));
 
-    function img(src) {
-      return `background-image:url('${src}');background-size:cover;background-position:center;`;
+    const bg = src => `background-image:url('${src}');background-size:cover;background-position:center;`;
+
+    // ─── TICKER ───
+    const track = document.getElementById('ticker-track');
+    if (track) {
+      const items = articles.slice(0, 8);
+      track.innerHTML = [...items, ...items].map(a =>
+        `<span class="ticker-item">${a.title}</span><span class="ticker-sep">/</span>`
+      ).join('');
     }
 
-    // CENTER: articles[0] — most recent
+    // ─── HERO ───
     const c = articles[0];
     if (c) {
       const el = document.getElementById('hero-center');
       el.href = c.url;
-      el.querySelector('.hero-center-img').style.cssText = img(c.image);
+      el.querySelector('.hero-center-img').style.cssText = bg(c.image);
       el.querySelector('.hero-center-meta').innerHTML = `<strong>${c.category}</strong> &nbsp;·&nbsp; ${c.dateDisplay}`;
       el.querySelector('.hero-big-headline').textContent = c.title;
       el.querySelector('.hero-center-deck').textContent = c.deck;
       el.style.visibility = '';
     }
-
-    // LEFT: articles[1] and articles[2]
     [1, 2].forEach((idx, i) => {
       const a = articles[idx];
       const el = document.getElementById(`hero-left-${i}`);
       if (!a || !el) return;
       el.href = a.url;
-      el.querySelector('.h-card-img').style.cssText = img(a.image);
+      el.querySelector('.h-card-img').style.cssText = bg(a.image);
       el.querySelector('.h-meta').textContent = `${a.category} · ${a.dateDisplay}`;
       el.querySelector('.h-headline').textContent = a.title;
       el.style.display = '';
     });
+    const heroRight = document.getElementById('hero-right');
+    if (heroRight) {
+      articles.slice(3, 7).forEach(a => {
+        const node = document.createElement('a');
+        node.href = a.url;
+        node.className = 'mini-story';
+        node.innerHTML = `
+          <div class="mini-story-body">
+            <div class="mini-cat">${a.category}</div>
+            <div class="mini-headline">${a.title}</div>
+          </div>
+          <div class="mini-img" style="${bg(a.image)}"></div>`;
+        heroRight.appendChild(node);
+      });
+    }
 
-    // RIGHT: articles[3]–[6] — next articles not shown in center or left
-    const right = document.getElementById('hero-right');
-    articles.slice(3, 7).forEach(a => {
-      const node = document.createElement('a');
-      node.href = a.url;
-      node.className = 'mini-story';
-      node.innerHTML = `
-        <div class="mini-story-body">
-          <div class="mini-cat">${a.category}</div>
-          <div class="mini-headline">${a.title}</div>
+    // ─── CATEGORY INDEX ───
+    const byCategory = {};
+    for (const a of articles) {
+      (byCategory[a.category] = byCategory[a.category] || []).push(a);
+    }
+
+    // Studio Growth — Growth & Strategy layout:
+    // left: large featured (16:9) | center: single article with image | right: TOP NEWS box
+    function renderGrowthStyle(items, id) {
+      const el = document.getElementById(id);
+      if (!el || !items?.length) return;
+      const [feat, second, ...rest] = items;
+      const topNews = rest.slice(0, 5);
+      el.className = 'section-body-3';
+      el.innerHTML = `
+        <a href="${feat.url}" class="sf-feat">
+          <div class="sf-feat-img" style="${bg(feat.image)}"></div>
+          <div class="sf-feat-date">${feat.dateDisplay}</div>
+          <div class="sf-feat-headline">${feat.title}</div>
+          <p class="sf-feat-deck">${feat.deck}</p>
+        </a>
+        <div class="sf-stack">
+          ${second ? `<a href="${second.url}" class="sf-card">
+            <div class="sf-card-img" style="${bg(second.image)}"></div>
+            <div class="sf-date">${second.dateDisplay}</div>
+            <div class="sf-headline">${second.title}</div>
+            <p class="sf-deck">${second.deck}</p>
+          </a>` : ''}
         </div>
-        <div class="mini-img" style="${img(a.image)}"></div>`;
-      right.appendChild(node);
-    });
+        <div class="top-stories">
+          <div class="top-stories-label">Top Stories</div>
+          ${topNews.map(a => `
+            <a href="${a.url}" class="tsi">
+              <div class="tsi-meta">${a.category} &middot; ${a.dateDisplay}</div>
+              <div class="tsi-headline">${a.title}</div>
+            </a>`).join('')}
+        </div>`;
+    }
+
+    // Tech & AI / Wellness / Brands — Brand & Creative layout:
+    // left: large featured | center: 2 stacked with images | right: text-only stack | bottom: mini grid
+    function renderBrandStyle(items, id) {
+      const el = document.getElementById(id);
+      if (!el || !items?.length) return;
+      const [feat, s1, s2, ...rest] = items;
+      const textItems = rest.slice(0, 3);
+      const miniItems = rest.slice(3, 7);
+      el.innerHTML = `
+        <div class="sg3-top">
+          <a href="${feat.url}" class="sg3-feat">
+            <div class="sg3-feat-img" style="${bg(feat.image)}"></div>
+            <div class="sg3-feat-date">${feat.dateDisplay}</div>
+            <div class="sg3-feat-headline">${feat.title}</div>
+            <p class="sg3-feat-deck">${feat.deck}</p>
+          </a>
+          <div class="sf-stack">
+            ${s1 ? `<a href="${s1.url}" class="sf-card">
+              <div class="sf-card-img" style="${bg(s1.image)}"></div>
+              <div class="sf-date">${s1.dateDisplay}</div>
+              <div class="sf-headline">${s1.title}</div>
+              <p class="sf-deck">${s1.deck}</p>
+            </a>` : ''}
+            ${s2 ? `<a href="${s2.url}" class="sf-card">
+              <div class="sf-card-img" style="${bg(s2.image)}"></div>
+              <div class="sf-date">${s2.dateDisplay}</div>
+              <div class="sf-headline">${s2.title}</div>
+              <p class="sf-deck">${s2.deck}</p>
+            </a>` : ''}
+          </div>
+          <div class="sg2-text-stack">
+            ${textItems.map(a => `
+              <a href="${a.url}" class="sg2-text-item">
+                <div class="sg2-text-date">${a.dateDisplay}</div>
+                <div class="sg2-text-headline">${a.title}</div>
+              </a>`).join('')}
+          </div>
+        </div>
+        ${miniItems.length ? `
+        <div class="mini-grid" style="grid-template-columns:repeat(${Math.min(miniItems.length,4)},1fr)">
+          ${miniItems.map(a => `
+            <a href="${a.url}" class="mini-card">
+              <div class="mini-card-img" style="${bg(a.image)}"></div>
+              <div class="mini-card-cat">${a.section || a.category}</div>
+              <div class="mini-card-headline">${a.title}</div>
+            </a>`).join('')}
+        </div>` : ''}`;
+    }
+
+    renderGrowthStyle(byCategory['Studio Growth'], 'sec-studio-growth');
+    renderBrandStyle(byCategory['Tech & AI'],      'sec-tech-ai');
+    renderBrandStyle(byCategory['Wellness'],        'sec-wellness');
+    renderBrandStyle(byCategory['Brands'],          'sec-brands');
+
+    // ─── MOST READ ───
+    const mrList = document.getElementById('most-read-list');
+    if (mrList) {
+      mrList.innerHTML = articles.slice(0, 10).map((a, i) => `
+        <li class="mr-item">
+          <span class="mr-num">${String(i + 1).padStart(2, '0')}</span>
+          <a href="${a.url}" class="mr-title">${a.title}</a>
+          <span class="mr-date">${a.dateDisplay}</span>
+        </li>`).join('');
+    }
 
   } catch (e) {
-    // articles.json unavailable — hero stays hidden rather than showing stale data
+    // articles.json unavailable — sections stay empty rather than showing stale data
   }
 })();
 </script>
