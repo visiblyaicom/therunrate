@@ -420,7 +420,7 @@ nav {
 /* Left: large featured */
 .sf-feat { display: flex; flex-direction: column; }
 .sf-feat-img {
-  width: 100%; aspect-ratio: 3/4;
+  width: 100%; aspect-ratio: 16/9;
   background: linear-gradient(160deg, #dddbd2 0%, #c8c6bc 100%);
   display: flex; align-items: flex-end; padding: 14px;
   margin-bottom: 16px; overflow: hidden;
@@ -444,7 +444,7 @@ nav {
 }
 .sf-card:last-child { border-bottom: none; margin-bottom: 0; padding-bottom: 0; }
 .sf-card-img {
-  width: 100%; height: 140px;
+  width: 100%; aspect-ratio: 16/9;
   background: linear-gradient(135deg, #e4e4de 0%, #d0d0c8 100%);
   display: flex; align-items: flex-end; padding: 10px;
   margin-bottom: 14px; overflow: hidden;
@@ -461,13 +461,13 @@ nav {
 
 /* Right: Top Stories box */
 .top-stories {
-  border: 1.5px solid var(--navy-deep);
+  border: 1.5px solid var(--red);
 }
 .top-stories-label {
   text-align: center; padding: 10px 16px;
   font-size: 10px; font-weight: 700; letter-spacing: 0.2em;
-  text-transform: uppercase; color: var(--navy-deep);
-  border-bottom: 1.5px solid var(--navy-deep);
+  text-transform: uppercase; color: var(--red);
+  border-bottom: 1.5px solid var(--red);
   background: #fff;
 }
 .tsi {
@@ -577,12 +577,12 @@ nav {
 /* ─── BRAND & CREATIVE STYLE — top 3-col + bottom 4-col (Acquisition) ─── */
 .sg3-top {
   display: grid;
-  grid-template-columns: 2fr 1.8fr 1.4fr;
+  grid-template-columns: 1.6fr 2fr 1.2fr;
   gap: 32px; align-items: start;
 }
 .sg3-feat { display: flex; flex-direction: column; }
 .sg3-feat-img {
-  width: 100%; aspect-ratio: 16/9;
+  width: 100%; aspect-ratio: 3/4;
   background: linear-gradient(150deg, #d4d8d0 0%, #bfc3bb 100%);
   display: flex; align-items: flex-end; padding: 14px;
   margin-bottom: 16px; overflow: hidden;
