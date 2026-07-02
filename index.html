@@ -423,7 +423,7 @@ nav {
 /* Left: large featured */
 .sf-feat { display: flex; flex-direction: column; }
 .sf-feat-img {
-  width: 100%; aspect-ratio: 16/9;
+  width: 100%; aspect-ratio: 4/3;
   background: linear-gradient(160deg, #dddbd2 0%, #c8c6bc 100%);
   display: flex; align-items: flex-end; padding: 14px;
   margin-bottom: 16px; overflow: hidden;
@@ -1101,13 +1101,11 @@ footer { background:var(--navy-deep); border-top:3px solid var(--yellow); }
             <div class="sf-card-img" style="${bg(second.image)}"></div>
             <div class="sf-date">${second.dateDisplay}</div>
             <div class="sf-headline">${second.title}</div>
-            <p class="sf-deck">${second.deck}</p>
           </a>` : ''}
           ${third ? `<a href="${third.url}" class="sf-card">
             <div class="sf-card-img" style="${bg(third.image)}"></div>
             <div class="sf-date">${third.dateDisplay}</div>
             <div class="sf-headline">${third.title}</div>
-            <p class="sf-deck">${third.deck}</p>
           </a>` : ''}
         </div>
         <div class="top-stories">
