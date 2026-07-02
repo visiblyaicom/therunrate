@@ -596,6 +596,16 @@ nav {
 /* Center stacked (reuses sf-stack / sf-card) — already defined */
 
 /* Right text-only (reuses sg2-text-stack / sg2-text-item) — already defined */
+/* Center: second card text-only (no image) */
+.sf-card--text .sf-card-img { display: none; }
+/* Right: second item with image */
+.sg2-card-img {
+  width: 100%; aspect-ratio: 16/9;
+  background: linear-gradient(135deg, #e4e4de 0%, #d0d0c8 100%);
+  background-size: cover; background-position: center;
+  margin-bottom: 10px; overflow: hidden;
+}
+.sg2-text-item--img { padding-top: 16px; }
 
 /* ─── 4-COL MINI GRID (shared) ─── */
 .mini-grid {
@@ -1107,14 +1117,16 @@ footer { background:var(--navy-deep); border-top:3px solid var(--yellow); }
         </div>`;
     }
 
-    // Tech & AI / Wellness / Brands — Brand & Creative layout:
-    // left: large featured | center: 2 stacked with images | right: text-only stack | bottom: mini grid
+    // Tech & AI / Wellness / Brands — Brand & Creative layout (matches stateofbrand reference):
+    // left: portrait image card (feat)
+    // center: s1 with landscape image + s2 text-only
+    // right: s3 text-only + s4 with landscape image
+    // bottom: 4-col mini grid (remaining articles)
     function renderBrandStyle(items, id) {
       const el = document.getElementById(id);
       if (!el || !items?.length) return;
-      const [feat, s1, s2, ...rest] = items;
-      const textItems = rest.slice(0, 3);
-      const miniItems = rest.slice(3, 7);
+      const [feat, s1, s2, s3, s4, ...rest] = items;
+      const miniItems = rest.slice(0, 4);
       el.innerHTML = `
         <div class="sg3-top">
           <a href="${feat.url}" class="sg3-feat">
@@ -1130,19 +1142,23 @@ footer { background:var(--navy-deep); border-top:3px solid var(--yellow); }
               <div class="sf-headline">${s1.title}</div>
               <p class="sf-deck">${s1.deck}</p>
             </a>` : ''}
-            ${s2 ? `<a href="${s2.url}" class="sf-card">
-              <div class="sf-card-img" style="${bg(s2.image)}"></div>
+            ${s2 ? `<a href="${s2.url}" class="sf-card sf-card--text">
               <div class="sf-date">${s2.dateDisplay}</div>
               <div class="sf-headline">${s2.title}</div>
               <p class="sf-deck">${s2.deck}</p>
             </a>` : ''}
           </div>
           <div class="sg2-text-stack">
-            ${textItems.map(a => `
-              <a href="${a.url}" class="sg2-text-item">
-                <div class="sg2-text-date">${a.dateDisplay}</div>
-                <div class="sg2-text-headline">${a.title}</div>
-              </a>`).join('')}
+            ${s3 ? `<a href="${s3.url}" class="sg2-text-item">
+              <div class="sg2-text-date">${s3.dateDisplay}</div>
+              <div class="sg2-text-headline">${s3.title}</div>
+              <p class="sg2-text-deck">${s3.deck}</p>
+            </a>` : ''}
+            ${s4 ? `<a href="${s4.url}" class="sg2-text-item sg2-text-item--img">
+              <div class="sg2-card-img" style="${bg(s4.image)}"></div>
+              <div class="sg2-text-date">${s4.dateDisplay}</div>
+              <div class="sg2-text-headline">${s4.title}</div>
+            </a>` : ''}
           </div>
         </div>
         ${miniItems.length >= 2 ? `
