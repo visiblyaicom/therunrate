@@ -1145,7 +1145,7 @@ footer { background:var(--navy-deep); border-top:3px solid var(--yellow); }
               </a>`).join('')}
           </div>
         </div>
-        ${miniItems.length ? `
+        ${miniItems.length >= 2 ? `
         <div class="mini-grid" style="grid-template-columns:repeat(${Math.min(miniItems.length,4)},1fr)">
           ${miniItems.map(a => `
             <a href="${a.url}" class="mini-card">
