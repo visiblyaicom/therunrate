@@ -43,44 +43,39 @@
         "@type": "Person",
         "name": "Alice",
         "jobTitle": "Editor",
-        "worksFor": {"@type": "Organization", "name": "The Run Rate", "url": "https://therunrate.co", "logo": {"@type": "ImageObject", "url": "https://therunrate.co/logo.png"}, "description": "Growth intelligence for fitness, wellness and health tech.", "sameAs": ["https://www.instagram.com/therunrate.co", "https://www.linkedin.com/company/the-run-rate", "https://newsletter.therunrate.co"]}
+        "worksFor": {
+          "@type": "Organization",
+          "name": "The Run Rate",
+          "url": "https://therunrate.co",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "https://therunrate.co/logo.png"
+          },
+          "description": "Growth intelligence for fitness, wellness and health tech.",
+          "sameAs": [
+            "https://www.instagram.com/therunrate.co",
+            "https://www.linkedin.com/company/the-run-rate",
+            "https://newsletter.therunrate.co"
+          ]
+        }
       },
       "publisher": {
         "@type": "Organization",
         "name": "The Run Rate",
         "url": "https://therunrate.co",
-        "logo": {"@type": "ImageObject", "url": "https://therunrate.co/logo.png"}
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://therunrate.co/logo.png"
+        }
       },
       "articleSection": "Tech & AI",
-      "keywords": ["peloton subscriber decline", "connected fitness growth ceiling", "boutique fitness strength training", "longevity fitness studios", "GLP-1 fitness strength", "fitness studio strategy 2026"]
-    },
-    {
-      "@type": "FAQPage",
-      "mainEntity": [
-        {
-          "@type": "Question",
-          "name": "Why is Peloton losing subscribers?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Peloton has lost 218,000 connected fitness subscribers year-over-year as of Q3 FY2026 — three straight quarters of decline. The core issue is structural: Peloton built its product around calorie burn and weight loss as the primary fitness goal, but consumer priorities have shifted toward strength, longevity, and functional health outcomes that connected cardio equipment can't deliver."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "What fitness goals are replacing weight loss for gym members?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Strength training has replaced weight loss as the primary gym goal for a growing segment of members. The shift is driven by longevity science, the rise of GLP-1 medications (which require resistance training to prevent muscle loss), and a broader cultural move toward functional health — being capable and strong at 60, 70, and beyond — rather than hitting a number on a scale."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "How should boutique fitness studios respond to the strength training trend?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Studios should reframe their positioning around outcomes — strength, capability, and longevity — rather than calorie burn and weight loss. Small group strength formats, programming tied to measurable performance gains, and explicit positioning as a GLP-1 companion for members on semaglutide are the highest-leverage moves in 2026."
-          }
-        }
+      "keywords": [
+        "peloton subscriber decline",
+        "connected fitness growth ceiling",
+        "boutique fitness strength training",
+        "longevity fitness studios",
+        "GLP-1 fitness strength",
+        "fitness studio strategy 2026"
       ]
     },
     {
@@ -88,7 +83,38 @@
       "name": "The Run Rate",
       "url": "https://therunrate.co",
       "description": "Growth intelligence for fitness and wellness operators.",
-      "sameAs": ["https://newsletter.therunrate.co"]
+      "sameAs": [
+        "https://newsletter.therunrate.co"
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Why are GLP-1 medications relevant to fitness studio operators?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Because GLP-1 drugs like semaglutide cause significant muscle loss — up to 25–40% of total weight lost — when used without resistance training. Members on these medications have a clinical need for supervised strength work, making them high-value acquisition targets for studios that offer coached, progressive resistance formats."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is cardio completely dead as a fitness goal?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No — but its role has inverted. Cardio still matters, but for a growing segment of consumers it now supports strength and longevity work rather than serving as the primary goal. Studios that treat cardio as a supplement to strength programming are better aligned with where consumer priorities are heading."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How should studios change their marketing language to reflect this shift?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Replace calorie-burn and class-count metrics with outcome-based language tied to capability and longevity — think 'add 20 pounds to your squat in 8 weeks' over 'burn 600 calories.' The goal for a growing number of consumers isn't smaller; it's stronger, more capable, and functional over decades."
+          }
+        }
+      ]
     }
   ]
 }
@@ -224,6 +250,13 @@ footer { background:var(--navy-deep); border-top:3px solid var(--yellow); }
   .footer-bottom { padding:16px; flex-direction:column; align-items:flex-start; gap:6px; }
   .footer-slug { display:none; }
 }
+
+.art-faq{margin-top:48px;padding-top:28px;border-top:1px solid var(--border)}
+.art-faq h3{font-family:'Playfair Display',serif;font-size:22px;font-weight:700;margin-bottom:20px}
+.faq-item{margin-bottom:20px}
+.faq-q{font-size:15px;font-weight:600;margin-bottom:6px;color:var(--ink)}
+.faq-a{font-size:15px;color:#3a3f4a;line-height:1.65}
+.byline-bio{font-size:13px;color:var(--muted, #6b7280);line-height:1.5;padding:12px 0 0}
 </style>
 <script async type="application/javascript" src="https://news.google.com/swg/js/v1/swg-basic.js"></script>
 <script>
@@ -293,6 +326,7 @@ footer { background:var(--navy-deep); border-top:3px solid var(--yellow); }
       </a>
     </div>
   </div>
+<p class="byline-bio">Alice covers growth, retention and technology for fitness and wellness operators at The Run Rate.</p>
 </div>
 
 <div class="art-hero">
@@ -328,7 +362,7 @@ footer { background:var(--navy-deep); border-top:3px solid var(--yellow); }
 
     <p>At its core, Peloton sold calorie burn with entertainment. The leaderboard, the output numbers, the milestone badges — all of it was built around a fitness objective that dominated the 2010s: burn more, weigh less. It was a compelling proposition packaged beautifully, and it worked until the underlying consumer goal started shifting underneath it.</p>
 
-    <p>The shift isn't subtle anymore. Strength training has replaced weight loss as the primary stated fitness goal for a meaningful and growing segment of gym-goers. The reasons are compounding: longevity science going mainstream, GLP-1 medications changing the weight loss conversation entirely, and a generation of fitness consumers who grew up watching their parents chase the scale and decided there had to be a better framework.</p>
+    <p>The shift isn't subtle anymore. <a href="https://therunrate.co/studio-growth/strength-training-replacing-weight-loss-gym-goal">Strength training has replaced weight loss as the primary stated fitness goal</a> for a meaningful and growing segment of gym-goers. The reasons are compounding: <a href="https://therunrate.co/wellness/longevity-coach-trainer-fitness-studios">longevity science going mainstream</a>, GLP-1 medications changing the weight loss conversation entirely, and a generation of fitness consumers who grew up watching their parents chase the scale and decided there had to be a better framework.</p>
 
     <div class="pull-quote">
       <p>The goal isn't smaller anymore. It's capable. It's still moving well at 75.</p>
@@ -370,7 +404,7 @@ footer { background:var(--navy-deep); border-top:3px solid var(--yellow); }
 
     <h2>What this means for how you market your studio</h2>
 
-    <p>If your current marketing language is built around classes, schedules, and calorie burn, you're speaking to a fitness goal that's losing consumer priority. The language that's resonating right now is different: strength, capability, longevity, performance. Not "burn 600 calories" — "add 20 pounds to your squat in 8 weeks." Not "get in shape" — "be strong enough to pick up your grandchildren without thinking about it."</p>
+    <p>If your current marketing language is built around <a href="https://therunrate.co/brands/pilates-boxing-barre-results-programming">classes, schedules, and calorie burn</a>, you're speaking to a fitness goal that's losing consumer priority. The language that's resonating right now is different: strength, capability, longevity, performance. Not "burn 600 calories" — "add 20 pounds to your squat in 8 weeks." Not "get in shape" — "be strong enough to pick up your grandchildren without thinking about it."</p>
 
     <p>The studios getting this right are reframing their outcomes in the language of functional capability and long-term health — and they're doing it before their competition figures out that weight loss as a positioning anchor is quietly becoming a liability.</p>
 
@@ -378,7 +412,17 @@ footer { background:var(--navy-deep); border-top:3px solid var(--yellow); }
 
     <p>The question for studio operators isn't whether this shift is real. It's whether your positioning, your programming, and your sales conversation are already speaking to the person who's decided that Plan B is no longer good enough.</p>
 
-  </article>
+  
+    <h2>What does this shift actually mean for independent boutique studios right now?</h2>
+    <p>It means the competitive moat just got wider — but only for studios that name it. Connected fitness platforms are structurally unable to deliver coached, progressive resistance training at scale. That's not a gap they can close with a software update or a new instructor series. For independent boutique operators, the window to own 'strength, longevity, and capability' in their local market is open right now. The studios that reframe their marketing, retool their class mix, and position explicitly against the connected fitness ceiling will be the ones with retention numbers worth talking about in three years.</p>
+
+    <div class="art-faq">
+    <h3>Frequently Asked Questions</h3>
+    <div class="faq-item"><div class="faq-q">Why are GLP-1 medications relevant to fitness studio operators?</div><div class="faq-a">Because GLP-1 drugs like semaglutide cause significant muscle loss — up to 25–40% of total weight lost — when used without resistance training. Members on these medications have a clinical need for supervised strength work, making them high-value acquisition targets for studios that offer coached, progressive resistance formats.</div></div>
+    <div class="faq-item"><div class="faq-q">Is cardio completely dead as a fitness goal?</div><div class="faq-a">No — but its role has inverted. Cardio still matters, but for a growing segment of consumers it now supports strength and longevity work rather than serving as the primary goal. Studios that treat cardio as a supplement to strength programming are better aligned with where consumer priorities are heading.</div></div>
+    <div class="faq-item"><div class="faq-q">How should studios change their marketing language to reflect this shift?</div><div class="faq-a">Replace calorie-burn and class-count metrics with outcome-based language tied to capability and longevity — think 'add 20 pounds to your squat in 8 weeks' over 'burn 600 calories.' The goal for a growing number of consumers isn't smaller; it's stronger, more capable, and functional over decades.</div></div>
+    </div>
+</article>
 
   <aside class="art-sidebar">
     <div class="sidebar-sub">

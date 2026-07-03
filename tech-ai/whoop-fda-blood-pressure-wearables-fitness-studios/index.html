@@ -40,22 +40,76 @@
         "@type": "Person",
         "name": "Alice",
         "jobTitle": "Editor",
-        "worksFor": {"@type": "Organization", "name": "The Run Rate", "url": "https://therunrate.co", "logo": {"@type": "ImageObject", "url": "https://therunrate.co/logo.png"}, "description": "Growth intelligence for fitness, wellness and health tech.", "sameAs": ["https://www.instagram.com/therunrate.co", "https://www.linkedin.com/company/the-run-rate", "https://newsletter.therunrate.co"]}
+        "worksFor": {
+          "@type": "Organization",
+          "name": "The Run Rate",
+          "url": "https://therunrate.co",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "https://therunrate.co/logo.png"
+          },
+          "description": "Growth intelligence for fitness, wellness and health tech.",
+          "sameAs": [
+            "https://www.instagram.com/therunrate.co",
+            "https://www.linkedin.com/company/the-run-rate",
+            "https://newsletter.therunrate.co"
+          ]
+        }
       },
       "publisher": {
         "@type": "Organization",
         "name": "The Run Rate",
         "url": "https://therunrate.co",
-        "logo": {"@type": "ImageObject", "url": "https://therunrate.co/logo.png"}
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://therunrate.co/logo.png"
+        }
       },
       "articleSection": "Wearables",
-      "keywords": ["Whoop FDA approval", "wearable health data fitness studios", "blood pressure monitoring wearables", "fitness studio member retention", "health tech boutique fitness"]
+      "keywords": [
+        "Whoop FDA approval",
+        "wearable health data fitness studios",
+        "blood pressure monitoring wearables",
+        "fitness studio member retention",
+        "health tech boutique fitness"
+      ]
     },
     {
       "@type": "Organization",
       "name": "The Run Rate",
       "url": "https://therunrate.co",
-      "sameAs": ["https://newsletter.therunrate.co"]
+      "sameAs": [
+        "https://newsletter.therunrate.co"
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What is the wellness exemption Whoop used to get FDA approval for its blood pressure feature?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Instead of seeking formal FDA clearance as a medical diagnostic device — a long, expensive process Apple and Samsung are still navigating — Whoop framed its blood pressure estimation as a wellness feature rather than a clinical measurement. The FDA accepted that framing, allowing the feature to remain live without requiring the same regulatory burden as a medical device."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Should fitness studios be integrating wearable data into their programming right now?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Not necessarily through formal tech integrations yet — those are 18–24 months out for most platforms. But studios can act now by identifying which members use wearables, training instructors to speak the language of HRV and recovery scores, and building a culture around health data that will make future integrations with platforms like Mindbody or Mariana Tek a natural extension rather than a retrofit."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is Whoop actually a threat to fitness studios, or an opportunity?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "It's an opportunity — but only for studios that move. Whoop's 3 million members, and the broader wearable-wearing boutique fitness demographic, are generating rich recovery, sleep, and now blood pressure data daily with no contextual support. Studios that help members interpret and act on that data inside their four walls create a stickiness that no app can replicate on its own."
+          }
+        }
+      ]
     }
   ]
 }
@@ -200,6 +254,13 @@ footer { background:var(--navy-deep); border-top:3px solid var(--yellow); }
   .footer-bottom { padding:16px; flex-direction:column; align-items:flex-start; gap:6px; }
   .footer-slug { display:none; }
 }
+
+.art-faq{margin-top:48px;padding-top:28px;border-top:1px solid var(--border)}
+.art-faq h3{font-family:'Playfair Display',serif;font-size:22px;font-weight:700;margin-bottom:20px}
+.faq-item{margin-bottom:20px}
+.faq-q{font-size:15px;font-weight:600;margin-bottom:6px;color:var(--ink)}
+.faq-a{font-size:15px;color:#3a3f4a;line-height:1.65}
+.byline-bio{font-size:13px;color:var(--muted, #6b7280);line-height:1.5;padding:12px 0 0}
 </style>
 <script async type="application/javascript" src="https://news.google.com/swg/js/v1/swg-basic.js"></script>
 <script>
@@ -290,6 +351,7 @@ footer { background:var(--navy-deep); border-top:3px solid var(--yellow); }
       </a>
     </div>
   </div>
+<p class="byline-bio">Alice covers growth, retention and technology for fitness and wellness operators at The Run Rate.</p>
 </div>
 
 <div class="art-hero">
@@ -362,7 +424,7 @@ footer { background:var(--navy-deep); border-top:3px solid var(--yellow); }
 
     <p>These members are accumulating recovery data, sleep data, HRV data, and now blood pressure trend data. Most of them have no idea what to do with it. Most studios have no framework for helping them use it.</p>
 
-    <p>That's a retention gap dressed up as a data problem.</p>
+    <p>That's a <a href="https://therunrate.co/studio-growth/fitness-studio-member-churn-year-one">retention gap dressed up as a data problem</a>.</p>
 
     <p>The studios that figure out how to connect member wearable data to class programming, recovery recommendations, or even basic instructor conversations will have a structural engagement advantage over those that treat their members as anonymous bodies in a room.</p>
 
@@ -372,7 +434,7 @@ footer { background:var(--navy-deep); border-top:3px solid var(--yellow); }
 
     <p><strong>2. Train your instructors to speak the language.</strong> HRV, recovery scores, strain — these terms are in your members' apps every morning. If your instructors can reference recovery in class context ("today's session is a hard push — ideal when your recovery score is above 70"), you create a connection between their wearable data and your programming. That's retention.</p>
 
-    <p><strong>3. Watch the integration plays coming.</strong> Mindbody, Mariana Tek, and major booking platforms are all being approached by wearable companies. Apple Health integrations, Whoop partnerships, Oura API access — these are coming to studio software within 18–24 months. Studios that have already built a culture around health data will adopt these naturally. The ones that haven't will be retrofitting.</p>
+    <p><strong>3. Watch the integration plays coming.</strong> <a href="https://therunrate.co/tech-ai/octiv-explore-gym-software-owned-distribution-aggregators">Mindbody, Mariana Tek, and major booking platforms</a> are all being approached by wearable companies. Apple Health integrations, Whoop partnerships, Oura API access — these are coming to studio software within 18–24 months. Studios that have already built a culture around health data will adopt these naturally. The ones that haven't will be retrofitting.</p>
 
     <h2>What to watch next</h2>
 
@@ -382,7 +444,17 @@ footer { background:var(--navy-deep); border-top:3px solid var(--yellow); }
 
     <p>The question for every studio operator isn't whether your members will have this data. They will. The question is whether your studio is part of what they do with it — or invisible to it.</p>
 
-  </article>
+  
+    <h2>What does Whoop's FDA win actually mean for boutique fitness studios?</h2>
+    <p>It means the data gap between your members and your programming just got wider — and the window to close it is narrowing. Whoop's wellness exemption playbook will be replicated. More wearables will add clinically-adjacent features without medical clearance, without friction, and without waiting for your studio to catch up. The studios that treat member wearable data as a strategic asset — not a curiosity — will build retention structures that anonymous-body studios simply can't match. The race isn't between Apple and Whoop anymore. It's between studios that are part of their members' health data story and studios that aren't.</p>
+
+    <div class="art-faq">
+    <h3>Frequently Asked Questions</h3>
+    <div class="faq-item"><div class="faq-q">What is the wellness exemption Whoop used to get FDA approval for its blood pressure feature?</div><div class="faq-a">Instead of seeking formal FDA clearance as a medical diagnostic device — a long, expensive process Apple and Samsung are still navigating — Whoop framed its blood pressure estimation as a wellness feature rather than a clinical measurement. The FDA accepted that framing, allowing the feature to remain live without requiring the same regulatory burden as a medical device.</div></div>
+    <div class="faq-item"><div class="faq-q">Should fitness studios be integrating wearable data into their programming right now?</div><div class="faq-a">Not necessarily through formal tech integrations yet — those are 18–24 months out for most platforms. But studios can act now by identifying which members use wearables, training instructors to speak the language of HRV and recovery scores, and building a culture around health data that will make future integrations with platforms like Mindbody or Mariana Tek a natural extension rather than a retrofit.</div></div>
+    <div class="faq-item"><div class="faq-q">Is Whoop actually a threat to fitness studios, or an opportunity?</div><div class="faq-a">It's an opportunity — but only for studios that move. Whoop's 3 million members, and the broader wearable-wearing boutique fitness demographic, are generating rich recovery, sleep, and now blood pressure data daily with no contextual support. Studios that help members interpret and act on that data inside their four walls create a stickiness that no app can replicate on its own.</div></div>
+    </div>
+</article>
 
   <aside class="art-sidebar">
     <div class="sidebar-sub">

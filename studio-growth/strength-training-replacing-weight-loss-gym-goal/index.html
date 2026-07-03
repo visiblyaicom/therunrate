@@ -43,44 +43,39 @@
         "@type": "Person",
         "name": "Alice",
         "jobTitle": "Editor",
-        "worksFor": {"@type": "Organization", "name": "The Run Rate", "url": "https://therunrate.co", "logo": {"@type": "ImageObject", "url": "https://therunrate.co/logo.png"}, "description": "Growth intelligence for fitness, wellness and health tech.", "sameAs": ["https://www.instagram.com/therunrate.co", "https://www.linkedin.com/company/the-run-rate", "https://newsletter.therunrate.co"]}
+        "worksFor": {
+          "@type": "Organization",
+          "name": "The Run Rate",
+          "url": "https://therunrate.co",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "https://therunrate.co/logo.png"
+          },
+          "description": "Growth intelligence for fitness, wellness and health tech.",
+          "sameAs": [
+            "https://www.instagram.com/therunrate.co",
+            "https://www.linkedin.com/company/the-run-rate",
+            "https://newsletter.therunrate.co"
+          ]
+        }
       },
       "publisher": {
         "@type": "Organization",
         "name": "The Run Rate",
         "url": "https://therunrate.co",
-        "logo": {"@type": "ImageObject", "url": "https://therunrate.co/logo.png"}
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://therunrate.co/logo.png"
+        }
       },
       "articleSection": "Studio Growth",
-      "keywords": ["strength training gym goal", "fitness studio programming trends", "GLP-1 strength training", "boutique fitness class mix", "fitness studio retention strategy", "strength training marketing"]
-    },
-    {
-      "@type": "FAQPage",
-      "mainEntity": [
-        {
-          "@type": "Question",
-          "name": "Why is strength training replacing weight loss as the top gym goal?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Trainers report members increasingly arrive wanting to build strength and muscle rather than purely lose weight. Part of this is driven by GLP-1 medications, which handle weight loss pharmacologically and shift the remaining goal to preserving and building lean muscle mass — something only resistance training accomplishes."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "How does GLP-1 medication use affect gym programming?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "GLP-1 medications cause significant weight loss but also risk muscle loss if members aren't strength training. This makes structured resistance programming — not cardio — the critical complement to GLP-1 use, creating demand for studios that can offer guided strength coaching rather than open gym floors."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "What should boutique studios change in response to this shift?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Studios should audit class mix for strength-forward formats, retrain instructors on progressive overload coaching cues, and shift marketing language from calorie burn and weight loss toward strength gains, muscle preservation, and capability. Small group strength formats with measurable progression are the format best positioned to capture this shift."
-          }
-        }
+      "keywords": [
+        "strength training gym goal",
+        "fitness studio programming trends",
+        "GLP-1 strength training",
+        "boutique fitness class mix",
+        "fitness studio retention strategy",
+        "strength training marketing"
       ]
     },
     {
@@ -88,7 +83,38 @@
       "name": "The Run Rate",
       "url": "https://therunrate.co",
       "description": "Growth intelligence for fitness and wellness operators.",
-      "sameAs": ["https://newsletter.therunrate.co"]
+      "sameAs": [
+        "https://newsletter.therunrate.co"
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "How should studio operators actually audit their current class mix for the strength-first era?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Start by categorizing every format on your schedule as primarily cardio-output-driven or progression-driven. If more than 60% of your weekly slots are built around heart-rate zones and calorie burn rather than trackable strength gains, your mix is misaligned with where member demand is heading. The key signal: can a member point to a number that went up this month?"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do GLP-1 users need a completely separate program, or can they train alongside general members?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "They can train alongside general members, but coaches need to understand the specific risk — GLP-1-driven weight loss without structured resistance training accelerates muscle loss. Programming for this member means prioritizing progressive overload and adequate protein guidance over calorie burn, and scaling loads carefully if they're experiencing fatigue or reduced muscle mass early in their medication cycle."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is strength-era marketing just a language swap, or does it require changing the actual offer?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Both — but in that order. Updating copy from 'burn fat' to 'build strength' without changing the underlying programming is just greenwashing for a new trend. The language shift only holds up if the class structure, instructor coaching cues, and progress-tracking tools actually deliver on a strength and capability promise."
+          }
+        }
+      ]
     }
   ]
 }
@@ -224,6 +250,13 @@ footer { background:var(--navy-deep); border-top:3px solid var(--yellow); }
   .footer-bottom { padding:16px; flex-direction:column; align-items:flex-start; gap:6px; }
   .footer-slug { display:none; }
 }
+
+.art-faq{margin-top:48px;padding-top:28px;border-top:1px solid var(--border)}
+.art-faq h3{font-family:'Playfair Display',serif;font-size:22px;font-weight:700;margin-bottom:20px}
+.faq-item{margin-bottom:20px}
+.faq-q{font-size:15px;font-weight:600;margin-bottom:6px;color:var(--ink)}
+.faq-a{font-size:15px;color:#3a3f4a;line-height:1.65}
+.byline-bio{font-size:13px;color:var(--muted, #6b7280);line-height:1.5;padding:12px 0 0}
 </style>
 <script async type="application/javascript" src="https://news.google.com/swg/js/v1/swg-basic.js"></script>
 <script>
@@ -293,6 +326,7 @@ footer { background:var(--navy-deep); border-top:3px solid var(--yellow); }
       </a>
     </div>
   </div>
+<p class="byline-bio">Alice covers growth, retention and technology for fitness and wellness operators at The Run Rate.</p>
 </div>
 
 <div class="art-hero">
@@ -322,7 +356,7 @@ footer { background:var(--navy-deep); border-top:3px solid var(--yellow); }
 
     <p>For two decades, "weight loss" was the default answer when a new member filled out a goals form. Trainers say that's no longer true. Across boutique studios and big-box gyms alike, the most common stated goal walking through the door now is some version of "get stronger" — build muscle, lift heavier, look capable rather than just smaller.</p>
 
-    <p>This isn't a vibe shift. It's a structural one, and it's being driven by two forces converging at the same time: a cultural move away from pure weight-loss messaging toward strength and longevity, and the rapid mainstreaming of GLP-1 medications, which are quietly making cardio-for-weight-loss programming obsolete for a growing share of the member base.</p>
+    <p>This isn't a vibe shift. It's a structural one, and it's being driven by two forces converging at the same time: a cultural move away from pure weight-loss messaging toward <a href="https://therunrate.co/wellness/longevity-coach-trainer-fitness-studios">strength and longevity</a>, and the rapid mainstreaming of GLP-1 medications, which are quietly making <a href="https://therunrate.co/tech-ai/peloton-connected-fitness-plan-b-strength-longevity">cardio-for-weight-loss programming obsolete</a> for a growing share of the member base.</p>
 
     <h2>The GLP-1 variable nobody's programming for</h2>
 
@@ -349,9 +383,19 @@ footer { background:var(--navy-deep); border-top:3px solid var(--yellow); }
 
     <p>And the marketing language has to catch up last. Every piece of copy that still leads with "lose weight," "burn fat," or "shed pounds" is talking to a goal a growing share of your prospective members no longer have. The studios that get ahead of this — that retool their Instagram captions, their intro offer copy, their onboarding conversation around strength and capability instead of the scale — are the ones who'll capture this wave before it becomes obvious to everyone.</p>
 
-    <p>Strength training didn't replace weight loss as a gym goal by accident. It replaced it because the underlying problem changed — partly cultural, partly pharmacological. The studios paying attention to why their members' goals shifted, not just that they did, are the ones who'll build the next five years of retention around it.</p>
+    <p>Strength training didn't replace weight loss as a gym goal by accident. It replaced it because the underlying problem changed — partly cultural, partly pharmacological. The studios paying attention to why their members' goals shifted, not just that they did, are the ones who'll build <a href="https://therunrate.co/studio-growth/fitness-studio-member-churn-year-one">the next five years of retention</a> around it.</p>
 
-  </article>
+  
+    <h2>Why does the GLP-1 shift actually change your retention strategy?</h2>
+    <p>Because GLP-1 members aren't a trend — they're a permanent new cohort with a fundamentally different reason to stay. A member losing weight pharmacologically doesn't need your studio to solve the scale problem. They need it to solve the muscle-loss problem. That's a retention hook built on medical necessity, not motivation. Studios that build programming, coaching language, and onboarding around preserving lean mass for this member will retain them far longer than studios still selling calorie burn to someone whose medication already handles that job.</p>
+
+    <div class="art-faq">
+    <h3>Frequently Asked Questions</h3>
+    <div class="faq-item"><div class="faq-q">How should studio operators actually audit their current class mix for the strength-first era?</div><div class="faq-a">Start by categorizing every format on your schedule as primarily cardio-output-driven or progression-driven. If more than 60% of your weekly slots are built around heart-rate zones and calorie burn rather than trackable strength gains, your mix is misaligned with where member demand is heading. The key signal: can a member point to a number that went up this month?</div></div>
+    <div class="faq-item"><div class="faq-q">Do GLP-1 users need a completely separate program, or can they train alongside general members?</div><div class="faq-a">They can train alongside general members, but coaches need to understand the specific risk — GLP-1-driven weight loss without structured resistance training accelerates muscle loss. Programming for this member means prioritizing progressive overload and adequate protein guidance over calorie burn, and scaling loads carefully if they're experiencing fatigue or reduced muscle mass early in their medication cycle.</div></div>
+    <div class="faq-item"><div class="faq-q">Is strength-era marketing just a language swap, or does it require changing the actual offer?</div><div class="faq-a">Both — but in that order. Updating copy from 'burn fat' to 'build strength' without changing the underlying programming is just greenwashing for a new trend. The language shift only holds up if the class structure, instructor coaching cues, and progress-tracking tools actually deliver on a strength and capability promise.</div></div>
+    </div>
+</article>
 
   <aside class="art-sidebar">
     <div class="sidebar-sub">

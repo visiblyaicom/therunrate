@@ -43,24 +43,60 @@
         "@type": "Person",
         "name": "Alice",
         "jobTitle": "Editor",
-        "worksFor": {"@type": "Organization", "name": "The Run Rate", "url": "https://therunrate.co", "logo": {"@type": "ImageObject", "url": "https://therunrate.co/logo.png"}, "description": "Growth intelligence for fitness, wellness and health tech.", "sameAs": ["https://www.instagram.com/therunrate.co", "https://www.linkedin.com/company/the-run-rate", "https://newsletter.therunrate.co"]}
+        "worksFor": {
+          "@type": "Organization",
+          "name": "The Run Rate",
+          "url": "https://therunrate.co",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "https://therunrate.co/logo.png"
+          },
+          "description": "Growth intelligence for fitness, wellness and health tech.",
+          "sameAs": [
+            "https://www.instagram.com/therunrate.co",
+            "https://www.linkedin.com/company/the-run-rate",
+            "https://newsletter.therunrate.co"
+          ]
+        }
       },
       "publisher": {
         "@type": "Organization",
         "name": "The Run Rate",
         "url": "https://therunrate.co",
-        "logo": {"@type": "ImageObject", "url": "https://therunrate.co/logo.png"}
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://therunrate.co/logo.png"
+        }
       },
       "articleSection": "Retention",
-      "keywords": ["fitness studio churn rate", "gym member retention", "member attrition", "fitness studio year one churn", "gym member dropout"],
+      "keywords": [
+        "fitness studio churn rate",
+        "gym member retention",
+        "member attrition",
+        "fitness studio year one churn",
+        "gym member dropout"
+      ],
       "about": [
-        {"@type": "Thing", "name": "Fitness Studio Member Retention"},
-        {"@type": "Thing", "name": "Gym Membership Churn"},
-        {"@type": "Thing", "name": "Fitness Business Metrics"}
+        {
+          "@type": "Thing",
+          "name": "Fitness Studio Member Retention"
+        },
+        {
+          "@type": "Thing",
+          "name": "Gym Membership Churn"
+        },
+        {
+          "@type": "Thing",
+          "name": "Fitness Business Metrics"
+        }
       ],
       "speakable": {
         "@type": "SpeakableSpecification",
-        "cssSelector": [".art-kicker", ".stat-strip", ".body-col p:first-of-type"]
+        "cssSelector": [
+          ".art-kicker",
+          ".stat-strip",
+          ".body-col p:first-of-type"
+        ]
       }
     },
     {
@@ -68,7 +104,38 @@
       "name": "The Run Rate",
       "url": "https://therunrate.co",
       "description": "Growth intelligence for fitness and wellness operators. Weekly newsletter covering studio growth, retention, acquisition, and AI & tech.",
-      "sameAs": ["https://newsletter.therunrate.co"]
+      "sameAs": [
+        "https://newsletter.therunrate.co"
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What is the single most effective thing a studio can do to reduce early churn?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Trigger a personal outreach from a staff member or coach to any new member who hasn't visited within their first 7 days. It doesn't need to be elaborate — just a message that shows the member they've been noticed. That single touchpoint has an outsized impact on whether a habit forms."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Why do members say they canceled for price or schedule when that isn't really why?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Because the actual decision — a quiet disengagement driven by lack of habit, social connection, or undelivered promises — happened weeks earlier. By the time they cancel, members have already rationalized the exit. Price and schedule are the story, not the cause."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How should studios measure churn risk in real time rather than after the fact?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Watch visit frequency in the first 30 days, not cancellation dates. A member who hasn't visited in their first 10 days is already a high-risk signal. Most studio CRMs only show you who left — you need to be tracking who has stopped showing up before they've formally quit."
+          }
+        }
+      ]
     }
   ]
 }
@@ -214,6 +281,13 @@ footer { background:var(--navy-deep); border-top:3px solid var(--yellow); }
   .footer-slug { display:none; }
 }
 
+
+.art-faq{margin-top:48px;padding-top:28px;border-top:1px solid var(--border)}
+.art-faq h3{font-family:'Playfair Display',serif;font-size:22px;font-weight:700;margin-bottom:20px}
+.faq-item{margin-bottom:20px}
+.faq-q{font-size:15px;font-weight:600;margin-bottom:6px;color:var(--ink)}
+.faq-a{font-size:15px;color:#3a3f4a;line-height:1.65}
+.byline-bio{font-size:13px;color:var(--muted, #6b7280);line-height:1.5;padding:12px 0 0}
 </style>
 <script async type="application/javascript" src="https://news.google.com/swg/js/v1/swg-basic.js"></script>
 <script>
@@ -298,6 +372,7 @@ footer { background:var(--navy-deep); border-top:3px solid var(--yellow); }
       </a>
     </div>
   </div>
+<p class="byline-bio">Alice covers growth, retention and technology for fitness and wellness operators at The Run Rate.</p>
 </div>
 
 <div class="art-hero">
@@ -339,7 +414,7 @@ footer { background:var(--navy-deep); border-top:3px solid var(--yellow); }
 
     <p>Second: members with zero social connection to staff or other members churn at roughly double the rate of those who have at least one. Not dozens of connections — one. Knowing a coach's name. Being remembered at the front desk. Being recognized by a single regular in a class. That's the threshold. It's not about community in the abstract. It's about a single person knowing you exist.</p>
 
-    <p>Third: members who don't use the feature they were sold on in the first month almost never do. The studio that sold them on "personalized programming" needs to deliver that experience before day 30, or they will have created a gap between the promise and the reality that no discount or re-engagement email will close.</p>
+    <p>Third: members who don't use the feature they were sold on in the first month almost never do. The studio that sold them on "personalized programming" needs to deliver that experience before day 30, or they will have created a <a href="https://therunrate.co/brands/pilates-boxing-barre-results-programming">gap between the promise and the reality</a> that no discount or re-engagement email will close.</p>
 
     <h2>Why operators miss this</h2>
 
@@ -362,10 +437,20 @@ footer { background:var(--navy-deep); border-top:3px solid var(--yellow); }
 
     <h2>The math that should change how you think about this</h2>
 
-    <p>Acquiring a new member costs roughly six times what it costs to retain an existing one. If your average member pays $100/month and you're losing 57% of them before year one, you're spending acquisition budget to replace members who never had to leave. Every percentage point of improvement in 30-day retention is worth more than most paid acquisition campaigns — and it compounds, because retained members refer more, spend more, and leave better reviews.</p>
+    <p><a href="https://therunrate.co/studio-growth/fitness-studio-member-attribution">Acquiring a new member costs roughly six times</a> what it costs to retain an existing one. If your average member pays $100/month and you're losing 57% of them before year one, you're spending acquisition budget to replace members who never had to leave. Every percentage point of improvement in 30-day retention is worth more than most paid acquisition campaigns — and it compounds, because retained members refer more, spend more, and leave better reviews.</p>
 
-    <p>The studios that are growing fastest right now aren't the ones with the best Facebook ads. They're the ones with the best first 30 days.</p>
-  </article>
+    <p>The studios that are growing fastest right now aren't the ones with the <a href="https://therunrate.co/studio-growth/fitness-studio-new-member-acquisition-sources">best Facebook ads</a>. They're the ones with the best first 30 days.</p>
+  
+    <h2>What does a 1% improvement in 30-day retention actually mean for your bottom line?</h2>
+    <p>More than most operators expect. If you're running 200 members at $100/month and losing 57% before year one, a single percentage point improvement in early retention compounds fast — fewer replacement members to acquire at six times the cost, higher lifetime value per seat, and a referral base that grows instead of turns over. The studios winning on growth right now aren't outspending anyone on acquisition. They're just losing fewer people in the first 30 days. That's the whole game.</p>
+
+    <div class="art-faq">
+    <h3>Frequently Asked Questions</h3>
+    <div class="faq-item"><div class="faq-q">What is the single most effective thing a studio can do to reduce early churn?</div><div class="faq-a">Trigger a personal outreach from a staff member or coach to any new member who hasn't visited within their first 7 days. It doesn't need to be elaborate — just a message that shows the member they've been noticed. That single touchpoint has an outsized impact on whether a habit forms.</div></div>
+    <div class="faq-item"><div class="faq-q">Why do members say they canceled for price or schedule when that isn't really why?</div><div class="faq-a">Because the actual decision — a quiet disengagement driven by lack of habit, social connection, or undelivered promises — happened weeks earlier. By the time they cancel, members have already rationalized the exit. Price and schedule are the story, not the cause.</div></div>
+    <div class="faq-item"><div class="faq-q">How should studios measure churn risk in real time rather than after the fact?</div><div class="faq-a">Watch visit frequency in the first 30 days, not cancellation dates. A member who hasn't visited in their first 10 days is already a high-risk signal. Most studio CRMs only show you who left — you need to be tracking who has stopped showing up before they've formally quit.</div></div>
+    </div>
+</article>
 
     <aside class="art-sidebar">
     <div class="sidebar-sub">

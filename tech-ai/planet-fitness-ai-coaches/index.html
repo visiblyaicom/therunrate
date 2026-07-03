@@ -43,24 +43,60 @@
         "@type": "Person",
         "name": "Alice",
         "jobTitle": "Editor",
-        "worksFor": {"@type": "Organization", "name": "The Run Rate", "url": "https://therunrate.co", "logo": {"@type": "ImageObject", "url": "https://therunrate.co/logo.png"}, "description": "Growth intelligence for fitness, wellness and health tech.", "sameAs": ["https://www.instagram.com/therunrate.co", "https://www.linkedin.com/company/the-run-rate", "https://newsletter.therunrate.co"]}
+        "worksFor": {
+          "@type": "Organization",
+          "name": "The Run Rate",
+          "url": "https://therunrate.co",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "https://therunrate.co/logo.png"
+          },
+          "description": "Growth intelligence for fitness, wellness and health tech.",
+          "sameAs": [
+            "https://www.instagram.com/therunrate.co",
+            "https://www.linkedin.com/company/the-run-rate",
+            "https://newsletter.therunrate.co"
+          ]
+        }
       },
       "publisher": {
         "@type": "Organization",
         "name": "The Run Rate",
         "url": "https://therunrate.co",
-        "logo": {"@type": "ImageObject", "url": "https://therunrate.co/logo.png"}
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://therunrate.co/logo.png"
+        }
       },
       "articleSection": "AI & Tech",
-      "keywords": ["Planet Fitness AI coaches", "fitness studio AI technology", "independent gym competition", "AI personal training", "fitness tech trends"],
+      "keywords": [
+        "Planet Fitness AI coaches",
+        "fitness studio AI technology",
+        "independent gym competition",
+        "AI personal training",
+        "fitness tech trends"
+      ],
       "about": [
-        {"@type": "Organization", "name": "Planet Fitness"},
-        {"@type": "Thing", "name": "Artificial Intelligence in Fitness"},
-        {"@type": "Thing", "name": "Independent Fitness Studio Strategy"}
+        {
+          "@type": "Organization",
+          "name": "Planet Fitness"
+        },
+        {
+          "@type": "Thing",
+          "name": "Artificial Intelligence in Fitness"
+        },
+        {
+          "@type": "Thing",
+          "name": "Independent Fitness Studio Strategy"
+        }
       ],
       "speakable": {
         "@type": "SpeakableSpecification",
-        "cssSelector": [".art-kicker", ".stat-strip", ".body-col p:first-of-type"]
+        "cssSelector": [
+          ".art-kicker",
+          ".stat-strip",
+          ".body-col p:first-of-type"
+        ]
       }
     },
     {
@@ -68,7 +104,38 @@
       "name": "The Run Rate",
       "url": "https://therunrate.co",
       "description": "Growth intelligence for fitness and wellness operators. Weekly newsletter covering studio growth, retention, acquisition, and AI & tech.",
-      "sameAs": ["https://newsletter.therunrate.co"]
+      "sameAs": [
+        "https://newsletter.therunrate.co"
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Can independent studios realistically compete with Planet Fitness on AI coaching features?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No — and that's not the right frame. Planet Fitness has the scale and infrastructure to commoditize AI coaching. Independent studios win by doing what AI structurally cannot: building genuine human relationships at the moments that determine whether a member stays or leaves."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "When is a new member most at risk of churning, and what should studios do about it?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The highest-risk window is days 7 through 30. A member who doesn't form a habit in their first month rarely forms one at all. Auditing your first-30-day touchpoint cadence — and replacing automated check-ins with real human contact from coaches — is the single highest-leverage retention intervention available right now."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How is Planet Fitness actually using AI coaching, and why does it matter for premium studios?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Planet Fitness is using AI coaching primarily as a churn-reduction tool, not a training tool. Even a modest retention lift is highly profitable at $10/month across 2,500+ locations. The strategic danger for premium studios is that it normalizes AI coaching as a baseline expectation — the same way app booking and on-demand video once did."
+          }
+        }
+      ]
     }
   ]
 }
@@ -223,6 +290,13 @@ footer { background:var(--navy-deep); border-top:3px solid var(--yellow); }
   .footer-slug { display:none; }
 }
 
+
+.art-faq{margin-top:48px;padding-top:28px;border-top:1px solid var(--border)}
+.art-faq h3{font-family:'Playfair Display',serif;font-size:22px;font-weight:700;margin-bottom:20px}
+.faq-item{margin-bottom:20px}
+.faq-q{font-size:15px;font-weight:600;margin-bottom:6px;color:var(--ink)}
+.faq-a{font-size:15px;color:#3a3f4a;line-height:1.65}
+.byline-bio{font-size:13px;color:var(--muted, #6b7280);line-height:1.5;padding:12px 0 0}
 </style>
 <script async type="application/javascript" src="https://news.google.com/swg/js/v1/swg-basic.js"></script>
 <script>
@@ -316,6 +390,7 @@ footer { background:var(--navy-deep); border-top:3px solid var(--yellow); }
       </a>
     </div>
   </div>
+<p class="byline-bio">Alice covers growth, retention and technology for fitness and wellness operators at The Run Rate.</p>
 </div>
 
 <!-- HERO IMAGE -->
@@ -363,7 +438,7 @@ footer { background:var(--navy-deep); border-top:3px solid var(--yellow); }
   <article class="art-body">
     <p>Planet Fitness announced AI-powered coaching features for all members last week. At $10/month. Across 2,500+ locations. This isn't a pilot. It's a market signal — and independent studios have a narrow window to respond before the window closes.</p>
 
-    <p>The move follows a predictable playbook. A dominant low-cost operator adds a capability that was previously a differentiator for premium competitors, normalizing it as a baseline feature. It happened with app-based class booking, with on-demand video libraries, and now with AI coaching.</p>
+    <p>The move follows a predictable playbook. A dominant low-cost operator adds a capability that was previously a differentiator for premium competitors, normalizing it as a baseline feature. It happened with <a href="https://therunrate.co/tech-ai/peloton-connected-fitness-plan-b-strength-longevity">app-based class booking, with on-demand video libraries</a>, and now with AI coaching.</p>
 
     <div class="pull-quote">
       <p>"When the biggest low-cost operator in fitness adds AI, it stops being a differentiator and starts being an expectation."</p>
@@ -380,7 +455,7 @@ footer { background:var(--navy-deep); border-top:3px solid var(--yellow); }
 
     <p>The opportunity isn't to out-AI Planet Fitness. You can't. And you shouldn't try. The opportunity is to do the thing AI coaching fundamentally cannot do: build a genuine human relationship at the moment a member almost quits.</p>
 
-    <p>That moment happens between day 7 and day 30. A member who doesn't develop a habit in their first month rarely develops one at all. An AI can send a push notification. It cannot notice that someone looks discouraged and say the right thing.</p>
+    <p>That moment happens between day 7 and day 30. <a href="https://therunrate.co/studio-growth/fitness-studio-member-churn-year-one">A member who doesn't develop a habit in their first month rarely develops one at all</a>. An AI can send a push notification. It cannot notice that someone looks discouraged and say the right thing.</p>
 
     <p>Three moves that matter right now:</p>
 
@@ -392,12 +467,22 @@ footer { background:var(--navy-deep); border-top:3px solid var(--yellow); }
 
     <h2>The 18-month window</h2>
 
-    <p>AI coaching will become table stakes within 18 months. Every major gym software platform is building or acquiring it. That's not a prediction — it's already in the product roadmaps of the major players in fitness tech.</p>
+    <p>AI coaching will become table stakes within 18 months. <a href="https://therunrate.co/tech-ai/daxko-acquires-fitnessforce-fitness-software-consolidation">Every major gym software platform is building or acquiring it</a>. That's not a prediction — it's already in the product roadmaps of the major players in fitness tech.</p>
 
     <p>The studios that will win aren't the ones that add AI first. They're the ones that define what AI can't replace — and make that the center of their positioning — before everyone else figures it out.</p>
 
     <p>The window is open. It won't be for long.</p>
-  </article>
+  
+    <h2>What does the 18-month window actually mean for your studio's positioning?</h2>
+    <p>It means the clock is already running. AI coaching isn't a future threat — it's a current commodity in the making. Studios that wait until every major platform has shipped it will be defending ground they've already lost. The studios that win will have already answered a harder question: what is the irreplaceable thing we do? Human relationship, community belonging, and coach-driven accountability aren't soft differentiators. They're the only moat that compounds faster than a software update can erase it.</p>
+
+    <div class="art-faq">
+    <h3>Frequently Asked Questions</h3>
+    <div class="faq-item"><div class="faq-q">Can independent studios realistically compete with Planet Fitness on AI coaching features?</div><div class="faq-a">No — and that's not the right frame. Planet Fitness has the scale and infrastructure to commoditize AI coaching. Independent studios win by doing what AI structurally cannot: building genuine human relationships at the moments that determine whether a member stays or leaves.</div></div>
+    <div class="faq-item"><div class="faq-q">When is a new member most at risk of churning, and what should studios do about it?</div><div class="faq-a">The highest-risk window is days 7 through 30. A member who doesn't form a habit in their first month rarely forms one at all. Auditing your first-30-day touchpoint cadence — and replacing automated check-ins with real human contact from coaches — is the single highest-leverage retention intervention available right now.</div></div>
+    <div class="faq-item"><div class="faq-q">How is Planet Fitness actually using AI coaching, and why does it matter for premium studios?</div><div class="faq-a">Planet Fitness is using AI coaching primarily as a churn-reduction tool, not a training tool. Even a modest retention lift is highly profitable at $10/month across 2,500+ locations. The strategic danger for premium studios is that it normalizes AI coaching as a baseline expectation — the same way app booking and on-demand video once did.</div></div>
+    </div>
+</article>
 
     <aside class="art-sidebar">
     <div class="sidebar-sub">

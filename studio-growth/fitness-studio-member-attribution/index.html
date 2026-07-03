@@ -40,22 +40,76 @@
         "@type": "Person",
         "name": "Alice",
         "jobTitle": "Editor",
-        "worksFor": {"@type": "Organization", "name": "The Run Rate", "url": "https://therunrate.co", "logo": {"@type": "ImageObject", "url": "https://therunrate.co/logo.png"}, "description": "Growth intelligence for fitness, wellness and health tech.", "sameAs": ["https://www.instagram.com/therunrate.co", "https://www.linkedin.com/company/the-run-rate", "https://newsletter.therunrate.co"]}
+        "worksFor": {
+          "@type": "Organization",
+          "name": "The Run Rate",
+          "url": "https://therunrate.co",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "https://therunrate.co/logo.png"
+          },
+          "description": "Growth intelligence for fitness, wellness and health tech.",
+          "sameAs": [
+            "https://www.instagram.com/therunrate.co",
+            "https://www.linkedin.com/company/the-run-rate",
+            "https://newsletter.therunrate.co"
+          ]
+        }
       },
       "publisher": {
         "@type": "Organization",
         "name": "The Run Rate",
         "url": "https://therunrate.co",
-        "logo": {"@type": "ImageObject", "url": "https://therunrate.co/logo.png"}
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://therunrate.co/logo.png"
+        }
       },
       "articleSection": "Acquisition",
-      "keywords": ["fitness studio attribution", "gym member acquisition", "fitness marketing attribution", "studio growth", "member acquisition channels"]
+      "keywords": [
+        "fitness studio attribution",
+        "gym member acquisition",
+        "fitness marketing attribution",
+        "studio growth",
+        "member acquisition channels"
+      ]
     },
     {
       "@type": "Organization",
       "name": "The Run Rate",
       "url": "https://therunrate.co",
-      "sameAs": ["https://newsletter.therunrate.co"]
+      "sameAs": [
+        "https://newsletter.therunrate.co"
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What is last-click attribution and why is it a problem for fitness studios?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Last-click attribution gives all the credit for a new member to the final touchpoint they report — usually 'referral' or 'Instagram.' It ignores every channel that built awareness before that moment, which means studios routinely defund the channels actually doing the heavy lifting and over-invest in the ones that just happened to be last."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How many questions should a fitness studio's attribution survey include?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Three questions maximum. Drop-off increases sharply beyond that. The three covered here capture first-touch channel, conversion trigger, and member goals — giving you acquisition intelligence and retention data from a single short form."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How long does it take before first-touch attribution data becomes actionable?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Expect the first month to feel inconclusive. By month three, patterns start to emerge. By month six, you'll have a defensible, channel-level view of what's actually driving member growth — enough to make real budget reallocation decisions."
+          }
+        }
+      ]
     }
   ]
 }
@@ -204,6 +258,13 @@ footer { background:var(--navy-deep); border-top:3px solid var(--yellow); }
   .footer-bottom { padding:16px; flex-direction:column; align-items:flex-start; gap:6px; }
   .footer-slug { display:none; }
 }
+
+.art-faq{margin-top:48px;padding-top:28px;border-top:1px solid var(--border)}
+.art-faq h3{font-family:'Playfair Display',serif;font-size:22px;font-weight:700;margin-bottom:20px}
+.faq-item{margin-bottom:20px}
+.faq-q{font-size:15px;font-weight:600;margin-bottom:6px;color:var(--ink)}
+.faq-a{font-size:15px;color:#3a3f4a;line-height:1.65}
+.byline-bio{font-size:13px;color:var(--muted, #6b7280);line-height:1.5;padding:12px 0 0}
 </style>
 <script async type="application/javascript" src="https://news.google.com/swg/js/v1/swg-basic.js"></script>
 <script>
@@ -284,6 +345,7 @@ footer { background:var(--navy-deep); border-top:3px solid var(--yellow); }
       </a>
     </div>
   </div>
+<p class="byline-bio">Alice covers growth, retention and technology for fitness and wellness operators at The Run Rate.</p>
 </div>
 
 <div class="art-hero">
@@ -323,7 +385,7 @@ footer { background:var(--navy-deep); border-top:3px solid var(--yellow); }
 
     <p>Here's the problem: a new member fills out your intake form and checks "referred by a friend." That gets logged as a referral. Done. But what made that friend become a member in the first place? Was it a Google search? Your Instagram? A promotion that ran in January? That's the question nobody's asking — and it's the one that actually explains your growth.</p>
 
-    <p>The result is a pattern that keeps repeating: studios over-invest in Instagram, under-invest in whatever's actually building word-of-mouth, and then wonder why their referral programs aren't generating more volume. The channel you're crediting isn't always the channel doing the work.</p>
+    <p>The result is a pattern that keeps repeating: studios over-invest in Instagram, under-invest in whatever's actually building word-of-mouth, and then wonder why their <a href="https://therunrate.co/studio-growth/fitness-studio-new-member-acquisition-sources">referral programs aren't generating more volume</a>. The channel you're crediting isn't always the channel doing the work.</p>
 
     <h2>Why it matters more than you think</h2>
 
@@ -344,7 +406,7 @@ footer { background:var(--navy-deep); border-top:3px solid var(--yellow); }
       <div class="survey-q">Q2: What made you decide to book today?</div>
       <div class="survey-hint">Open text (short answer) — this surfaces what actually converts, not just what builds awareness.</div>
       <div class="survey-q">Q3: What are you hoping to get from your first few months with us?</div>
-      <div class="survey-hint">Open text — feeds your retention sequence at the same time. Two birds.</div>
+      <div class="survey-hint">Open text — <a href="https://therunrate.co/studio-growth/fitness-studio-member-churn-year-one">feeds your retention sequence at the same time</a>. Two birds.</div>
     </div>
 
     <p>Build this into your booking software, a linked Typeform, or your welcome email. Keep it to three questions maximum — drop-off increases sharply after that.</p>
@@ -369,7 +431,17 @@ footer { background:var(--navy-deep); border-top:3px solid var(--yellow); }
     <p>If you're running any digital advertising and want to capture UTM data automatically without building a custom integration, <a href="https://attributer.io" target="_blank" rel="noopener">Attributer.io</a> is worth a look. It captures UTM parameters and referral source from your website visitors and appends it to every form submission or CRM entry — without code. It's not a full analytics platform. Think of it as a UTM capture layer between your marketing and your CRM. Most useful once you're running two or more paid channels and need to differentiate what's working from what just looks good on the dashboard.</p>
 
     <p>But the survey approach comes first. Start with the intake form. Once you've got a baseline on first-touch channels, the tech layer becomes meaningful. Before that, it's just another dashboard with nothing to compare against.</p>
-  </article>
+  
+    <h2>Why do most studios keep funding channels that aren't actually driving members?</h2>
+    <p>Because last-click logic feels like data. When a member writes 'referral' on an intake form, it registers as a clean answer — and nobody digs further. The channel that closed the conversion gets the credit; the channels that built the belief never get counted. The result is predictable: Instagram budgets grow, Google search stays underfunded, and referral programs get relaunched every six months without improving. Better measurement doesn't require new software. It requires three questions, reviewed monthly, until the pattern becomes undeniable.</p>
+
+    <div class="art-faq">
+    <h3>Frequently Asked Questions</h3>
+    <div class="faq-item"><div class="faq-q">What is last-click attribution and why is it a problem for fitness studios?</div><div class="faq-a">Last-click attribution gives all the credit for a new member to the final touchpoint they report — usually 'referral' or 'Instagram.' It ignores every channel that built awareness before that moment, which means studios routinely defund the channels actually doing the heavy lifting and over-invest in the ones that just happened to be last.</div></div>
+    <div class="faq-item"><div class="faq-q">How many questions should a fitness studio's attribution survey include?</div><div class="faq-a">Three questions maximum. Drop-off increases sharply beyond that. The three covered here capture first-touch channel, conversion trigger, and member goals — giving you acquisition intelligence and retention data from a single short form.</div></div>
+    <div class="faq-item"><div class="faq-q">How long does it take before first-touch attribution data becomes actionable?</div><div class="faq-a">Expect the first month to feel inconclusive. By month three, patterns start to emerge. By month six, you'll have a defensible, channel-level view of what's actually driving member growth — enough to make real budget reallocation decisions.</div></div>
+    </div>
+</article>
 
   <aside class="art-sidebar">
     <div class="sidebar-sub">

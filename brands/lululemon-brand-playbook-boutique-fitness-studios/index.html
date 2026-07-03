@@ -40,22 +40,76 @@
         "@type": "Person",
         "name": "Alice",
         "jobTitle": "Editor",
-        "worksFor": {"@type": "Organization", "name": "The Run Rate", "url": "https://therunrate.co", "logo": {"@type": "ImageObject", "url": "https://therunrate.co/logo.png"}, "description": "Growth intelligence for fitness, wellness and health tech.", "sameAs": ["https://www.instagram.com/therunrate.co", "https://www.linkedin.com/company/the-run-rate", "https://newsletter.therunrate.co"]}
+        "worksFor": {
+          "@type": "Organization",
+          "name": "The Run Rate",
+          "url": "https://therunrate.co",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "https://therunrate.co/logo.png"
+          },
+          "description": "Growth intelligence for fitness, wellness and health tech.",
+          "sameAs": [
+            "https://www.instagram.com/therunrate.co",
+            "https://www.linkedin.com/company/the-run-rate",
+            "https://newsletter.therunrate.co"
+          ]
+        }
       },
       "publisher": {
         "@type": "Organization",
         "name": "The Run Rate",
         "url": "https://therunrate.co",
-        "logo": {"@type": "ImageObject", "url": "https://therunrate.co/logo.png"}
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://therunrate.co/logo.png"
+        }
       },
       "articleSection": "Brand Strategy",
-      "keywords": ["Lululemon brand strategy", "fitness studio marketing", "community ambassador model", "boutique fitness no ads", "fitness brand building"]
+      "keywords": [
+        "Lululemon brand strategy",
+        "fitness studio marketing",
+        "community ambassador model",
+        "boutique fitness no ads",
+        "fitness brand building"
+      ]
     },
     {
       "@type": "Organization",
       "name": "The Run Rate",
       "url": "https://therunrate.co",
-      "sameAs": ["https://newsletter.therunrate.co"]
+      "sameAs": [
+        "https://newsletter.therunrate.co"
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "How did Lululemon actually structure its ambassador program, and can small studios replicate it?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Lululemon identified 10–15 highly connected local fitness figures per market — yoga teachers, run club leaders, trainers — and offered modest compensation (a few hundred dollars plus free product) in exchange for authentic community engagement. Studios can replicate this at smaller scale: five well-chosen local connectors, given genuine insider access and a great experience, can drive more qualified members than most paid campaigns."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Won't cutting Meta ad spend hurt a studio's new member pipeline in the short term?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Possibly, briefly. But the article suggests a controlled experiment rather than a cold cut: redirect one week of ad spend toward a community event and track 30-day joins. Most studios discover the pipeline impact is smaller than feared and the quality of members acquired is meaningfully higher."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What killed Lululemon's differentiation as it scaled, and what's the warning for growing studios?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Growth pressure pushed Lululemon toward category expansion — men's apparel, international markets, lifestyle adjacencies — which diluted the precise product focus that made the brand defensible. For studios, the parallel trap is adding formats, locations, or offerings to chase revenue, which erodes the specific thing that made word-of-mouth work in the first place."
+          }
+        }
+      ]
     }
   ]
 }
@@ -199,6 +253,13 @@ footer { background:var(--navy-deep); border-top:3px solid var(--yellow); }
   .footer-bottom { padding:16px; flex-direction:column; align-items:flex-start; gap:6px; }
   .footer-slug { display:none; }
 }
+
+.art-faq{margin-top:48px;padding-top:28px;border-top:1px solid var(--border)}
+.art-faq h3{font-family:'Playfair Display',serif;font-size:22px;font-weight:700;margin-bottom:20px}
+.faq-item{margin-bottom:20px}
+.faq-q{font-size:15px;font-weight:600;margin-bottom:6px;color:var(--ink)}
+.faq-a{font-size:15px;color:#3a3f4a;line-height:1.65}
+.byline-bio{font-size:13px;color:var(--muted, #6b7280);line-height:1.5;padding:12px 0 0}
 </style>
 <script async type="application/javascript" src="https://news.google.com/swg/js/v1/swg-basic.js"></script>
 <script>
@@ -289,6 +350,7 @@ footer { background:var(--navy-deep); border-top:3px solid var(--yellow); }
       </a>
     </div>
   </div>
+<p class="byline-bio">Alice covers growth, retention and technology for fitness and wellness operators at The Run Rate.</p>
 </div>
 
 <div class="art-hero">
@@ -334,7 +396,7 @@ footer { background:var(--navy-deep); border-top:3px solid var(--yellow); }
 
     <p>Not in their early years. Not when they scaled past $1B. Not today. No TV spots, no print, no paid social at scale. While Nike budgets hundreds of millions annually on media, Lululemon built a $10B business — with some of the highest gross margins in apparel — almost entirely without buying attention.</p>
 
-    <p>That's not an accident. It's a strategy. And the core mechanics of it are directly available to every boutique fitness studio that's currently burning budget on Meta ads and getting mediocre returns.</p>
+    <p>That's not an accident. It's a strategy. And the core mechanics of it are directly available to every boutique fitness studio that's currently <a href="https://therunrate.co/studio-growth/fitness-studio-new-member-acquisition-sources">burning budget on Meta ads and getting mediocre returns</a>.</p>
 
     <h2>What happened</h2>
 
@@ -365,9 +427,9 @@ footer { background:var(--navy-deep); border-top:3px solid var(--yellow); }
 
     <p>The reason fitness studios default to paid ads isn't because ads work better than community — it's because ads are easier to measure and easier to start. You can launch a Meta campaign in an afternoon. Building an ambassador network takes months and the results don't show up in a dashboard.</p>
 
-    <p>But the results show up in retention. Members who joined because a trusted person in their network recommended you stay longer, refer more, and complain less about price. Members who found you via a $15 lead ad have no particular loyalty to you over the next studio offering a Groupon.</p>
+    <p>But the results show up in retention. <a href="https://therunrate.co/studio-growth/fitness-studio-member-churn-year-one">Members who joined because a trusted person in their network recommended you stay longer</a>, refer more, and complain less about price. Members who found you via a $15 lead ad have no particular loyalty to you over the next studio offering a Groupon.</p>
 
-    <p>Lululemon understood that the path to pricing power and sustainable growth runs through community, not impressions. The studios that figure this out — and have the patience to build it — are the ones that will still be thriving in five years.</p>
+    <p>Lululemon understood that the path to <a href="https://therunrate.co/studio-growth/equinox-identity-pricing-playbook">pricing power and sustainable growth</a> runs through community, not impressions. The studios that figure this out — and have the patience to build it — are the ones that will still be thriving in five years.</p>
 
     <h2>Three moves to steal this week</h2>
 
@@ -385,7 +447,17 @@ footer { background:var(--navy-deep); border-top:3px solid var(--yellow); }
 
     <p>The no-ads strategy isn't a budget constraint. It's a philosophy. And the studios that commit to it will build something that paid media can't buy.</p>
 
-  </article>
+  
+    <h2>Does the no-ads playbook actually hold up when studios need members fast?</h2>
+    <p>Short-term, no — community-building doesn't fill a class by Tuesday. But the studios running pure paid acquisition are solving the wrong problem. Our data shows 57% of fitness studio members churn in year one, and the acquisition channel is a primary driver of that. Members sourced through trusted referrals retain longer, spend more, and generate their own referrals. Paid ads rent attention. Ambassador networks compound. The studios that are genuinely thriving past year three aren't the ones who cracked the Facebook algorithm — they're the ones who made paid media unnecessary.</p>
+
+    <div class="art-faq">
+    <h3>Frequently Asked Questions</h3>
+    <div class="faq-item"><div class="faq-q">How did Lululemon actually structure its ambassador program, and can small studios replicate it?</div><div class="faq-a">Lululemon identified 10–15 highly connected local fitness figures per market — yoga teachers, run club leaders, trainers — and offered modest compensation (a few hundred dollars plus free product) in exchange for authentic community engagement. Studios can replicate this at smaller scale: five well-chosen local connectors, given genuine insider access and a great experience, can drive more qualified members than most paid campaigns.</div></div>
+    <div class="faq-item"><div class="faq-q">Won't cutting Meta ad spend hurt a studio's new member pipeline in the short term?</div><div class="faq-a">Possibly, briefly. But the article suggests a controlled experiment rather than a cold cut: redirect one week of ad spend toward a community event and track 30-day joins. Most studios discover the pipeline impact is smaller than feared and the quality of members acquired is meaningfully higher.</div></div>
+    <div class="faq-item"><div class="faq-q">What killed Lululemon's differentiation as it scaled, and what's the warning for growing studios?</div><div class="faq-a">Growth pressure pushed Lululemon toward category expansion — men's apparel, international markets, lifestyle adjacencies — which diluted the precise product focus that made the brand defensible. For studios, the parallel trap is adding formats, locations, or offerings to chase revenue, which erodes the specific thing that made word-of-mouth work in the first place.</div></div>
+    </div>
+</article>
 
   <aside class="art-sidebar">
     <div class="sidebar-sub">

@@ -43,25 +43,65 @@
         "@type": "Person",
         "name": "Alice",
         "jobTitle": "Editor",
-        "worksFor": {"@type": "Organization", "name": "The Run Rate", "url": "https://therunrate.co", "logo": {"@type": "ImageObject", "url": "https://therunrate.co/logo.png"}, "description": "Growth intelligence for fitness, wellness and health tech.", "sameAs": ["https://www.instagram.com/therunrate.co", "https://www.linkedin.com/company/the-run-rate", "https://newsletter.therunrate.co"]}
+        "worksFor": {
+          "@type": "Organization",
+          "name": "The Run Rate",
+          "url": "https://therunrate.co",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "https://therunrate.co/logo.png"
+          },
+          "description": "Growth intelligence for fitness, wellness and health tech.",
+          "sameAs": [
+            "https://www.instagram.com/therunrate.co",
+            "https://www.linkedin.com/company/the-run-rate",
+            "https://newsletter.therunrate.co"
+          ]
+        }
       },
       "publisher": {
         "@type": "Organization",
         "name": "The Run Rate",
         "url": "https://therunrate.co",
-        "logo": {"@type": "ImageObject", "url": "https://therunrate.co/logo.png"}
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://therunrate.co/logo.png"
+        }
       },
       "articleSection": "Tech & AI",
-      "keywords": ["Daxko", "FitnessForce", "fitness software acquisition", "gym management software", "fitness tech consolidation", "API-first fitness platform"],
+      "keywords": [
+        "Daxko",
+        "FitnessForce",
+        "fitness software acquisition",
+        "gym management software",
+        "fitness tech consolidation",
+        "API-first fitness platform"
+      ],
       "about": [
-        {"@type": "Organization", "name": "Daxko"},
-        {"@type": "Organization", "name": "FitnessForce"},
-        {"@type": "Thing", "name": "Fitness Software Consolidation"},
-        {"@type": "Thing", "name": "Gym Management Technology"}
+        {
+          "@type": "Organization",
+          "name": "Daxko"
+        },
+        {
+          "@type": "Organization",
+          "name": "FitnessForce"
+        },
+        {
+          "@type": "Thing",
+          "name": "Fitness Software Consolidation"
+        },
+        {
+          "@type": "Thing",
+          "name": "Gym Management Technology"
+        }
       ],
       "speakable": {
         "@type": "SpeakableSpecification",
-        "cssSelector": [".art-deck", ".art-stats-inner", ".art-body p:first-of-type"]
+        "cssSelector": [
+          ".art-deck",
+          ".art-stats-inner",
+          ".art-body p:first-of-type"
+        ]
       }
     },
     {
@@ -69,7 +109,38 @@
       "name": "The Run Rate",
       "url": "https://therunrate.co",
       "description": "Growth intelligence for fitness and wellness operators.",
-      "sameAs": ["https://newsletter.therunrate.co"]
+      "sameAs": [
+        "https://newsletter.therunrate.co"
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What is FitnessForce and why did Daxko acquire it?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "FitnessForce is an API-first membership management platform operating across 12 countries on three continents, built on 1,100+ APIs and 50 webhooks. Daxko acquired it primarily for international expansion into India, the Middle East, Australia, and Southeast Asia — but the more strategic prize is FitnessForce's modern architecture, which Daxko could use as a blueprint to modernize its legacy portfolio."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How does this acquisition affect independent fitness studio software vendors?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Every acquisition by Daxko, ABC Fitness, or similar consolidators shrinks the field of independent vendors competing for studio business. Fewer competitors means less pressure on price, integration openness, and responsiveness — so operators who haven't locked into long-term contracts still have negotiating leverage that will erode as consolidation continues."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Could Daxko actually use FitnessForce's API architecture across its entire portfolio?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Theoretically yes — and that's the most compelling version of this deal. If FitnessForce's headless, API-first design becomes a backbone for platforms like Club Automation, CSI, and Motionsoft, Daxko could ship integrations faster and layer AI features across 19,000+ locations without rebuilding from scratch. But acquisition integration roadmaps frequently stall, so the product roadmap over the next 12-18 months is the real signal to watch."
+          }
+        }
+      ]
     }
   ]
 }
@@ -223,6 +294,13 @@ footer { background:var(--navy-deep); border-top:3px solid var(--yellow); }
   .footer-bottom { padding:16px; flex-direction:column; align-items:flex-start; gap:6px; }
   .footer-slug { display:none; }
 }
+
+.art-faq{margin-top:48px;padding-top:28px;border-top:1px solid var(--border)}
+.art-faq h3{font-family:'Playfair Display',serif;font-size:22px;font-weight:700;margin-bottom:20px}
+.faq-item{margin-bottom:20px}
+.faq-q{font-size:15px;font-weight:600;margin-bottom:6px;color:var(--ink)}
+.faq-a{font-size:15px;color:#3a3f4a;line-height:1.65}
+.byline-bio{font-size:13px;color:var(--muted, #6b7280);line-height:1.5;padding:12px 0 0}
 </style>
 <script async type="application/javascript" src="https://news.google.com/swg/js/v1/swg-basic.js"></script>
 <script>
@@ -316,6 +394,7 @@ footer { background:var(--navy-deep); border-top:3px solid var(--yellow); }
       </a>
     </div>
   </div>
+<p class="byline-bio">Alice covers growth, retention and technology for fitness and wellness operators at The Run Rate.</p>
 </div>
 
 <!-- HERO IMAGE -->
@@ -392,22 +471,32 @@ footer { background:var(--navy-deep); border-top:3px solid var(--yellow); }
 
     <h2>The consolidation math for studio owners</h2>
 
-    <p>Here's the more immediate concern for operators: this acquisition is one more step in the rapid consolidation of fitness software. Daxko, ABC Fitness, and a handful of other platforms are buying up the landscape. Each acquisition narrows the field of independent vendors competing for your business — and raises the switching costs for the operators already inside those portfolios.</p>
+    <p>Here's the more immediate concern for operators: this acquisition is one more step in the <a href="https://therunrate.co/tech-ai/octiv-explore-gym-software-owned-distribution-aggregators">rapid consolidation of fitness software</a>. Daxko, ABC Fitness, and a handful of other platforms are buying up the landscape. Each acquisition narrows the field of independent vendors competing for your business — and raises the switching costs for the operators already inside those portfolios.</p>
 
     <p>The studios with the most leverage right now are the ones evaluating software before locking into long-term contracts. Once consolidation finishes its work, the negotiating window closes. The platforms that survive will have less pressure to compete on price, integration openness, or responsiveness — because there will be fewer places for an unhappy operator to go.</p>
 
-    <p>That's not a reason to panic. But it is a reason to read the fine print on your next renewal.</p>
+    <p>That's not a reason to panic. But it is a reason to <a href="https://therunrate.co/tech-ai/octiv-explore-gym-software-owned-distribution-aggregators">read the fine print on your next renewal</a>.</p>
 
     <h2>The execution question</h2>
 
     <p>Acquisitions have a way of producing ambitious integration roadmaps that quietly stall. The acquired team gets absorbed into the mothership. The "modern platform" gets positioned as a separate product line. The synergies remain in the deck but not in the product.</p>
 
-    <p>If Daxko executes — if FitnessForce's API architecture actually accelerates development across the legacy portfolio — the combined platform becomes meaningfully more competitive. Faster integrations, better third-party connectivity, and the ability to ship AI features across 19,000 locations is a genuine moat.</p>
+    <p>If Daxko executes — if FitnessForce's API architecture actually accelerates development across the legacy portfolio — the combined platform becomes meaningfully more competitive. Faster integrations, better third-party connectivity, and the <a href="https://therunrate.co/tech-ai/planet-fitness-ai-coaches">ability to ship AI features across 19,000 locations</a> is a genuine moat.</p>
 
     <p>If they don't execute, it's a geographic expansion with a good press release. The fitness software market will have one more large platform with a complicated legacy stack and an international footprint it doesn't quite know what to do with.</p>
 
     <p>Watch the product roadmap, not the announcement.</p>
-  </article>
+  
+    <h2>What does this mean for studio operators right now?</h2>
+    <p>Consolidation doesn't hurt you the day it's announced — it hurts you at your next renewal. Daxko's portfolio now touches 19,000+ locations across 55 countries. ABC Fitness and a handful of others are buying up the rest. Every independent vendor that gets absorbed narrows your negotiating leverage and raises your switching costs. The window to evaluate alternatives, renegotiate contracts, and demand integration openness is open now. It won't stay open. Operators who treat software as a commodity until it's painful will find themselves locked into platforms that no longer need to compete for their business.</p>
+
+    <div class="art-faq">
+    <h3>Frequently Asked Questions</h3>
+    <div class="faq-item"><div class="faq-q">What is FitnessForce and why did Daxko acquire it?</div><div class="faq-a">FitnessForce is an API-first membership management platform operating across 12 countries on three continents, built on 1,100+ APIs and 50 webhooks. Daxko acquired it primarily for international expansion into India, the Middle East, Australia, and Southeast Asia — but the more strategic prize is FitnessForce's modern architecture, which Daxko could use as a blueprint to modernize its legacy portfolio.</div></div>
+    <div class="faq-item"><div class="faq-q">How does this acquisition affect independent fitness studio software vendors?</div><div class="faq-a">Every acquisition by Daxko, ABC Fitness, or similar consolidators shrinks the field of independent vendors competing for studio business. Fewer competitors means less pressure on price, integration openness, and responsiveness — so operators who haven't locked into long-term contracts still have negotiating leverage that will erode as consolidation continues.</div></div>
+    <div class="faq-item"><div class="faq-q">Could Daxko actually use FitnessForce's API architecture across its entire portfolio?</div><div class="faq-a">Theoretically yes — and that's the most compelling version of this deal. If FitnessForce's headless, API-first design becomes a backbone for platforms like Club Automation, CSI, and Motionsoft, Daxko could ship integrations faster and layer AI features across 19,000+ locations without rebuilding from scratch. But acquisition integration roadmaps frequently stall, so the product roadmap over the next 12-18 months is the real signal to watch.</div></div>
+    </div>
+</article>
 
   <aside class="art-sidebar">
     <div class="sidebar-sub">
