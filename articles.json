@@ -1,5 +1,35 @@
 [
   {
+    "title": "AI Can Write Your Workout Plan But It Can't Show Up For You.",
+    "url": "/studio-growth/ai-workout-plans-accountability-fitness-studios",
+    "category": "Studio Growth",
+    "section": "Retention",
+    "date": "2026-07-03",
+    "dateDisplay": "Jul 3, 2026",
+    "image": "/ai-accountability-fitness-studios.png",
+    "deck": "Generic AI programming is now free. The thing it can't replicate — a human who shows up and holds you to it — is what studios are actually selling."
+  },
+  {
+    "title": "Nike Had the Budget. It Never Had the Fitness Studio Moat.",
+    "url": "/brands/nike-fitness-studios-shutdown-boutique-lessons",
+    "category": "Brands",
+    "section": "Brand Strategy",
+    "date": "2026-07-03",
+    "dateDisplay": "Jul 3, 2026",
+    "image": "/nike-fitness-studios-shutdown.png",
+    "deck": "Nike just closed its fitness studios. The failure wasn't a lack of capital — it was the absence of a method, a founder story, and a following that believed in either."
+  },
+  {
+    "title": "The Social Media Comment-Jacking Playbook: Free Reach for Studios",
+    "url": "/studio-growth/comment-jacking-playbook-fitness-studio-growth",
+    "category": "Studio Growth",
+    "section": "Growth Playbook",
+    "date": "2026-07-03",
+    "dateDisplay": "Jul 3, 2026",
+    "image": "/comment-jacking-playbook-fitness-studios.png",
+    "deck": "A step-by-step framework for borrowing reach from bigger accounts your ideal members already follow — no ad spend, no influencer deals, just showing up in the right comments."
+  },
+  {
     "title": "Equinox Doesn't Compete on Price. It Competes on Identity.",
     "url": "/studio-growth/equinox-identity-pricing-playbook",
     "category": "Studio Growth",
@@ -107,7 +137,7 @@
     "date": "2026-06-29",
     "dateDisplay": "Jun 29, 2026",
     "image": "/octiv-explore-gym-software-owned-distribution.png",
-    "deck": "Octiv just launched a consumer discovery engine for 1,400 gyms across 40 countries \u2014 and it signals the end of paying aggregators to find your own customers."
+    "deck": "Octiv just launched a consumer discovery engine for 1,400 gyms across 40 countries — and it signals the end of paying aggregators to find your own customers."
   },
   {
     "title": "The Longevity Clinic Is Coming for Your Members. Here's How to Not Lose Them.",
@@ -127,7 +157,7 @@
     "date": "2026-06-29",
     "dateDisplay": "Jun 29, 2026",
     "image": "/lululemon-brand-playbook-boutique-fitness-studios.png",
-    "deck": "No TV. No print. No paid social. Just obsessive product focus and local community ambassadors. The playbook is free \u2014 and most studios aren't using it."
+    "deck": "No TV. No print. No paid social. Just obsessive product focus and local community ambassadors. The playbook is free — and most studios aren't using it."
   },
   {
     "title": "Whoop Just Won a Fight Apple and Samsung Couldn't",
@@ -137,7 +167,7 @@
     "date": "2026-06-29",
     "dateDisplay": "Jun 29, 2026",
     "image": "/whoop-fda-blood-pressure-wearables-fitness-studios.png",
-    "deck": "The FDA cleared Whoop's blood pressure feature \u2014 without the clearance Apple Watch has been chasing for years. Here's what it means for your studio."
+    "deck": "The FDA cleared Whoop's blood pressure feature — without the clearance Apple Watch has been chasing for years. Here's what it means for your studio."
   },
   {
     "title": "The Vibe Era Is Over. What Comes Next for Pilates, Boxing, and Barre.",
@@ -157,7 +187,7 @@
     "date": "2026-06-29",
     "dateDisplay": "Jun 29, 2026",
     "image": "/exercise-dementia-longevity-fitness-studios.png",
-    "deck": "New research confirms regular exercise measurably slows cognitive decline. The opportunity for operators isn't just a wellness positioning shift \u2014 it's a referral network, a new pricing tier, and a program design question your competitors haven't asked yet."
+    "deck": "New research confirms regular exercise measurably slows cognitive decline. The opportunity for operators isn't just a wellness positioning shift — it's a referral network, a new pricing tier, and a program design question your competitors haven't asked yet."
   },
   {
     "title": "Apple Is Building a Women's Health OS. Your Gym Is Either a Node in It or Invisible.",
@@ -167,7 +197,7 @@
     "date": "2026-06-29",
     "dateDisplay": "Jun 29, 2026",
     "image": "/apple-health-ios27-womens-fitness.png",
-    "deck": "iOS 27's perimenopause tracking and Apple Health+ aren't just features. They're Apple staking a claim on the 40+ female health journey \u2014 the same journey your millennial members are now on."
+    "deck": "iOS 27's perimenopause tracking and Apple Health+ aren't just features. They're Apple staking a claim on the 40+ female health journey — the same journey your millennial members are now on."
   },
   {
     "title": "Daxko Just Bought an API Stack. Here's Why That Matters More Than the Acquisition.",
@@ -197,7 +227,7 @@
     "date": "2026-06-27",
     "dateDisplay": "Jun 27, 2026",
     "image": "/fitness-studio-member-churn-statistics.png",
-    "deck": "The data is damning \u2014 and it's not about price, location, or equipment. Members who leave tell a consistent story. The question is whether you're listening before they go."
+    "deck": "The data is damning — and it's not about price, location, or equipment. Members who leave tell a consistent story. The question is whether you're listening before they go."
   },
   {
     "title": "80% of New Members Come From 3 Sources. Most Studios Are Funding the Other 20.",
@@ -217,6 +247,6 @@
     "date": "2026-04-19",
     "dateDisplay": "Apr 19, 2026",
     "image": "/fitness-studio-member-attribution.png",
-    "deck": "Most fitness studios credit referrals and Instagram \u2014 but have no data to back it up. The attribution gap costs more than most operators realize, and fixing it starts with three questions on a signup form."
+    "deck": "Most fitness studios credit referrals and Instagram — but have no data to back it up. The attribution gap costs more than most operators realize, and fixing it starts with three questions on a signup form."
   }
 ]
