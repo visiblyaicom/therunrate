@@ -23,6 +23,10 @@ const TRR = (() => {
     return `background-image:url('${src}');background-size:cover;background-position:center;`;
   }
 
+  function lazyImg(a) {
+    return `<img src="${a.image}" alt="${a.title}" loading="lazy" decoding="async" style="width:100%;height:100%;object-fit:cover;display:block;">`;
+  }
+
   function label(a) {
     return a.section || a.category;
   }
@@ -39,7 +43,7 @@ const TRR = (() => {
     el.className = 'cat-grid';
     el.innerHTML = arts.map(a => `
       <a href="${a.url}" class="cat-card">
-        <div class="cat-card-img" style="${bg(a.image)}"></div>
+        <div class="cat-card-img">${lazyImg(a)}</div>
         <div class="cat-card-meta">${label(a)} &nbsp;·&nbsp; ${a.dateDisplay}</div>
         <div class="cat-card-headline">${a.title}</div>
         <p class="cat-card-deck">${a.deck}</p>
@@ -69,7 +73,7 @@ const TRR = (() => {
     el.className = 'art-more-grid';
     el.innerHTML = picks.map(a => `
       <a href="${a.url}" class="mini-card">
-        <div class="mini-card-img" style="${bg(a.image)}"></div>
+        <div class="mini-card-img">${lazyImg(a)}</div>
         <div class="mini-card-cat">${label(a)}</div>
         <div class="mini-card-headline">${a.title}</div>
       </a>`).join('');
