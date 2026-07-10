@@ -1,5 +1,45 @@
 [
   {
+    "title": "Strava's IPO Isn't About Data. It's About Deeply Knowing Their Customer.",
+    "url": "/brands/strava-ipo-know-your-customer-fitness-studios",
+    "category": "Brands",
+    "section": "Community Strategy",
+    "date": "2026-07-10",
+    "dateDisplay": "Jul 10, 2026",
+    "image": "/strava-ipo-know-your-customer.jpg",
+    "deck": "Strava filed for IPO the same week its niche clubs quadrupled — proof that knowing your customer's specific, obsessive interest beats trying to serve everyone. Boutique studios have the same advantage sitting in their client data."
+  },
+  {
+    "title": "Gen Z Didn't Just Quit Drinking. They Found Something Better.",
+    "url": "/studio-growth/gen-z-fitness-spending-sober-curious-studios",
+    "category": "Studio Growth",
+    "section": "Member Acquisition",
+    "date": "2026-07-10",
+    "dateDisplay": "Jul 10, 2026",
+    "image": "/gen-z-fitness-spending-sober-curious.jpg",
+    "deck": "US drinking hit its lowest rate since 1939 while Gen Z fitness spend rose 9%. This isn't sobriety — it's a full reallocation of where a generation spends its social currency."
+  },
+  {
+    "title": "Crunch Just Put Their Money on Pilates. But Can It Buy the Experience?",
+    "url": "/tech-ai/pilates-connected-tech-boutique-experience-crunch",
+    "category": "Tech & AI",
+    "section": "Connected Fitness",
+    "date": "2026-07-10",
+    "dateDisplay": "Jul 10, 2026",
+    "image": "/pilates-connected-tech-boutique-experience.jpg",
+    "deck": "Crunch bet big on 20 Pilates locations and connected reformer tech. The 66% surge in ClassPass Pilates bookings proves the workout scales — the question is whether the experience does too."
+  },
+  {
+    "title": "The New Country Club Looks a Lot Like a Boutique Wellness Studio.",
+    "url": "/brands/virgin-active-social-wellness-club-boutique-playbook",
+    "category": "Brands",
+    "section": "Premium Positioning",
+    "date": "2026-07-10",
+    "dateDisplay": "Jul 10, 2026",
+    "image": "/virgin-active-social-wellness-country-club.jpg",
+    "deck": "Virgin Active's new Mayfair club blends fitness, recovery and lounge space into one membership — the exact community-first model boutique studios have used to win premium members for a decade."
+  },
+  {
     "title": "3 in 4 Instructors Feel Underpaid. Paying Everyone The Same Will Not Fix It.",
     "url": "/studio-growth/instructor-pay-bifurcation-fitness-studios",
     "category": "Studio Growth",
@@ -7,7 +47,7 @@
     "date": "2026-07-06",
     "dateDisplay": "Jul 6, 2026",
     "image": "/instructor-pay-bifurcation-fitness-studios.jpg",
-    "deck": "New instructor data shows a decade of flat pay. But the real fix isn't a blanket raise \u2014 it's admitting some instructors are talent and most are commodity, and building a pay structure that says so."
+    "deck": "New instructor data shows a decade of flat pay. But the real fix isn't a blanket raise — it's admitting some instructors are talent and most are commodity, and building a pay structure that says so."
   },
   {
     "title": "A Free Rest Club Went Viral in NYC. What Smart Studios Can Learn.",
@@ -17,7 +57,7 @@
     "date": "2026-07-06",
     "dateDisplay": "Jul 6, 2026",
     "image": "/club-rest-stop-fitness-studio-acquisition-funnel.jpg",
-    "deck": "Club Rest Stop charges nothing and still can't keep up with demand. For fitness studios chasing member acquisition, the lesson isn't to sell rest \u2014 it's to give away community the same way, and build the paid layer behind it."
+    "deck": "Club Rest Stop charges nothing and still can't keep up with demand. For fitness studios chasing member acquisition, the lesson isn't to sell rest — it's to give away community the same way, and build the paid layer behind it."
   },
   {
     "title": "The Rise of Rest and Recovery as Fitness's Next Big Monetization Play.",
@@ -27,7 +67,7 @@
     "date": "2026-07-06",
     "dateDisplay": "Jul 6, 2026",
     "image": "/recovery-monetization-fitness-studios.jpg",
-    "deck": "Wearables have made nervous-system data mainstream, and recovery studios are already proving people will pay for it \u2014 at wildly different price points. The trick is knowing which layer to sell, and what to give away first."
+    "deck": "Wearables have made nervous-system data mainstream, and recovery studios are already proving people will pay for it — at wildly different price points. The trick is knowing which layer to sell, and what to give away first."
   },
   {
     "title": "AI Can Write Your Workout Plan But It Can't Show Up For You.",
@@ -37,7 +77,7 @@
     "date": "2026-07-03",
     "dateDisplay": "Jul 3, 2026",
     "image": "/ai-accountability-fitness-studios.jpg",
-    "deck": "Generic AI programming is now free. The thing it can't replicate \u2014 a human who shows up and holds you to it \u2014 is what studios are actually selling."
+    "deck": "Generic AI programming is now free. The thing it can't replicate — a human who shows up and holds you to it — is what studios are actually selling."
   },
   {
     "title": "Nike Had the Budget. It Never Had the Fitness Studio Moat.",
@@ -47,7 +87,7 @@
     "date": "2026-07-03",
     "dateDisplay": "Jul 3, 2026",
     "image": "/nike-fitness-studios-shutdown.jpg",
-    "deck": "Nike just closed its fitness studios. The failure wasn't a lack of capital \u2014 it was the absence of a method, a founder story, and a following that believed in either."
+    "deck": "Nike just closed its fitness studios. The failure wasn't a lack of capital — it was the absence of a method, a founder story, and a following that believed in either."
   },
   {
     "title": "Equinox Doesn't Compete on Price. It Competes on Identity.",
@@ -57,7 +97,7 @@
     "date": "2026-07-02",
     "dateDisplay": "Jul 2, 2026",
     "image": "/equinox-identity-pricing-playbook.jpg",
-    "deck": "Equinox raised its membership price \u2014 again \u2014 while boutique studios are racing to the ClassPass floor. The difference isn't the gym. It's the identity contract. Here's the pricing playbook most operators are ignoring."
+    "deck": "Equinox raised its membership price — again — while boutique studios are racing to the ClassPass floor. The difference isn't the gym. It's the identity contract. Here's the pricing playbook most operators are ignoring."
   },
   {
     "title": "The Longevity Coach Is the New Personal Trainer. Fitness Studios Need to Decide Where They Stand.",
@@ -67,7 +107,7 @@
     "date": "2026-07-02",
     "dateDisplay": "Jul 2, 2026",
     "image": "/longevity-coach-trainer-fitness-studios.jpg",
-    "deck": "NASM just launched a longevity coaching certification. That's not a credential \u2014 it's a category signal. The trainer who can speak to VO2 max, zone 2 cardio, and muscle mass preservation is now competing directly with your membership model."
+    "deck": "NASM just launched a longevity coaching certification. That's not a credential — it's a category signal. The trainer who can speak to VO2 max, zone 2 cardio, and muscle mass preservation is now competing directly with your membership model."
   },
   {
     "title": "ClassPass Trained Consumers to Expect Optionality. Now Studios Are Paying for It.",
@@ -77,7 +117,7 @@
     "date": "2026-07-02",
     "dateDisplay": "Jul 2, 2026",
     "image": "/classpass-optionality-consumer-behavior.jpg",
-    "deck": "ClassPass didn't just build a discovery platform \u2014 it rewired how fitness consumers think about commitment. Studios that understand the optionality mindset (and build against it) are retaining members. The ones that ignore it are filling their classes at 40% margin."
+    "deck": "ClassPass didn't just build a discovery platform — it rewired how fitness consumers think about commitment. Studios that understand the optionality mindset (and build against it) are retaining members. The ones that ignore it are filling their classes at 40% margin."
   },
   {
     "title": "Pilates Isn't a Workout Anymore. It's a Business Model.",
@@ -87,7 +127,7 @@
     "date": "2026-07-02",
     "dateDisplay": "Jul 2, 2026",
     "image": "/pilates-business-model-boutique-fitness.jpg",
-    "deck": "Pilates studios that named their method, built an in-group, and priced above the ClassPass floor are quietly outperforming everyone else. The playbook isn't complicated \u2014 most studios just haven't committed to it."
+    "deck": "Pilates studios that named their method, built an in-group, and priced above the ClassPass floor are quietly outperforming everyone else. The playbook isn't complicated — most studios just haven't committed to it."
   },
   {
     "title": "Stop Checking Your Stats. Come Work Out.",
@@ -97,7 +137,7 @@
     "date": "2026-07-02",
     "dateDisplay": "Jul 2, 2026",
     "image": "/wearable-anxiety-health-trackers-fitness-studios.jpg",
-    "deck": "WHOOP data now shows exactly when your members' stress peaks. The LA Times says health trackers are making people more anxious, not healthier. Your studio is the actual answer to both \u2014 most operators just haven't figured out how to say it."
+    "deck": "WHOOP data now shows exactly when your members' stress peaks. The LA Times says health trackers are making people more anxious, not healthier. Your studio is the actual answer to both — most operators just haven't figured out how to say it."
   },
   {
     "title": "Crunch Has a New CEO. Here's What It Signals for the Budget Fitness Wars.",
@@ -107,7 +147,7 @@
     "date": "2026-06-30",
     "dateDisplay": "Jun 30, 2026",
     "image": "/crunch-fitness-chequan-lewis-ceo-boutique-studio-competition.jpg",
-    "deck": "Chequan Lewis just took the top job at Crunch Fitness. Leadership changes at 400-location chains don't happen quietly \u2014 and the direction he takes Crunch will tell boutique studio operators a lot about where the competitive pressure is heading next."
+    "deck": "Chequan Lewis just took the top job at Crunch Fitness. Leadership changes at 400-location chains don't happen quietly — and the direction he takes Crunch will tell boutique studio operators a lot about where the competitive pressure is heading next."
   },
   {
     "title": "Strength Training Just Replaced Weight Loss as the Top Gym Goal. Is Your Class Mix Ready?",
@@ -127,7 +167,7 @@
     "date": "2026-06-30",
     "dateDisplay": "Jun 30, 2026",
     "image": "/apple-smart-ring-oura-wearables-war-fitness-studios.jpg",
-    "deck": "Oura charges $6 a month on top of the hardware. If Apple folds the same recovery data into the Health app for free, the smart ring business model breaks overnight \u2014 and your members' wearable data gets a lot more interesting."
+    "deck": "Oura charges $6 a month on top of the hardware. If Apple folds the same recovery data into the Health app for free, the smart ring business model breaks overnight — and your members' wearable data gets a lot more interesting."
   },
   {
     "title": "WHOOP Built a $1B Category. Now Every Boardroom Wants a Piece.",
@@ -147,7 +187,7 @@
     "date": "2026-06-30",
     "dateDisplay": "Jun 30, 2026",
     "image": "/peloton-connected-fitness-plan-b-strength-longevity.jpg",
-    "deck": "Peloton lost 218,000 subscribers in a year. It's not a product problem \u2014 it's a fitness goal problem. The studios winning right now are built around something screens can't sell."
+    "deck": "Peloton lost 218,000 subscribers in a year. It's not a product problem — it's a fitness goal problem. The studios winning right now are built around something screens can't sell."
   },
   {
     "title": "Your Gym Software Just Became Your Distribution Channel",
@@ -157,7 +197,7 @@
     "date": "2026-06-29",
     "dateDisplay": "Jun 29, 2026",
     "image": "/octiv-explore-gym-software-owned-distribution.jpg",
-    "deck": "Octiv just launched a consumer discovery engine for 1,400 gyms across 40 countries \u2014 and it signals the end of paying aggregators to find your own customers."
+    "deck": "Octiv just launched a consumer discovery engine for 1,400 gyms across 40 countries — and it signals the end of paying aggregators to find your own customers."
   },
   {
     "title": "The Longevity Clinic Is Coming for Your Members. Here's How to Not Lose Them.",
@@ -177,7 +217,7 @@
     "date": "2026-06-29",
     "dateDisplay": "Jun 29, 2026",
     "image": "/lululemon-brand-playbook-boutique-fitness-studios.jpg",
-    "deck": "No TV. No print. No paid social. Just obsessive product focus and local community ambassadors. The playbook is free \u2014 and most studios aren't using it."
+    "deck": "No TV. No print. No paid social. Just obsessive product focus and local community ambassadors. The playbook is free — and most studios aren't using it."
   },
   {
     "title": "Whoop Just Won a Fight Apple and Samsung Couldn't",
@@ -187,7 +227,7 @@
     "date": "2026-06-29",
     "dateDisplay": "Jun 29, 2026",
     "image": "/whoop-fda-blood-pressure-wearables-fitness-studios.jpg",
-    "deck": "The FDA cleared Whoop's blood pressure feature \u2014 without the clearance Apple Watch has been chasing for years. Here's what it means for your studio."
+    "deck": "The FDA cleared Whoop's blood pressure feature — without the clearance Apple Watch has been chasing for years. Here's what it means for your studio."
   },
   {
     "title": "The Vibe Era Is Over. What Comes Next for Pilates, Boxing, and Barre.",
@@ -207,7 +247,7 @@
     "date": "2026-06-29",
     "dateDisplay": "Jun 29, 2026",
     "image": "/exercise-dementia-longevity-fitness-studios.jpg",
-    "deck": "New research confirms regular exercise measurably slows cognitive decline. The opportunity for operators isn't just a wellness positioning shift \u2014 it's a referral network, a new pricing tier, and a program design question your competitors haven't asked yet."
+    "deck": "New research confirms regular exercise measurably slows cognitive decline. The opportunity for operators isn't just a wellness positioning shift — it's a referral network, a new pricing tier, and a program design question your competitors haven't asked yet."
   },
   {
     "title": "Apple Is Building a Women's Health OS. Your Gym Is Either a Node in It or Invisible.",
@@ -217,7 +257,7 @@
     "date": "2026-06-29",
     "dateDisplay": "Jun 29, 2026",
     "image": "/apple-health-ios27-womens-fitness.jpg",
-    "deck": "iOS 27's perimenopause tracking and Apple Health+ aren't just features. They're Apple staking a claim on the 40+ female health journey \u2014 the same journey your millennial members are now on."
+    "deck": "iOS 27's perimenopause tracking and Apple Health+ aren't just features. They're Apple staking a claim on the 40+ female health journey — the same journey your millennial members are now on."
   },
   {
     "title": "Daxko Just Bought an API Stack. Here's Why That Matters More Than the Acquisition.",
@@ -247,7 +287,7 @@
     "date": "2026-06-27",
     "dateDisplay": "Jun 27, 2026",
     "image": "/fitness-studio-member-churn-statistics.jpg",
-    "deck": "The data is damning \u2014 and it's not about price, location, or equipment. Members who leave tell a consistent story. The question is whether you're listening before they go."
+    "deck": "The data is damning — and it's not about price, location, or equipment. Members who leave tell a consistent story. The question is whether you're listening before they go."
   },
   {
     "title": "80% of New Members Come From 3 Sources. Most Studios Are Funding the Other 20.",
@@ -267,6 +307,6 @@
     "date": "2026-04-19",
     "dateDisplay": "Apr 19, 2026",
     "image": "/fitness-studio-member-attribution.jpg",
-    "deck": "Most fitness studios credit referrals and Instagram \u2014 but have no data to back it up. The attribution gap costs more than most operators realize, and fixing it starts with three questions on a signup form."
+    "deck": "Most fitness studios credit referrals and Instagram — but have no data to back it up. The attribution gap costs more than most operators realize, and fixing it starts with three questions on a signup form."
   }
 ]
