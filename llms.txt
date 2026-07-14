@@ -4,6 +4,7 @@
 
 ## About
 - [About](https://therunrate.co/about/): Who The Run Rate is and what it covers
+- [Growth Playbooks](https://therunrate.co/playbooks/): Tactical, operator-ready guides for growing a fitness studio — acquisition, retention, email, churn, and AI. Free and paid tiers.
 - [Work With Us](https://therunrate.co/work-with-us/): Advertising and sponsorship
 - [Newsletter](https://newsletter.therunrate.co/subscribe): Weekly Roundup (free) + The Take (paid) + Growth Playbooks
 
