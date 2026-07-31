@@ -437,5 +437,6 @@ footer { background:var(--navy-deep); border-top:3px solid var(--yellow); }
   TRR.renderSidebar('/tech-ai/chatgpt-health-gemini-samsung-ai-coaches-own-the-data', 'Tech & AI', document.getElementById("trr-sidebar"));
   TRR.renderMore('/tech-ai/chatgpt-health-gemini-samsung-ai-coaches-own-the-data', document.getElementById("trr-more"));
 </script>
+<script>/* ticker speed: normalize to ~154px/s to match the homepage ticker, independent of headline count */(function(){function s(){var t=document.querySelector(".ticker-track");if(!t)return;var d=(t.scrollWidth/2)/154;if(d>0)t.style.animationDuration=d.toFixed(1)+"s";}s();if(document.fonts&&document.fonts.ready){document.fonts.ready.then(s);}window.addEventListener("resize",s);})();</script>
 </body>
 </html>
