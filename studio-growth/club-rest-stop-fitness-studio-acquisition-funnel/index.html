@@ -374,7 +374,7 @@ footer { background:var(--navy-deep); border-top:3px solid var(--yellow); }
     <div>
       <div class="footer-brand-name">The Run Rate</div>
       <p class="footer-tagline">Growth intelligence for fitness, wellness and health tech.</p>
-      <form class="footer-form" onsubmit="window.location.href='https://newsletter.therunrate.co/subscribe?email='+encodeURIComponent(this.querySelector('input').value);return false;">
+      <form class="footer-form" onsubmit="try{gtag('event','subscribe_submit',{source:'footer'});}catch(e){}window.location.href='https://newsletter.therunrate.co/subscribe?email='+encodeURIComponent(this.querySelector('input').value);return false;">
         <input class="footer-email-input" type="email" placeholder="your@email.com" required>
         <button type="submit" class="footer-submit">Subscribe →</button>
       </form>
@@ -417,5 +417,6 @@ footer { background:var(--navy-deep); border-top:3px solid var(--yellow); }
   TRR.renderMore('/studio-growth/club-rest-stop-fitness-studio-acquisition-funnel', document.getElementById("trr-more"));
 </script>
 <script>/* ticker speed: normalize to ~154px/s to match the homepage ticker, independent of headline count */(function(){function s(){var t=document.querySelector(".ticker-track");if(!t)return;var d=(t.scrollWidth/2)/154;if(d>0)t.style.animationDuration=d.toFixed(1)+"s";}s();if(document.fonts&&document.fonts.ready){document.fonts.ready.then(s);}window.addEventListener("resize",s);})();</script>
+<script defer src="/subscribe-popup.js"></script>
 </body>
 </html>

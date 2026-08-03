@@ -565,7 +565,7 @@ footer { background:var(--navy-deep); border-top:3px solid var(--yellow); }
     <div>
       <div class="footer-brand-name">The Run Rate</div>
       <p class="footer-tagline">Growth intelligence for fitness, wellness and health tech.</p>
-      <form class="footer-form" onsubmit="window.location.href='https://newsletter.therunrate.co/subscribe?email='+encodeURIComponent(this.querySelector('input').value);return false;">
+      <form class="footer-form" onsubmit="try{gtag('event','subscribe_submit',{source:'footer'});}catch(e){}window.location.href='https://newsletter.therunrate.co/subscribe?email='+encodeURIComponent(this.querySelector('input').value);return false;">
         <input class="footer-email-input" type="email" placeholder="your@email.com" required>
         <button type="submit" class="footer-submit">Subscribe →</button>
       </form>
@@ -608,5 +608,6 @@ footer { background:var(--navy-deep); border-top:3px solid var(--yellow); }
   TRR.renderSidebar('/tech-ai/daxko-acquires-fitnessforce-fitness-software-consolidation', 'Tech & AI', document.getElementById("trr-sidebar"));
   TRR.renderMore('/tech-ai/daxko-acquires-fitnessforce-fitness-software-consolidation', document.getElementById("trr-more"));
 </script>
+<script defer src="/subscribe-popup.js"></script>
 </body>
 </html>
