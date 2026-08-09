@@ -8,6 +8,24 @@
 - [Work With Us](https://therunrate.co/work-with-us/): Advertising and sponsorship
 - [Newsletter](https://newsletter.therunrate.co/subscribe): Weekly Roundup (free) + The Take (paid) + Growth Playbooks
 
+## The Run Rate Index
+- [The Run Rate Index — Summer 2026](https://therunrate.co/index/): A quarterly power ranking of the fastest-moving consumer fitness and wellness brands, scored on six public signals (demand, expansion, capital, pricing, talent, buzz). HYROX and Garmin lead the Summer 2026 edition.
+- [HYROX — #1 (76/100)](https://therunrate.co/index/summer-2026/hyrox/): Nothing in fitness is scaling like HYROX — a projected 2M athletes across 107 race weekends on six continents, with events stretching into 10-day residencies.
+- [Garmin — #2 (76/100)](https://therunrate.co/index/summer-2026/garmin/): In one week Garmin acquired TrainingPeaks + TrainHeroic (~120 staff) and launched the subscription-free CIRQA band — owning sensor to data to plan to coach.
+- [WHOOP — #3 (72/100)](https://therunrate.co/index/summer-2026/whoop/): Crossed 3M members and hired like a consumer-goods company: ex-Nike CMO DJ van Hameren and ex-Glossier CEO Kyle Leahy.
+- [Crunch Fitness — #4 (70/100)](https://therunrate.co/index/summer-2026/crunch-fitness/): Crunch 3.0 bolts recovery and boutique onto the value model, plus 20 Phoenix clubs, 50 in Mexico and a New Zealand entry under a new CEO.
+- [Oura — #5 (69/100)](https://therunrate.co/index/summer-2026/oura/): The demand story of the quarter — search up 44% on an Eli Lilly equity investment, 5.5M rings sold and a confidential IPO on file.
+- [Third Space — #6 (65/100)](https://therunrate.co/index/summer-2026/third-space/): Permira lined up a ~£700m bid for the 13-club London luxury operator (£250/mo) — the quarter's biggest capital signal, paired with strong pricing power..
+- [Planet Fitness — #7 (63/100)](https://therunrate.co/index/summer-2026/planet-fitness/): Q2 revenue +7.1% and Black Card penetration at 68% — but same-club growth was all rate, not new members.
+- [Basic-Fit — #8 (62/100)](https://therunrate.co/index/summer-2026/basic-fit/): H1 memberships hit 6.1M (+34%) and 2,192 clubs (+35%), outlook raised, free cash flow positive — the growth machine turned cash-generative without stopping..
+- [Life Time — #9 (60/100)](https://therunrate.co/index/summer-2026/life-time/): Q2 net income +40.6%, revenue +13.7%, guidance raised, 14 clubs opening in 2026 — a luxury operator compounding on premium pricing and healthspan positioning..
+- [Strava — #10 (60/100)](https://therunrate.co/index/summer-2026/strava/): 180M athletes, ~$500M revenue, 50% new-user growth and an IPO waiting in the wings.
+- [Solidcore — #11 (59/100)](https://therunrate.co/index/summer-2026/solidcore/): A 250-location pipeline via SiteRise and 30–35 openings in 2026 — the boutique that industrialized site selection.
+- [Anytime Fitness — #12 (58/100)](https://therunrate.co/index/summer-2026/anytime-fitness/): Hit its 6,000th club and extended Apple Fitness+ to UK & Ireland members — a value ladder built on someone else's content..
+- [Equinox — #13 (53/100)](https://therunrate.co/index/summer-2026/equinox/): Quiet quarter, loud pricing: the $40k/yr Optimize longevity tier still carries a 1,000+ waitlist.
+- [Human Longevity — #14 (46/100)](https://therunrate.co/index/summer-2026/human-longevity/): Dropped a clinical-grade genome to $599 ("Genomics for All"), commoditizing the longevity entry point.
+- [Othership — #15 (42/100)](https://therunrate.co/index/summer-2026/othership/): Opening its second NYC social-sauna site (Williamsburg) on a US expansion push — sober social wellness goes multi-unit.
+
 ## Studio Growth
 - [When the Only Lever Left Is Revenue Per Member. How Boutique and Budget Gyms Are Adapting to Slowing Member Growth.](https://therunrate.co/studio-growth/planet-fitness-permira-third-space-revenue-per-member/): When member growth stops, revenue per member is the only lever left. For high-volume, low-price gyms the sequence is everything: add value before you touch the price.
 - [Discounts Don't Keep Gym Members. Habits Do. South Korea Just Proved It.](https://therunrate.co/studio-growth/south-korea-workout-reward-habit-retention/): A government program that pays people to exercise just proved the money was never what kept them going. The lesson for studios burning margin on retention discounts: build the habit, not the bribe.
