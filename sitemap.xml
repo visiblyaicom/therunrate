@@ -21,6 +21,36 @@
     <priority>0.5</priority>
   </url>
   <url>
+    <loc>https://therunrate.co/brands/xponential-q2-2026-studio-count-unit-economics/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://therunrate.co/studio-growth/gym-membership-2019-levels-market-saturation/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://therunrate.co/studio-growth/hyrox-ecosystem-gym-revenue-affiliate/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://therunrate.co/brands/crunch-fitness-bay-area-franchisee-buyback-crunch-3-0/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://therunrate.co/studio-growth/master-franchising-pilates-brands-scale/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://therunrate.co/tech-ai/ai-workout-programming-gym-floor-trainers/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://therunrate.co/studio-growth/planet-fitness-permira-third-space-revenue-per-member/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -309,90 +339,5 @@
     <loc>https://therunrate.co/studio-growth/fitness-studio-member-attribution/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://therunrate.co/the-index/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://therunrate.co/the-index/summer-2026/hyrox/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://therunrate.co/the-index/summer-2026/garmin/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://therunrate.co/the-index/summer-2026/whoop/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://therunrate.co/the-index/summer-2026/crunch-fitness/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://therunrate.co/the-index/summer-2026/oura/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://therunrate.co/the-index/summer-2026/third-space/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://therunrate.co/the-index/summer-2026/planet-fitness/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://therunrate.co/the-index/summer-2026/basic-fit/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://therunrate.co/the-index/summer-2026/life-time/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://therunrate.co/the-index/summer-2026/strava/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://therunrate.co/the-index/summer-2026/solidcore/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://therunrate.co/the-index/summer-2026/anytime-fitness/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://therunrate.co/the-index/summer-2026/equinox/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://therunrate.co/the-index/summer-2026/human-longevity/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://therunrate.co/the-index/summer-2026/othership/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://therunrate.co/the-index/summer-2026/badges/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
   </url>
 </urlset>
