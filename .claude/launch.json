@@ -4,7 +4,7 @@
     {
       "name": "therunrate",
       "runtimeExecutable": "/usr/local/bin/npx",
-      "runtimeArgs": ["serve", "-p", "8791", "/Users/babypau/Documents/Trainerize/2026/Claude code/therunrate/site"],
+      "runtimeArgs": ["serve", "-p", "8791", "/Users/paulalizab/Documents/Claude code/therunrate/site"],
       "port": 8791
     }
   ]
