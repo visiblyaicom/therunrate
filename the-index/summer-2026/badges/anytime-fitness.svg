@@ -7,6 +7,8 @@
     .award{font-family:'TRRJost',sans-serif;font-weight:500;font-size:9.5px;letter-spacing:1.9px;fill:#7a8699;}
     .hero-num{font-family:'TRRPlayfair',serif;font-weight:700;font-size:126px;letter-spacing:-2.5px;fill:#f0e87a;}
     .hero-num .hash{font-size:50px;baseline-shift:38px;}
+    .hero-top{font-family:'TRRPlayfair',serif;font-weight:700;font-size:74px;letter-spacing:-1px;fill:#f0e87a;}
+    .hero-top .fig{font-size:1.12em;}
     .hero-cat{font-family:'TRRPlayfair',serif;font-weight:700;font-size:42px;fill:#f0e87a;}
     .brand{font-family:'TRRPlayfair',serif;font-weight:700;font-size:29px;fill:#f8f8f4;}
     .foot{font-family:'TRRJost',sans-serif;font-weight:500;font-size:9.5px;letter-spacing:1.35px;fill:#7a8699;}
@@ -16,7 +18,7 @@
   <text x="220" y="74" text-anchor="middle" class="eyebrow" dx="1.9">THE RUN RATE INDEX</text>
   <line x1="191" y1="96" x2="249" y2="96" stroke="rgba(255,255,255,.16)" stroke-width="1"/>
   <text x="220" y="124" text-anchor="middle" class="award" dx="0.95">FASTEST-MOVING BRANDS IN FITNESS</text>
-  <text x="220" y="250" text-anchor="middle" class="hero-num"><tspan class="hash">#</tspan>12</text>
+  <text x="220" y="246" text-anchor="middle" class="hero-top">TOP <tspan class="fig">15</tspan></text>
   <text x="220" y="341" text-anchor="middle" class="brand">Anytime Fitness</text>
   <text x="220" y="399" text-anchor="middle" class="foot" dx="0.68">SUMMER 2026 &#183; THERUNRATE.CO/THE-INDEX</text>
 </svg>
