@@ -101,6 +101,11 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://therunrate.co/the-index/summer-2026/badges/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
     <loc>https://therunrate.co/tech-ai/oura-sleep-accuracy-lawsuit-wearable-data-coaching/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>

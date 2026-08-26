@@ -25,6 +25,7 @@
 - [Equinox — #13 in The Run Rate Index, Summer 2026](https://therunrate.co/the-index/summer-2026/equinox/): Rank 13 of 15, score 53/100, category Luxury gym. Quiet quarter, loud pricing: the $40k/yr Optimize longevity tier still carries a 1,000+ waitlist. Top pricing-power score on the Index — health as the new luxury.
 - [Human Longevity — #14 in The Run Rate Index, Summer 2026](https://therunrate.co/the-index/summer-2026/human-longevity/): Rank 14 of 15, score 46/100, category Longevity. Dropped a clinical-grade genome to $599 ("Genomics for All"), commoditizing the longevity entry point. A real move, but near-zero search demand keeps it low.
 - [Othership — #15 in The Run Rate Index, Summer 2026](https://therunrate.co/the-index/summer-2026/othership/): Rank 15 of 15, score 42/100, category Social wellness. Opening its second NYC social-sauna site (Williamsburg) on a US expansion push — sober social wellness goes multi-unit. Emerging, with the lightest signals on the list.
+- [The Run Rate Index badge kit, Summer 2026](https://therunrate.co/the-index/summer-2026/badges/): Embeddable rank and category badges for the 15 ranked brands, with copy-paste embed code.
 
 ## Studio Growth
 - [EoS Just Licensed HYROX. So Can You, for $130 a Month.](https://therunrate.co/studio-growth/eos-hyrox-licence-affiliate-independent-gyms/): EoS is the first gym chain to put HYROX Training+ inside its member app, across 25 locations, gated behind its premium tier. The licence it used is open to any gym in the world at roughly $1,500 a year, and 2,500 gyms already hold it.
