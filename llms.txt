@@ -28,6 +28,7 @@
 - [The Run Rate Index badge kit, Summer 2026](https://therunrate.co/the-index/summer-2026/badges/): Embeddable rank and category badges for the 15 ranked brands, with copy-paste embed code.
 
 ## Studio Growth
+- [How Gen Z Picks Where to Live: The Gym Comes Before the Pub](https://therunrate.co/studio-growth/gen-z-gym-proximity-strava-heatmap-site-selection/): The Gym Group's third annual Gen Z survey puts the gym ahead of the pub as the amenity that decides where they move. Strava's heatmap looks like the map of that demand. Its users are 93.5% male and 93.6% cyclists.
 - [Why Yoga Studios Are Cutting Classes and Adding Pilates](https://therunrate.co/studio-growth/yoga-pilates-conversion-format-rebundling/): Walla's veteran studios cut yoga supply by a quarter. Two in five ClassPass yoga studios now sell Pilates too. The schedule moved before the members did.
 - [GLP-1 Users Spend 4x More on Fitness. Why This Matters](https://therunrate.co/studio-growth/glp1-fitness-spending-449-sample-caveat/): The Consumer Collective found GLP-1 users outspend everyone else by nearly 4x. The finding rests on 123 people, and household income is doing some of the work.
 - [Gym Member Retention: The Benchmark Guide](https://therunrate.co/studio-growth/gym-member-retention-benchmarks/): Many retention targets were set from a benchmark reporting 2015 data. Here are the numbers that survive a source check, and the ones that do not.
