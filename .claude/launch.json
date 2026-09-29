@@ -3,8 +3,8 @@
   "configurations": [
     {
       "name": "therunrate",
-      "runtimeExecutable": "/usr/local/bin/npx",
-      "runtimeArgs": ["serve", "-p", "8791", "/Users/paulalizab/Documents/Claude code/therunrate/site"],
+      "runtimeExecutable": "/opt/homebrew/bin/npx",
+      "runtimeArgs": ["serve", "-p", "8791", "/Users/paulabartis/Documents/Claude code/therunrate/site"],
       "port": 8791
     }
   ]
